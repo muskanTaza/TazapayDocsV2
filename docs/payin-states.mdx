@@ -1,0 +1,20 @@
+---
+title: "Payin states"
+description: "A payin transitions through multiple statuses"
+---
+
+The following flowchart details the possible status of a payin
+
+![](/images/docs/5e40336-image.png)
+
+| Name                      | Description                                                                                                                                     |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| requires\_payment\_method | Payment Method details need to be attached to the payin to proceed with the payment                                                             |
+| requires\_action          | An action needs to be taken by the customer for the payment to go through                                                                       |
+| processing                | All the actions have been performed by the customer, Tazapay is still waiting to confirm the payment. Not all payment methods have this status. |
+| succeeded                 | The payin is successful                                                                                                                         |
+| cancelled                 | The payin is cancelled                                                                                                                          |
+
+***
+
+[Payin](/docs/payin-6)

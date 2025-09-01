@@ -1,0 +1,63 @@
+---
+title: "Authentication"
+description: "The Tazapay API uses  or  to authenticate requests. When you sign up for an account, you can view and manage your keys on . Tazapay API provides you with two types of keys, the API_Key and the API_Secret. You will need to authenticate by providing the base64 encoded key pair in the request Authorization header."
+---
+
+<Info>
+  Tazapay has separate keys for both test and live environments. Test keys can be generated automatically by logging into the [sandbox dashboard](https://dashboard-sandbox.tazapay.com/) and live keys by logging into the [live dashboard](https://dashboard.tazapay.com) after clearing KYB.
+</Info>
+
+All requests to Tazapay API must be made over HTTPS. Requests over HTTP will fail. Requests without authentication will also fail.
+
+*NOTE: To go from test mode to live mode, you need to change the endpoint URL along with changing the API keys.*
+
+<Warning>
+  ### API\_Secret key is "secret" for a reason!
+
+  Do not share your API keys to any unauthorised parties. This includes publicly accessible areas such as GitHub, client-side code, etc. An unauthorised party can create transactions on your behalf if they get a hold of your API keys.
+</Warning>
+
+### How to Authenticate
+
+1. `BASIC AUTH` requires a username and a password combined with a colon. Its format is **\{\{username}}:\{\{password}}**.
+
+   **NOTE:** Your API\_Key will serve as the username USER and the API\_Secret PASS as the password.
+
+2. The resultant value is encoded into a [Base64](https://en.wikipedia.org/wiki/Base64) format.
+
+3. Prefix the Base64 encoded value with **Basic** and pass it in the *Authorization* header.
+
+### Example
+
+1. If your API keys are:
+
+<CodeGroup>
+  ```bash bash
+  API_Key : F2W7H8JWMO8398KAPW85
+  API_Secret : rKHFAffLq5Lnrms3mOBQi71oQmMATH2EByYDyIR2Wd0jGdKeed08WThGVS6v1257
+  ```
+</CodeGroup>
+
+2. Following the `BASIC AUTH` format, the value generated is:
+
+<CodeGroup>
+  ```bash bash
+  F2W7H8JWMO8398KAPW85:rKHFAffLq5Lnrms3mOBQi71oQmMATH2EByYDyIR2Wd0jGdKeed08WThGVS6v1257
+  ```
+</CodeGroup>
+
+3. [Encoding the above value](https://www.base64encode.org/) into Base64, the resultant value generated is:
+
+<CodeGroup>
+  ```bash bash
+  RjJXN0g4SldNTzgzOThLQVBXODU6cktIRkFmZkxxNUxucm1zM21PQlFpNzFvUW1NQVRIMkVCeVlEeUlSMldkMGpHZEtlZWQwOFdUaEdWUzZ2MTI1Nw==
+  ```
+</CodeGroup>
+
+4. Include this Base64 value in the Authorization header with Basic prefix:
+
+<CodeGroup>
+  ```bash bash
+  Authorization: Basic RjJXN0g4SldNTzgzOThLQVBXODU6cktIRkFmZkxxNUxucm1zM21PQlFpNzFvUW1NQVRIMkVCeVlEeUlSMldkMGpHZEtlZWQwOFdUaEdWUzZ2MTI1Nw==
+  ```
+</CodeGroup>
