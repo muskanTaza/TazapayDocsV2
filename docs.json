@@ -9,15 +9,23 @@
   },
   "favicon": "/10a0fda-favicon.ico",
   "navigation": {
+    "anchors": [
+      {
+        "anchor": "Dashboard",
+        "href": "https://dashboard.tazapay.com/"
+      }
+    ]
     "tabs": [
       {
         "tab": "Guides",
+        "icon": "book-open",
         "groups": [
           {
             "group": "Tazapay",
             "pages": [
               {
                 "group": "Start Here",
+                "icon": "book-open",
                 "pages": [
                   "docs/introduction-to-tazapay",
                   {
@@ -31,6 +39,7 @@
               },
               {
                 "group": "Security",
+                "icon": "lock",
                 "pages": [
                   "docs/multi-factor-authentication-coming-soon",
                   "docs/faq",
@@ -39,6 +48,7 @@
               },
               {
                 "group": "Collections",
+                "icon": "book-open",
                 "pages": [
                   "docs/cards-description",
                   {
@@ -310,6 +320,7 @@
               },
               {
                 "group": "Payin api",
+                "icon": "dollar-sign",
                 "pages": [
                   "docs/brazil-br",
                   {
@@ -466,6 +477,7 @@
               },
               {
                 "group": "Platform : Fintech Guides",
+                "icon": "book-open",
                 "pages": [
                   "docs/creating-payouts-on-behalf-of",
                   "docs/creating-payouts-on-behalf-of-individuals",
@@ -475,6 +487,7 @@
               },
               {
                 "group": "PAYOUTS",
+                "icon": "dollar-sign",
                 "pages": [
                   "docs/payout-overview",
                   "docs/payout-object",
@@ -537,6 +550,7 @@
               },
               {
                 "group": "collect",
+                "icon": "dollar-sign",
                 "pages": [
                   "docs/collection-accounts-and-collect",
                   {
@@ -551,6 +565,7 @@
               },
               {
                 "group": "Checkout",
+                "icon": "dollar-sign",
                 "pages": [
                   "docs/checkout-intro",
                   "docs/how-checkout-works",
@@ -559,6 +574,7 @@
               },
               {
                 "group": "Transfers Within Tazapay",
+                "icon": "book-open",
                 "pages": [
                   "docs/overview",
                   "docs/configuring-an-accounts-deposit-address",
@@ -571,6 +587,7 @@
                   },
                   {
                     "group": "Viewing an Incoming Payment",
+                    "icon": "book-open",
                     "pages": [
                       "docs/using-the-dashboard-1",
                       "docs/using-api-1"
@@ -580,6 +597,7 @@
               },
               {
                 "group": "PAYMENT ATTEMPT INFORMATION",
+                "icon": "book-open",
                 "pages": [
                   "docs/singapore-sg-1",
                   {
@@ -598,6 +616,7 @@
               },
               {
                 "group": "Guides : use cases",
+                "icon": "book-open",
                 "pages": [
                   "docs/listing-payment-methods-on-your-ui",
                   {
@@ -610,6 +629,7 @@
               },
               {
                 "group": "Developer Tools",
+                "icon": "square-terminal",
                 "pages": [
                   "docs/checkout-copy-1",
                   {
@@ -633,6 +653,7 @@
               },
               {
                 "group": "APPENDIX",
+                "icon": "book-open",
                 "pages": [
                   "docs/address-validation",
                   "docs/decimal-currencies",
@@ -649,12 +670,28 @@
       },
       {
         "tab": "API Reference",
+        "icon": "rocket",
+        "menu": [
+          {
+            "item": "Payin",
+            "icon": "dollar-sign",
+            "groups": [
+              {
+                "group": "Core endpoints",
+                "icon": "square-terminal",
+                "pages": [
+                  "reference/create-payin"
+                ]
+              }
+            ]
+          },
         "groups": [
           {
             "group": "Tazapay",
             "pages": [
               {
                 "group": "API Overview",
+                "icon": "rocket",
                 "pages": [
                   "reference/introduction",
                   "reference/endpoints-environments",
@@ -666,6 +703,7 @@
               },
               {
                 "group": "Tazapay API",
+                "icon": "book",
                 "pages": [
                   "reference/create-payin",
                   {
@@ -765,6 +803,7 @@
               },
               {
                 "group": "JAVASCRIPT SDK",
+                "icon": "square-terminal",
                 "pages": [
                   "reference/sdk-overview",
                   "reference/how-the-sdk-works",
@@ -817,6 +856,7 @@
               },
               {
                 "group": "APPENDIX",
+                "icon": "book",
                 "pages": [
                   "reference/test-cards",
                   {
