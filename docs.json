@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "almond",
   "name": "Introduction to Tazapay",
   "colors": {
     "primary": "#1fa7d9",
@@ -847,6 +847,14 @@
               }
             ]
           }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "groups":[{
+          "group" : "changelog",
+          "pages" : ["docs/changelog.mdx"]
+        }
         ]
       }
     ]
