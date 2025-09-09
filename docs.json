@@ -851,10 +851,11 @@
       },
       {
         "tab": "Changelog",
-        "groups":[{
+        "groups":[
+          {
           "group" : "changelog",
-          "pages" : ["docs/changelog.mdx"]
-        }
+          "pages" : ["docs/changelog"]
+          }
         ]
       }
     ]
