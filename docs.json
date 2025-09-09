@@ -889,6 +889,15 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Changelog",
+        "groups":[
+          {
+          "group" : "changelog",
+          "pages" : ["docs/changelog"]
+          }
+        ]
       }
     ]
   },
