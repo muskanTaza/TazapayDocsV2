@@ -706,108 +706,73 @@
                 "group": "Tazapay API",
                 "icon": "book",
                 "pages": [
-                  "reference/global-collection-account-object",
+                  "reference/create-payin",
                   {
                     "group": "Payin",
                     "pages": [
-                      "reference/create-payin",
-                      "reference/create-a-payin",
-                      "reference/fetching-a-payin",
-                      "reference/cancelling-a-payin",
-                      "reference/confirm-a-payin",
-                      "reference/updating-a-payin"
+                      "reference/create-payin"
                     ]
                   },
                   {
                     "group": "Checkout",
                     "pages": [
-                      "reference/create-checkout",
-                      "reference/create-checkout-session",
-                      "reference/fetch-checkout",
-                      "reference/update-checkout",
-                      "reference/expire-checkout"
+                      "reference/create-checkout"
                     ]
                   },
                   {
                     "group": "Payout",
                     "pages": [
                       "reference/create-payout",
-                      "reference/fetch-payout",
-                      "reference/update-payout",
-                      "reference/simulating-payouts-on-test-environment-sandbox",
-                      "reference/funding-a-payout",
-                      "reference/payout-failure-reasons",
-                      "reference/post-payout-confirm",
-                      "reference/post-v3payoutquote"
+                      "reference/simulating-payouts-on-test-environment-sandbox"
                     ]
                   },
                   {
                     "group": "Escrow",
                     "pages": [
-                      "reference/create-escrow",
-                      "reference/fetch-escrow",
-                      "reference/update-escrow",
-                      "reference/expire-escrow",
                       "reference/payments"
                     ]
                   },
                   {
                     "group": "Customers",
                     "pages": [
-                      "reference/create-customer",
-                      "reference/fetch-customer-details",
-                      "reference/update-customer",
                       "reference/user"
                     ]
                   },
                   {
                     "group": "Refund",
                     "pages": [
-                      "reference/fetch-refund",
-                      "reference/update-refund",
-                      "reference/cancel-refund",
-                      "reference/refund",
-                      "reference/initiate-refund"
+                      "reference/refund"
                     ]
                   },
                   {
                     "group": "Metadata",
                     "pages": [
                       "reference/metadata",
-                      "reference/collection-methods",
-                     "reference/payout-bank"
+                      "reference/collection-methods"
                     ]
                   },
                   {
                     "group": "Document",
                     "pages": [
-                      "reference/document",
-                      "reference/upload-document",
-                      "reference/get-v3metadatadocupload",
-                      "reference/post-v3metadatadocupload"
+                      "reference/document"
                     ]
                   },
                   {
                     "group": "Payment Attempts",
                     "pages": [
-                      "reference/fetch-payment-attempt",
-                      "reference/update-payment-attempt",
                       "reference/payment-attempts-1"
                     ]
                   },
                   {
                     "group": "Beneficiary",
                     "pages": [
-                      "reference/create-beneficiary",
-                      "reference/fetch-beneficiary",
-                      "reference/update-beneficiary"
+                      "reference/create-beneficiary"
                     ]
                   },
+                  "reference/global-collection-account-object",
                   {
                     "group": "Balance",
                     "pages": [
-                      "reference/fetch-balance-transaction",
-                      "reference/fetch-balance",
                       "reference/balance"
                     ]
                   },
@@ -820,28 +785,19 @@
                   {
                     "group": "Entity",
                     "pages": [
-                      "reference/create-entity",
-                      "reference/fetch-entity",
-                      "reference/update-entity",
-                      "reference/list-entity",
-                      "reference/submit-entity"
+                      "reference/create-entity"
                     ]
                   },
                   {
                     "group": "Settlements",
                     "pages": [
-                      "reference/fetch-payins",
-                      "reference/fetch-collects",
-                      "reference/fetch-adjustments",
-                      "reference/fetch-refunds",
-                      "reference/fetch-payouts"
+                      "reference/fetch-payins"
                     ]
                   },
                   {
                     "group": "Quote",
                     "pages": [
-                      "reference/create-a-quote",
-                      "reference/fetch-quote"
+                      "reference/create-a-quote"
                     ]
                   }
                 ]
@@ -854,19 +810,6 @@
                   "reference/how-the-sdk-works",
                   "reference/specifying-payment-methods",
                   "reference/managing-exchange-rates-fx",
-                  "reference/version-history",
-                  "reference/integrate-with-risk-sdk",
-                  "reference/blur-event",
-                  "reference/button-styles",
-                  "reference/change-event",
-                  "reference/container-styles",
-                  "reference/element-styles",
-                  "reference/escape-event",
-                  "reference/focus-event",
-                  "reference/input-styles",
-                  "reference/modal-styles",
-                  "reference/ready-event",
-                  "reference/style-customisation",
                   {
                     "group": "Integrating into your Project",
                     "pages": [
@@ -907,46 +850,16 @@
                       "reference/element-styles",
                       "reference/modal-styles"
                     ]
-                  }
+                  },
+                  "reference/version-history",
+                  "reference/integrate-with-risk-sdk"
                 ]
               },
               {
                 "group": "APPENDIX",
                 "icon": "book",
                 "pages": [
-                  "reference/fetch-exchange-rates",
-                  "reference/fetch-external-account-details",
                   "reference/test-cards",
-                  "reference/error-codes",
-                  "reference/error-code-by-payment-methods",
-                  "reference/payout-failure-reasons",
-                  "reference/add-billingshipping",
-                  "reference/alternate-payment-methods",
-                  "reference/authentication",
-                  "reference/cardembedlock",
-                  "reference/cardembedunlock",
-                  "reference/collection-methods",
-                  "reference/custom-flow",
-                  "reference/developer-recomendations",
-                  "reference/endpoints-environments",
-                  "reference/get-",
-                  "reference/get-new-endpoint",
-                  "reference/get-v3collection_account",
-                  "reference/get-v3collection_accounts",
-                  "reference/global-collection-account-object",
-                  "reference/idempotent-requests",
-                  "reference/integrating-client-side",
-                  "reference/introduction",
-                  "reference/managing-exchange-rates-fx",
-                  "reference/payments",
-                  "reference/post-v3collection_account",
-                  "reference/post-v3collection_account:iddisable",
-                  "reference/post-v3collection_accounts",
-                  "reference/put-v3collection_account:id",
-                  "reference/specifying-payment-methods",
-                  "reference/tazapay-mcp-server",
-                  "reference/version-history",
-                  "reference/webhooks-intro",
                   {
                     "group": "Simulating Payments",
                     "pages": [
@@ -954,6 +867,7 @@
                       "reference/alternate-payment-methods"
                     ]
                   },
+                  "reference/error-codes",
                   {
                     "group": "Error Codes by Core Resource",
                     "pages": [
@@ -967,19 +881,12 @@
                       "reference/payout-error-codes",
                       "reference/entity-error-codes"
                     ]
-                  }
+                  },
+                  "reference/error-code-by-payment-methods",
+                  "reference/payout-failure-reasons"
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "tab": "Changelog",
-        "groups":[
-          {
-          "group" : "changelog",
-          "pages" : ["docs/changelog"]
           }
         ]
       }
@@ -989,8 +896,8 @@
   "navbar": {
     "links": [
       {
-        "label": "Dashboard",
-        "href": "https://dashboard.tazapay.com/"
+         "label": "Dashboard",
+         "href": "https://dashboard.tazapay.com/"
       }
     ]
   }
