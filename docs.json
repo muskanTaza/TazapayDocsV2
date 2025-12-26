@@ -710,6 +710,7 @@
                   {
                     "group": "Payin",
                     "pages": [
+                      "openapi.json POST /v3/payin",
                       "reference/create-payin",
                       "reference/create-a-payin",
                       "reference/fetching-a-payin",
