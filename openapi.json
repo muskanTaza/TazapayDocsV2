@@ -4057,8 +4057,7 @@
                 "required": [
                   "amount",
                   "currency",
-                  "purpose",
-                  "transaction_description"
+                  "purpose"
                 ],
                 "properties": {
                   "amount": {
