@@ -14,6 +14,25 @@
         "anchor": "Dashboard",
         "href": "https://dashboard.tazapay.com/"
       }
+    ],
+    "tabs": [
+      {
+        "tab": "Guides",
+        "icon": "book-open",
+        "groups": []
+      },
+      {
+        "tab": "API Reference",
+        "icon": "rocket",
+        "menu": [
+          {
+            "item": "Payin",
+            "icon": "dollar-sign",
+            "groups": []
+          }
+        ],
+        "groups": []
+      }
     ]
   },
   "logo": "/images/532e286-small-Tazapay-logotype-white.png",
