@@ -26,37 +26,96 @@
           {
             "group": "Start Here",
             "pages": [
-              "Guides/1.StartHere/1.1.GetStartedwithTazapay",
-              "Guides/1.StartHere/1.2.OnboardingRequirements",
-              "Guides/1.StartHere/1.3.ManagingyourTeam",
-              "Guides/1.StartHere/1.4.MultiFactorAuthentication"
+              "Guides/start-here/get-started-with-tazapay",
+              "Guides/start-here/onboarding-requirements",
+              "Guides/start-here/managing-your-team",
+              "Guides/start-here/multifactor-authentication"
             ]
           },
           {
-            "group": "Collections",
+            "group": "Global Collections Accounts",
             "pages": [
-              "Guides/2.Collections/2.1.TypesofCollections/2.1.1.Cards",
-              "Guides/2.Collections/2.1.TypesofCollections/2.1.2.LocalPaymentMethodsLPMs",
-              "Guides/2.Collections/2.1.TypesofCollections/2.1.3.ViewingVirtualAccountsandStablecoinWallets"
+              "Guides/global-collections-accounts/overview",
+              "Guides/global-collections-accounts/configuring-virtual-accounts-and-stablecoin-wallets",
+              "Guides/global-collections-accounts/viewing-virtual-accounts-and-stablecoin-wallets",
+              "Guides/global-collections-accounts/receiving-funds",
+              "Guides/global-collections-accounts/coverage"
             ]
           },
           {
-            "group": "Global Collection Accounts",
+            "group": "Viewing Balances",
             "pages": [
-              "Guides/3.GlobalCollectionAccounts/3.1.Overview",
-              "Guides/3.GlobalCollectionAccounts/3.2.ConfiguringVirtualAccountsandStablecoinWallets",
-              "Guides/3.GlobalCollectionAccounts/3.3.ViewingVirtualAccountsandStablecoinWallets",
-              "Guides/3.GlobalCollectionAccounts/3.4.ReceivingFunds",
-              "Guides/3.GlobalCollectionAccounts/3.5.Coverage"
+              "Guides/viewing-balances/overview",
+              "Guides/viewing-balances/enabling-additional-balance-currencies",
+              "Guides/viewing-balances/fx-transactions"
+            ]
+          },
+          {
+            "group": "Payouts",
+            "pages": [
+              "Guides/payouts/overview",
+              "Guides/payouts/coverage",
+              "Guides/payouts/purpose",
+              "Guides/payouts/fund-transfer-networks",
+              {
+                "group": "Managing FX",
+                "pages": [
+                  "Guides/payouts/managing-fx/overview",
+                  "Guides/payouts/managing-fx/locking-exchange-rates-for-a-payout",
+                  "Guides/payouts/managing-fx/for-the-time-duration-between-maker-checker-flow",
+                  "Guides/payouts/managing-fx/for-the-funding-time-duration",
+                  "Guides/payouts/managing-fx/creating-a-quote-and-then-attaching-it-to-a-payout"
+                ]
+              },
+              "Guides/payouts/local-guides",
+              "Guides/payouts/reversals"
+            ]
+          },
+          {
+            "group": "Connected Accounts",
+            "pages": [
+              "Guides/connected-accounts/overview",
+              "Guides/connected-accounts/creating-sub-accounts",
+              "Guides/connected-accounts/creating-entities",
+              "Guides/connected-accounts/simplified-entity-creation",
+              "Guides/connected-accounts/approval-lifecycle"
+            ]
+          },
+          {
+            "group": "Templatised Guides",
+            "pages": [
+              "Guides/templatised-guides/payouts-on-behalf-of",
+              "Guides/templatised-guides/collections-on-behalf-of",
+              "Guides/templatised-guides/global-payout-network",
+              "Guides/templatised-guides/just-in-time-funding"
+            ]
+          },
+          {
+            "group": "Embedded Finance Use Cases",
+            "pages": [
+              {
+                "group": "Global Treasury",
+                "pages": [
+                  "Guides/embedded-finance-use-cases/global-treasury/payroll",
+                  "Guides/embedded-finance-use-cases/global-treasury/vendor-payouts",
+                  "Guides/embedded-finance-use-cases/global-treasury/employee-reimbursements"
+                ]
+              },
+              {
+                "group": "Banking as a Service",
+                "pages": [
+                  "Guides/embedded-finance-use-cases/banking-as-a-service/stablecoin-neobanks"
+                ]
+              }
             ]
           },
           {
             "group": "Transfers Within Tazapay",
             "pages": [
-              "Guides/4.TransfersWithinTazapay/4.1.Overview",
-              "Guides/4.TransfersWithinTazapay/4.2.ConfiguringAnAccountsDepositAddress",
-              "Guides/4.TransfersWithinTazapay/4.3.Making-a-Payment-to-a-Deposit-Address",
-              "Guides/4.TransfersWithinTazapay/4.4.Viewing-an-Incoming-Payment"
+              "Guides/transfers-within-tazapay/overview",
+              "Guides/transfers-within-tazapay/configuring-an-accounts-deposit-address",
+              "Guides/transfers-within-tazapay/making-a-payment-to-a-deposit-address",
+              "Guides/transfers-within-tazapay/viewing-an-incoming-payment"
             ]
           }
         ]
@@ -68,14 +127,116 @@
           {
             "group": "API Overview",
             "pages": [
-              "API-Reference/API-Overview/Introduction",
-              "API-Reference/API-Overview/Endpoints-and-Environments"
+              "API-Reference/api-overview/introduction",
+              "API-Reference/api-overview/endpoints-and-environments",
+              "API-Reference/api-overview/authentication",
+              "API-Reference/api-overview/webhooks",
+              "API-Reference/api-overview/idempotent-requests"
             ]
           },
           {
-            "group": "Reference",
+            "group": "Collection Account",
             "pages": [
-              "reference/user"
+              "API-Reference/tazapay-api/collection-account/webhook-events"
+            ]
+          },
+          {
+            "group": "Collect",
+            "pages": [
+              "API-Reference/tazapay-api/collect/fetch-collect",
+              "API-Reference/tazapay-api/collect/webhook-events",
+              "API-Reference/tazapay-api/collect/error-codes"
+            ]
+          },
+          {
+            "group": "Payout",
+            "pages": [
+              "API-Reference/tazapay-api/payout/create-payout",
+              "API-Reference/tazapay-api/payout/fetch-payout",
+              "API-Reference/tazapay-api/payout/update-payout",
+              "API-Reference/tazapay-api/payout/fund-payout",
+              "API-Reference/tazapay-api/payout/create-payout-quote",
+              "API-Reference/tazapay-api/payout/confirm-payout",
+              "API-Reference/tazapay-api/payout/webhook-events",
+              "API-Reference/tazapay-api/payout/simulating-payouts-on-test-environment"
+            ]
+          },
+          {
+            "group": "Metadata",
+            "pages": [
+              "API-Reference/tazapay-api/metadata/fetch-external-account-details",
+              "API-Reference/tazapay-api/metadata/fetch-exchange-rates",
+              "API-Reference/tazapay-api/metadata/payout-bank"
+            ]
+          },
+          {
+            "group": "Document",
+            "pages": [
+              "API-Reference/tazapay-api/document/upload-document-to-tazapay",
+              "API-Reference/tazapay-api/document/add-document-to-a-resource"
+            ]
+          },
+          {
+            "group": "Entity",
+            "pages": [
+              "API-Reference/tazapay-api/entity/create-entity",
+              "API-Reference/tazapay-api/entity/submit-entity",
+              "API-Reference/tazapay-api/entity/fetch-entity",
+              "API-Reference/tazapay-api/entity/update-entity",
+              "API-Reference/tazapay-api/entity/list-entity",
+              "API-Reference/tazapay-api/entity/webhook-events",
+              "API-Reference/tazapay-api/entity/simulating-on-test-environment"
+            ]
+          },
+          {
+            "group": "Balance",
+            "pages": [
+              "API-Reference/tazapay-api/balance/fetch-balance"
+            ]
+          },
+          {
+            "group": "Balance Transaction",
+            "pages": [
+              "API-Reference/tazapay-api/balance-transaction/fetch-balance-transaction",
+              "API-Reference/tazapay-api/balance-transaction/list-balance-transactions"
+            ]
+          },
+          {
+            "group": "Beneficiary",
+            "pages": [
+              "API-Reference/tazapay-api/beneficiary/create-beneficiary",
+              "API-Reference/tazapay-api/beneficiary/fetch-beneficiary",
+              "API-Reference/tazapay-api/beneficiary/update-beneficiary",
+              "API-Reference/tazapay-api/beneficiary/webhook-events"
+            ]
+          },
+          {
+            "group": "Lightning Invoice",
+            "pages": [
+              "API-Reference/tazapay-api/lightning-invoice/create-an-invoice",
+              "API-Reference/tazapay-api/lightning-invoice/fetch-an-invoice",
+              "API-Reference/tazapay-api/lightning-invoice/update-an-invoice"
+            ]
+          },
+          {
+            "group": "Common Object Schemas",
+            "pages": [
+              "API-Reference/tazapay-api/common-object-schemas/fx-transaction",
+              "API-Reference/tazapay-api/common-object-schemas/phone",
+              "API-Reference/tazapay-api/common-object-schemas/address"
+            ]
+          },
+          {
+            "group": "Appendix",
+            "pages": [
+              "API-Reference/appendix/payout-failure-reasons",
+              {
+                "group": "Error Codes",
+                "pages": [
+                  "API-Reference/appendix/error-codes/generic",
+                  "API-Reference/appendix/error-codes/by-resource"
+                ]
+              }
             ]
           }
         ]
