@@ -8,6 +8,7 @@
     "dark": "#1fa7d9"
   },
   "favicon": "/10a0fda-favicon.ico",
+  "openapi": "/tazapay-api.json",
   "navigation": {
     "anchors": [
       {
