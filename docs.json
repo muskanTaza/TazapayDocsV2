@@ -160,6 +160,14 @@
                 ]
               }
             ]
+          },
+          {
+            "group": "Changelog",
+            "pages": []
+          },
+          {
+            "group": "Product Releases",
+            "pages": []
           }
         ]
       },
@@ -288,6 +296,14 @@
                 ]
               }
             ]
+          },
+          {
+            "group": "Changelog",
+            "pages": []
+          },
+          {
+            "group": "Product Releases",
+            "pages": []
           }
         ]
       }
