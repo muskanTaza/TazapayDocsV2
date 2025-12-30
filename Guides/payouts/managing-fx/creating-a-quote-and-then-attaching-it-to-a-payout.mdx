@@ -1,8 +1,25 @@
 ---
 title: "Creating a quote and then attaching it to a payout"
-description: "Learn about Creating a quote and then attaching it to a payout"
 ---
 
-# Creating a quote and then attaching it to a payout
+This is useful for
+- Displaying exchange rates to your customers
+- Getting customer acceptance before executing FX
+- Locking rates for a short, controlled window
 
-This page is under construction.
+### How it works
+
+1. Create an FX quote via API
+2. Quote returns:
+    - Exchange rate
+    - Validity duration
+3. Attach the quote ID while creating the payout
+4. Payout executes using the quoted rate
+
+> Quotes are valid only for a limited time duration. Expired quotes cannot be used for payout creation.
+
+![payout-quote](/images/diagrams/payout-quote.png)
+
+## Relevant API Endpoints
+- [Create Payout Quote](/API-Reference/tazapay-api/payout/create-payout-quote)
+- [Create Payout](/API-Reference/tazapay-api/payout/create-payout)
