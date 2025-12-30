@@ -1,8 +1,44 @@
 ---
 title: "Simplified Entity Creation"
-description: "Learn about Simplified Entity Creation"
+description: "Lightweight Onboarding Flow"
+---
+In this flow:
+- Only minimum required details are collected  
+- There is no upfront manual approval by the Tazapay onboarding team  
+- Entities become usable almost immediately  
+- Continuous monitoring is applied post-creation  
+
+This flow is commonly used when platforms need to:
+- Rapidly enable payouts on behalf of many businesses or individuals  
+- Minimize onboarding friction while maintaining compliance controls  
+
 ---
 
-# Simplified Entity Creation
+## Information Required for Simplified Onboarding
 
-This page is under construction.
+For simplified onboarding, only basic identifying information is required. This includes:
+
+### For Businesses
+- Registered Business Name
+- Business Registration Number
+- Relationship (vendor, customer, etc.)
+- Purpose of Use
+- Business Industry Vertical
+- Registered Address
+- Website (optional but recommended)
+
+### For Individuals
+- Full name  
+- Relationship (vendor, customer, etc.)
+- Purpose of Use
+- Address
+- Date of Birth (optional but recommended to prevent false sanction hits)
+- Nationality (optional but recommended to prevent false sanction hits)
+
+> ⚠️ **Important Note on Mandatory Fields**  
+> Although the fields in the documentation may be marked as **mandatory**, simplified onboarding will still work for your account. This is because the flow will be **whitelisted based on prior approval specifically for your account**, allowing reduced data requirements.
+
+## Relevant Links
+1. [Entity API - individual](/API-Reference/tazapay-api/entity/create-entity-individual)
+2. [Entity API - business](/API-Reference/tazapay-api/entity/create-entity-business)
+3. [Entity Approval State Machine](/API-Reference/tazapay-api/entity/entity-state-machine)

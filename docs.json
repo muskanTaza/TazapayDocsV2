@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
+  "theme": "mint",
   "name": "Introduction to Tazapay",
   "colors": {
-    "primary": "#1fa7d9",
-    "light": "#1fa7d9",
-    "dark": "#1fa7d9"
+    "primary": "#3b82f6",
+    "light": "#3b82f6",
+    "dark": "#3b82f6"
   },
   "favicon": "/10a0fda-favicon.ico",
   "openapi": "/tazapay-api.json",
@@ -16,9 +16,7 @@
         "href": "https://dashboard.tazapay.com/"
       }
     ],
-    "pages": [
-      "docs/getting_started_with_tazapay"
-    ],
+    "pages": ["docs/getting_started_with_tazapay"],
     "tabs": [
       {
         "tab": "Guides",
@@ -76,6 +74,7 @@
             "group": "Connected Accounts",
             "pages": [
               "Guides/connected-accounts/overview",
+              "Guides/connected-accounts/how-connected-accounts-work",
               "Guides/connected-accounts/creating-sub-accounts",
               "Guides/connected-accounts/creating-entities",
               "Guides/connected-accounts/simplified-entity-creation",
@@ -191,9 +190,7 @@
           },
           {
             "group": "Balance",
-            "pages": [
-              "API-Reference/tazapay-api/balance/fetch-balance"
-            ]
+            "pages": ["API-Reference/tazapay-api/balance/fetch-balance"]
           },
           {
             "group": "Balance Transaction",

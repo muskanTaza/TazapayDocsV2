@@ -1,8 +1,31 @@
 ---
 title: "Creating Sub-Accounts"
-description: "Learn about Creating Sub-Accounts"
+description: "A sub-account represents the platform's end customer who is onboarded as a separate account"
 ---
 
-# Creating Sub-Accounts
+## Key Characteristics
 
-This page is under construction.
+- The end customer has their own account on Tazapay  
+- Funds flow do not impact your platform’s balance, it directly impacts the customer's balance   
+- Your platform acts as an orchestrator, not a funds holder  
+
+## When This Model Is Typically Used
+
+- You do not want to be in the flow of funds  
+- You want clear separation of balances  
+- Regulatory or licensing constraints require this  
+
+## Operationally, How This Works
+
+- Your platform can initiate payouts for the sub-account using the dashboard or API 
+- The sub-account remains the economic owner and beneficiary of funds  
+- Compliance, reporting, and settlement are tied directly to the sub-account  
+- Tazapay treats the sub-account as the primary party for regulatory purposes  
+
+## Onboarding and Approval
+
+- Each sub-account undergoes a full onboarding flow  
+- Only businesses can be onboarded as sub-accounts. This [link](/Guides/appendix/onboarding-requirements/onboarding-requirements-business) contains the onboarding requirements.
+- Sub-accounts are subject to Tazapay approval before becoming active  
+
+Once approved, the sub-account operates independently for collections and payouts.

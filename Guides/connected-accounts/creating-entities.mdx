@@ -1,8 +1,33 @@
 ---
-title: "Creating entities"
-description: "Learn about Creating entities"
+title: "Creating Entities"
+description: "An entity represents an underlying customer that exists within the platform's master account, rather than as a separate account"
 ---
+## Key Characteristics
 
-# Creating entities
+- The account remains owned by your platform  
+- All balance movements affect your single master balance  
+- The entity is used for attribution, compliance visibility, and reporting  
+- Funds remain in your platform’s flow  
 
-This page is under construction.
+## When This Model Is Typically Used
+
+- Your platform is licensed to handle funds  
+- You want consolidated balances.
+- You need attribution without account-level separation  
+
+## Operationally, How This Works
+
+- Payouts / Collections are created on behalf of the entity  
+- The entity represents the actual business or individual involved in the transaction  
+- Tazapay attributes transactions, risk checks, and reporting to the entity  
+- Financial impact continues to reflect on your platform’s master balance  
+
+## How Entities Are Created
+
+- Entities are created via API for
+  - [Businesses](/API-Reference/tazapay-api/entity/create-entity-business)  
+  - [Individuals](/API-Reference/tazapay-api/entity/create-entity-individual)
+
+- Entity creation can follow either:
+  - [Full onboarding](/Guides/connected-accounts/full-entity-creation)  
+  - [Simplified onboarding](/Guides/connected-accounts/simplified-entity-creation)
