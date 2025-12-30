@@ -296,9 +296,11 @@
         "icon": "clock",
         "groups": [
           {
-            "group": "Overview",
+            "group": "2025",
             "pages": [
-              "Changelog/overview"
+              "Changelog/december-2025",
+              "Changelog/november-2025",
+              "Changelog/october-2025"
             ]
           }
         ]
@@ -308,9 +310,11 @@
         "icon": "rocket-launch",
         "groups": [
           {
-            "group": "Overview",
+            "group": "2025",
             "pages": [
-              "Product-Releases/overview"
+              "Product-Releases/connected-accounts-platform",
+              "Product-Releases/lightning-network",
+              "Product-Releases/virtual-accounts-2"
             ]
           }
         ]
@@ -320,9 +324,12 @@
         "icon": "map",
         "groups": [
           {
-            "group": "Overview",
+            "group": "2026",
             "pages": [
-              "Roadmap/overview"
+              "Roadmap/q1-2026",
+              "Roadmap/q2-2026",
+              "Roadmap/q3-2026",
+              "Roadmap/q4-2026"
             ]
           }
         ]
