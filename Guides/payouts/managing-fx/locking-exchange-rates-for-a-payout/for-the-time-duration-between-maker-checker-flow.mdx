@@ -1,47 +1,12 @@
 ---
-title: "For the time duration between maker-checker flow"
-description: "This is available on the Tazapay Dashboard"
+title: "For the funding time duration"
 ---
 
-For dashboard-initiated payouts:
-- FX rates can be locked during the maker-checker approval flow
-- Once approved, the payout executes using the locked rate
-- This prevents rate fluctuation between creation and approval
+For post-payout creation funding, FX can be locked for a defined funding window.
+
+This allows you to:
+- Create a payout
+- Fund it within a configured time window
+- Execute using the pre-locked FX rate
 
 > To enable this feature, please contact support@tazapay.com or your dedicated account manager.
-
-## FX Behavior Based on Payout Type
-
-### Same Currency In to Same Currency Out (No FX)
-
-Example:
-
-- Holding balance: USD
-- Payout currency: USD
-
-Behavior:
-
-- No FX transaction occurs
-- If balance is insufficient:
-    - Payout moves to requires funding
-    - Can remain in this state for up to days
-    - Automatically transitions to failed if not funded within this period
-
----
-
-### Payouts Involving FX
-
-Example:
-
-- Holding balance: USD
-- Payout currency: EUR
-
-Behavior:
-
-- If balance is insufficient at creation time:
-    - Payout creation fails by default
-- For flows where you need to:
-    - Create payout first
-    - Fund later
-    - Involves FX
-- Tazapay can enable a custom funding window. This configuration is enabled on request only.
