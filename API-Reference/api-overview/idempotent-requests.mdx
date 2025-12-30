@@ -1,0 +1,54 @@
+---
+title: "Idempotent Requests"
+description: "Safely retry API requests"
+---
+
+# Idempotent Requests
+
+Idempotency ensures that making the same API request multiple times has the same effect as making it once.
+
+## Why Use Idempotency?
+
+- Prevent duplicate transactions
+- Safely retry failed requests
+- Handle network issues gracefully
+
+## How It Works
+
+Include an `Idempotency-Key` header with a unique value:
+
+```bash
+curl https://service-sandbox.tazapay.com/v3/payout \
+  -u YOUR_API_KEY:YOUR_API_SECRET \
+  -H "Content-Type: application/json" \
+  -H "Idempotency-Key: unique-key-123" \
+  -d '{"amount": 10000}'
+```
+
+## Key Requirements
+
+- Must be unique for each logical request
+- Use UUIDs or similar unique identifiers
+- Keys expire after 24 hours
+
+## Example
+
+```javascript
+const idempotencyKey = generateUUID();
+
+fetch('https://service-sandbox.tazapay.com/v3/payout', {
+  method: 'POST',
+  headers: {
+    'Authorization': 'Basic ' + btoa(apiKey + ':' + apiSecret),
+    'Content-Type': 'application/json',
+    'Idempotency-Key': idempotencyKey
+  },
+  body: JSON.stringify({ amount: 10000 })
+});
+```
+
+## Best Practices
+
+1. Generate a new key for each unique transaction
+2. Store keys with your requests for tracking
+3. Reuse the same key when retrying failed requests

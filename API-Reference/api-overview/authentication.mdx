@@ -1,0 +1,41 @@
+---
+title: "Authentication"
+description: "How to authenticate with the Tazapay API"
+---
+
+# Authentication
+
+The Tazapay API uses HTTP Basic Authentication for all API requests.
+
+## API Credentials
+
+You'll need:
+- **API Key** - Your unique identifier
+- **API Secret** - Your secret key
+
+## How to Authenticate
+
+Include your credentials in the `Authorization` header using Basic Auth:
+
+```bash
+Authorization: Basic base64(api_key:api_secret)
+```
+
+## Example Request
+
+```bash
+curl https://service-sandbox.tazapay.com/v3/payout \
+  -u YOUR_API_KEY:YOUR_API_SECRET \
+  -H "Content-Type: application/json"
+```
+
+## Security Best Practices
+
+1. **Never expose credentials** in client-side code
+2. **Use environment variables** to store credentials
+3. **Rotate keys regularly** for enhanced security
+4. **Use HTTPS** for all API calls
+
+## Testing Authentication
+
+Use the sandbox environment to test your authentication setup before going live.
