@@ -180,6 +180,7 @@
           {
             "group": "Collection Account",
             "pages": [
+              "API-Reference/tazapay-api/collection-account/collection-account-object",
               "API-Reference/tazapay-api/collection-account/webhook-events"
             ]
           },
