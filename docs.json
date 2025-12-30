@@ -163,11 +163,15 @@
           },
           {
             "group": "Changelog",
-            "pages": []
+            "pages": [
+              "Guides/changelog/overview"
+            ]
           },
           {
             "group": "Product Releases",
-            "pages": []
+            "pages": [
+              "Guides/product-releases/overview"
+            ]
           }
         ]
       },
@@ -299,11 +303,15 @@
           },
           {
             "group": "Changelog",
-            "pages": []
+            "pages": [
+              "API-Reference/changelog/overview"
+            ]
           },
           {
             "group": "Product Releases",
-            "pages": []
+            "pages": [
+              "API-Reference/product-releases/overview"
+            ]
           }
         ]
       }
