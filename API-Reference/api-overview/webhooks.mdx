@@ -3,47 +3,15 @@ title: "Webhooks"
 description: "Receive real-time notifications via webhooks"
 ---
 
-# Webhooks
+Webhook Endpoints are setup on an account level from the dashboard as that gives users an interface to look at any successful or failed webhooks requests and also re-trigger them if required. Use this [guide](https://docs.tazapay.com/docs/webhooks-guides#/) to setup webhooks.
 
-Webhooks allow you to receive real-time notifications when events occur in your Tazapay account.
+It is necessary that you configure your endpoint URL to acknowledge Tazapay's webhooks with standard HTTP Codes.
+For example, pass 2xx for a successful POST request receipt on your server.
 
-## What are Webhooks?
+If Tazapay does not receive a 2xx acknowledgement, it will retry sending webhooks to the endpoint for a period of 24 hours. Click [here](/API-Reference/appendix/webhooks-retry-policy) for the detailed retry policy.
 
-Webhooks are HTTP callbacks that notify your application when specific events happen, such as:
-
-- Payment completed
-- Entity approved
-- Payout processed
-- Transaction status changes
-
-## Setting Up Webhooks
-
-1. Configure your webhook URL in the Tazapay dashboard
-2. Implement an endpoint to receive POST requests
-3. Verify webhook signatures for security
-4. Process events and respond with 200 OK
-
-## Webhook Payload
-
-All webhooks include:
-- `event_type` - Type of event
-- `data` - Event-specific data
-- `timestamp` - When the event occurred
-
-## Example Webhook
-
-```json
-{
-  "event_type": "payout.completed",
-  "data": {
-    "id": "payout_123",
-    "status": "completed",
-    "amount": 10000
-  },
-  "timestamp": "2024-01-01T00:00:00Z"
-}
-```
-
-## Security
-
-Always verify webhook signatures to ensure requests are from Tazapay.
+> 📘 Not receiving webhooks?
+>
+> In case of any server block or not receiving a response to your webhook URL, try whitelisting the below IP addresses:
+> Test Mode (Sandbox) : <b>13.213.226.109</b>
+> Live Mode (Production) : <b>52.77.198.235</b>
