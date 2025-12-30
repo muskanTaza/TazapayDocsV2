@@ -16,7 +16,9 @@
         "href": "https://dashboard.tazapay.com/"
       }
     ],
-    "pages": ["Guides/start-here/get-started-with-tazapay"],
+    "pages": [
+      "Guides/start-here/get-started-with-tazapay"
+    ],
     "tabs": [
       {
         "tab": "Guides",
@@ -63,7 +65,6 @@
             "group": "Viewing Balances",
             "pages": [
               "Guides/viewing-balances/overview",
-              "Guides/viewing-balances/viewing",
               "Guides/viewing-balances/enabling-additional-balance-currencies",
               "Guides/viewing-balances/fx-transactions"
             ]
@@ -79,26 +80,12 @@
                 "group": "Managing FX",
                 "pages": [
                   "Guides/payouts/managing-fx/overview",
-                  {
-                    "group": "Locking Exchange Rates for a Payout",
-                    "pages": [
-                      "Guides/payouts/managing-fx/locking-exchange-rates-for-a-payout/for-the-funding-time-duration",
-                      "Guides/payouts/managing-fx/locking-exchange-rates-for-a-payout/for-the-time-duration-between-maker-checker-flow"
-                    ]
-                  },
+                  "Guides/payouts/managing-fx/locking-exchange-rates-for-a-payout",
                   "Guides/payouts/managing-fx/creating-a-quote-and-then-attaching-it-to-a-payout"
                 ]
               },
               "Guides/payouts/local-guides",
-              {
-                "group": "Reversals",
-                "pages": [
-                  "Guides/payouts/reversals/overview",
-                  "Guides/payouts/reversals/reconciliation",
-                  "Guides/payouts/reversals/viewing-reversed-payouts",
-                  "Guides/payouts/reversals/webhooks"
-                ]
-              }
+              "Guides/payouts/reversals"
             ]
           },
           {
@@ -180,7 +167,6 @@
           {
             "group": "Collection Account",
             "pages": [
-              "API-Reference/tazapay-api/collection-account/collection-account-object",
               "API-Reference/tazapay-api/collection-account/webhook-events"
             ]
           },
@@ -242,7 +228,9 @@
           },
           {
             "group": "Balance",
-            "pages": ["API-Reference/tazapay-api/balance/fetch-balance"]
+            "pages": [
+              "API-Reference/tazapay-api/balance/fetch-balance"
+            ]
           },
           {
             "group": "Balance Transaction",
@@ -290,55 +278,15 @@
             ]
           }
         ]
-      },
-      {
-        "tab": "Changelog",
-        "icon": "clock",
-        "groups": [
-          {
-            "group": "Overview",
-            "pages": [
-              "Changelog/overview"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Product Releases",
-        "icon": "rocket-launch",
-        "groups": [
-          {
-            "group": "Overview",
-            "pages": [
-              "Product-Releases/overview"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Roadmap",
-        "icon": "map",
-        "groups": [
-          {
-            "group": "Overview",
-            "pages": [
-              "Roadmap/overview"
-            ]
-          }
-        ]
       }
     ]
   },
-  "logo": "/images/logos/tazapay-logo.png",
+  "logo": "/images/532e286-small-Tazapay-logotype-white.png",
   "navbar": {
     "links": [
       {
         "label": "Dashboard",
         "href": "https://dashboard.tazapay.com/"
-      },
-      {
-        "label": "Feature Requests",
-        "href": "https://forms.gle/your-feature-request-form"
       }
     ]
   }

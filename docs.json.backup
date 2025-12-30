@@ -1,0 +1,94 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "almond",
+  "name": "Introduction to Tazapay",
+  "colors": {
+    "primary": "#1fa7d9",
+    "light": "#1fa7d9",
+    "dark": "#1fa7d9"
+  },
+  "favicon": "/10a0fda-favicon.ico",
+  "navigation": {
+    "anchors": [
+      {
+        "anchor": "Dashboard",
+        "href": "https://dashboard.tazapay.com/"
+      }
+    ],
+    "pages": [
+      "docs/getting_started_with_tazapay"
+    ],
+    "tabs": [
+      {
+        "tab": "Guides",
+        "icon": "book-open",
+        "groups": [
+          {
+            "group": "Start Here",
+            "pages": [
+              "Guides/1.StartHere/1.1.GetStartedwithTazapay",
+              "Guides/1.StartHere/1.2.OnboardingRequirements",
+              "Guides/1.StartHere/1.3.ManagingyourTeam",
+              "Guides/1.StartHere/1.4.MultiFactorAuthentication"
+            ]
+          },
+          {
+            "group": "Collections",
+            "pages": [
+              "Guides/2.Collections/2.1.TypesofCollections/2.1.1.Cards",
+              "Guides/2.Collections/2.1.TypesofCollections/2.1.2.LocalPaymentMethodsLPMs",
+              "Guides/2.Collections/2.1.TypesofCollections/2.1.3.ViewingVirtualAccountsandStablecoinWallets"
+            ]
+          },
+          {
+            "group": "Global Collection Accounts",
+            "pages": [
+              "Guides/3.GlobalCollectionAccounts/3.1.Overview",
+              "Guides/3.GlobalCollectionAccounts/3.2.ConfiguringVirtualAccountsandStablecoinWallets",
+              "Guides/3.GlobalCollectionAccounts/3.3.ViewingVirtualAccountsandStablecoinWallets",
+              "Guides/3.GlobalCollectionAccounts/3.4.ReceivingFunds",
+              "Guides/3.GlobalCollectionAccounts/3.5.Coverage"
+            ]
+          },
+          {
+            "group": "Transfers Within Tazapay",
+            "pages": [
+              "Guides/4.TransfersWithinTazapay/4.1.Overview",
+              "Guides/4.TransfersWithinTazapay/4.2.ConfiguringAnAccountsDepositAddress",
+              "Guides/4.TransfersWithinTazapay/4.3.Making-a-Payment-to-a-Deposit-Address",
+              "Guides/4.TransfersWithinTazapay/4.4.Viewing-an-Incoming-Payment"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "icon": "rocket",
+        "groups": [
+          {
+            "group": "API Overview",
+            "pages": [
+              "API-Reference/API-Overview/Introduction",
+              "API-Reference/API-Overview/Endpoints-and-Environments"
+            ]
+          },
+          {
+            "group": "Reference",
+            "pages": [
+              "reference/user"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "logo": "/images/532e286-small-Tazapay-logotype-white.png",
+  "navbar": {
+    "links": [
+      {
+        "label": "Dashboard",
+        "href": "https://dashboard.tazapay.com/"
+      }
+    ]
+  }
+}
