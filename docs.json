@@ -314,6 +314,18 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Roadmap",
+        "icon": "map",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "Guides/roadmap/overview"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -323,6 +335,10 @@
       {
         "label": "Dashboard",
         "href": "https://dashboard.tazapay.com/"
+      },
+      {
+        "label": "Feature Requests",
+        "href": "https://forms.gle/your-feature-request-form"
       }
     ]
   }
