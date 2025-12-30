@@ -160,18 +160,6 @@
                 ]
               }
             ]
-          },
-          {
-            "group": "Changelog",
-            "pages": [
-              "Guides/changelog/overview"
-            ]
-          },
-          {
-            "group": "Product Releases",
-            "pages": [
-              "Guides/product-releases/overview"
-            ]
           }
         ]
       },
@@ -300,17 +288,29 @@
                 ]
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "icon": "clock",
+        "groups": [
           {
-            "group": "Changelog",
+            "group": "Overview",
             "pages": [
-              "API-Reference/changelog/overview"
+              "Guides/changelog/overview"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Product Releases",
+        "icon": "rocket-launch",
+        "groups": [
           {
-            "group": "Product Releases",
+            "group": "Overview",
             "pages": [
-              "API-Reference/product-releases/overview"
+              "Guides/product-releases/overview"
             ]
           }
         ]
