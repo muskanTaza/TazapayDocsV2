@@ -1004,7 +1004,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -2139,7 +2139,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -2170,7 +2170,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -2752,7 +2752,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -3330,7 +3330,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -3495,7 +3495,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -4082,7 +4082,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -4119,7 +4119,46 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{\n        \"address\": {\n            \"city\": \"Test\",\n            \"country\": \"IN\",\n            \"line1\": \"Test\",\n            \"line2\": \"Test\",\n            \"postal_code\": \"110017\",\n            \"state\": \"Test\"\n        },\n        \"created_at\": \"2024-10-03T11:03:40.326462Z\",\n        \"destination\": \"bnk_crv7k337eoqgk10pqp40\",\n        \"destination_details\": {\n            \"bank\": {\n                \"account_number\": \"Test\",\n                \"account_type\": \"\",\n                \"bank_codes\": {\n                    \"ifsc_code\": \"Test\",\n                    \"swift_code\": \"Test\"\n                },\n                \"bank_name\": \"hdfc\",\n                \"branch_name\": \"\",\n                \"country\": \"IN\",\n                \"currency\": \"INR\",\n                \"firc_required\": true,\n                \"purpose_code\": \"Test\"\n            },\n            \"type\": \"bank\"\n        },\n        \"documents\": [],\n        \"email\": \"test@example.com\",\n        \"id\": \"bnf_crv7k31h1l071n2fkbjg\",\n        \"metadata\": {},\n        \"name\": \"test\",\n        \"object\": \"beneficiary\",\n        \"phone\": {\n            \"calling_code\": \"91\"\n        },\n        \"tax_id\": \"\",\n        \"type\": \"individual\"\n    }"
+                    "value": {
+  "address": {
+    "city": "Test",
+    "country": "IN",
+    "line1": "Test",
+    "line2": "Test",
+    "postal_code": "110017",
+    "state": "Test"
+  },
+  "created_at": "2024-10-03T11:03:40.326462Z",
+  "destination": "bnk_crv7k337eoqgk10pqp40",
+  "destination_details": {
+    "bank": {
+      "account_number": "Test",
+      "account_type": "",
+      "bank_codes": {
+        "ifsc_code": "Test",
+        "swift_code": "Test"
+      },
+      "bank_name": "hdfc",
+      "branch_name": "",
+      "country": "IN",
+      "currency": "INR",
+      "firc_required": true,
+      "purpose_code": "Test"
+    },
+    "type": "bank"
+  },
+  "documents": [],
+  "email": "test@example.com",
+  "id": "bnf_crv7k31h1l071n2fkbjg",
+  "metadata": {},
+  "name": "test",
+  "object": "beneficiary",
+  "phone": {
+    "calling_code": "91"
+  },
+  "tax_id": "",
+  "type": "individual"
+}
                   }
                 },
                 "schema": {
@@ -4279,7 +4318,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -4571,7 +4610,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -4731,7 +4770,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -4757,7 +4796,72 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{\n  \"status\": \"success\",\n  \"message\": \"\",\n  \"data\": {\n    \"available\": [\n      {\n        \"amount\": \"1286628\",\n        \"currency\": \"CAD\"\n      },\n      {\n        \"amount\": \"1196374\",\n        \"currency\": \"USD\"\n      },\n      {\n        \"amount\": \"-6775457\",\n        \"currency\": \"EUR\"\n      },\n      {\n        \"amount\": \"0\",\n        \"currency\": \"THB\"\n      },\n      {\n        \"amount\": \"911436051\",\n        \"currency\": \"SGD\"\n      },\n      {\n        \"amount\": \"0\",\n        \"currency\": \"SEK\"\n      },\n      {\n        \"amount\": \"854902000\",\n        \"currency\": \"NGN\"\n      },\n      {\n        \"amount\": \"0\",\n        \"currency\": \"MYR\"\n      },\n      {\n        \"amount\": \"0\",\n        \"currency\": \"MXN\"\n      },\n      {\n        \"amount\": \"908760000\",\n        \"currency\": \"KRW\"\n      },\n      {\n        \"amount\": \"0\",\n        \"currency\": \"JPY\"\n      },\n      {\n        \"amount\": \"919089980000\",\n        \"currency\": \"IDR\"\n      },\n      {\n        \"amount\": \"932968\",\n        \"currency\": \"GBP\"\n      },\n      {\n        \"amount\": \"0\",\n        \"currency\": \"AUD\"\n      }\n    ],\n    \"object\": \"balance\",\n    \"updated_at\": \"2024-08-20T06:18:11.475605Z\"\n  }\n}"
+                    "value": {
+  "status": "success",
+  "message": "",
+  "data": {
+    "available": [
+      {
+        "amount": "1286628",
+        "currency": "CAD"
+      },
+      {
+        "amount": "1196374",
+        "currency": "USD"
+      },
+      {
+        "amount": "-6775457",
+        "currency": "EUR"
+      },
+      {
+        "amount": "0",
+        "currency": "THB"
+      },
+      {
+        "amount": "911436051",
+        "currency": "SGD"
+      },
+      {
+        "amount": "0",
+        "currency": "SEK"
+      },
+      {
+        "amount": "854902000",
+        "currency": "NGN"
+      },
+      {
+        "amount": "0",
+        "currency": "MYR"
+      },
+      {
+        "amount": "0",
+        "currency": "MXN"
+      },
+      {
+        "amount": "908760000",
+        "currency": "KRW"
+      },
+      {
+        "amount": "0",
+        "currency": "JPY"
+      },
+      {
+        "amount": "919089980000",
+        "currency": "IDR"
+      },
+      {
+        "amount": "932968",
+        "currency": "GBP"
+      },
+      {
+        "amount": "0",
+        "currency": "AUD"
+      }
+    ],
+    "object": "balance",
+    "updated_at": "2024-08-20T06:18:11.475605Z"
+  }
+}
                   }
                 },
                 "schema": {
@@ -6219,7 +6323,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -6267,7 +6371,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -6283,7 +6387,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -7085,7 +7189,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -7516,7 +7620,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -7589,7 +7693,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -7983,7 +8087,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -8476,7 +8580,98 @@
                 "examples": {
                   "OK": {
                     "summary": "OK",
-                    "value": "{\n  \"amount\": 5000,\n  \"balance_transaction\": \"btr_d24adsvfccunngaiu2bg\",\n  \"beneficiary\": \"bnf_d24adp7fccunngaiu20g\",\n  \"beneficiary_details\": {\n    \"address\": null,\n    \"date_of_birth\": \"\",\n    \"destination\": \"\",\n    \"destination_details\": {\n      \"bank\": {\n        \"account_type\": \"\",\n        \"bank_codes\": {},\n        \"bank_name\": \"testfxbank\",\n        \"branch_name\": \"\",\n        \"country\": \"FR\",\n        \"currency\": \"EUR\",\n        \"firc_required\": false,\n        \"iban\": \"31\",\n        \"purpose_code\": \"\",\n        \"transfer_type\": \"local\"\n      },\n      \"type\": \"bank\"\n    },\n    \"documents\": [],\n    \"email\": \"\",\n    \"name\": \"Jackie Morissette\",\n    \"national_identification_number\": \"\",\n    \"party_classification\": \"\",\n    \"phone\": {\n      \"calling_code\": \"33\"\n    },\n    \"registration_number\": \"\",\n    \"tax_id\": \"\",\n    \"type\": \"individual\",\n    \"status\": \"active\",\n    \"verification_status\": \"succeeded\",\n\t\t\"is_doc_verification_required\": false\n\t\t\n  },\n  \"charge_type\": \"\",\n  \"confirmation_documents\": [],\n  \"created_at\": \"2025-07-29T10:48:19.014533Z\",\n  \"currency\": \"EUR\",\n  \"documents\": [],\n  \"holding_currency\": \"USD\",\n  \"holding_fx_transaction\": {\n    \"exchange_rate\": 0.828672,\n    \"final\": {\n      \"amount\": 5000,\n      \"currency\": \"EUR\"\n    },\n    \"id\": \"fx_d24adsmp89reuemeaujg\",\n    \"initial\": {\n      \"amount\": 6034,\n      \"currency\": \"USD\"\n    },\n    \"object\": \"fx_transaction\"\n  },\n  \"id\": \"pot_d24adsnfccunngaiu280\",\n  \"local\": {\n    \"fund_transfer_network\": \"sepa\"\n  },\n  \"logistics_tracking_details\": [],\n  \"metadata\": {\n    \"collect_id\": \"col_d24ae102tsfj74sj23s0\",\n    \"transaction_hash\": \"0xie4el49kctwen8rf6urv7wirrtemva9bqhjlct7j1v9jp8r4eya4zg08c80xkgxo\"\n  },\n  \"mt103\": \"\",\n  \"object\": \"payout\",\n  \"on_behalf_of\": \"\",\n  \"payout_fx_transaction\": {\n    \"exchange_rate\": 1,\n    \"final\": {\n      \"amount\": 5000,\n      \"currency\": \"EUR\"\n    },\n    \"id\": \"fx_d24adsmp89reuemeauj0\",\n    \"initial\": {\n      \"amount\": 5000,\n      \"currency\": \"EUR\"\n    },\n    \"object\": \"fx_transaction\"\n  },\n  \"purpose\": \"PYR008\",\n  \"reference_id\": \"\",\n  \"source\": \"col_d24ae102tsfj74sj23s0\",\n  \"statement_descriptor\": \"\",\n  \"status\": \"processing\",\n  \"status_description\": \"\",\n  \"tracking_details\": null,\n  \"transaction_description\": \"Payout Description\",\n  \"type\": \"local\"\n}}"
+                    "value": {
+      "amount": 5000,
+      "balance_transaction": "btr_d24adsvfccunngaiu2bg",
+      "beneficiary": "bnf_d24adp7fccunngaiu20g",
+      "beneficiary_details": {
+            "address": null,
+            "date_of_birth": "",
+            "destination": "",
+            "destination_details": {
+                  "bank": {
+                        "account_type": "",
+                        "bank_codes": {},
+                        "bank_name": "testfxbank",
+                        "branch_name": "",
+                        "country": "FR",
+                        "currency": "EUR",
+                        "firc_required": false,
+                        "iban": "31",
+                        "purpose_code": "",
+                        "transfer_type": "local"
+                  },
+                  "type": "bank"
+            },
+            "documents": [],
+            "email": "",
+            "name": "Jackie Morissette",
+            "national_identification_number": "",
+            "party_classification": "",
+            "phone": {
+                  "calling_code": "33"
+            },
+            "registration_number": "",
+            "tax_id": "",
+            "type": "individual",
+            "status": "active",
+            "verification_status": "succeeded",
+            "is_doc_verification_required": false
+      },
+      "charge_type": "",
+      "confirmation_documents": [],
+      "created_at": "2025-07-29T10:48:19.014533Z",
+      "currency": "EUR",
+      "documents": [],
+      "holding_currency": "USD",
+      "holding_fx_transaction": {
+            "exchange_rate": 0.828672,
+            "final": {
+                  "amount": 5000,
+                  "currency": "EUR"
+            },
+            "id": "fx_d24adsmp89reuemeaujg",
+            "initial": {
+                  "amount": 6034,
+                  "currency": "USD"
+            },
+            "object": "fx_transaction"
+      },
+      "id": "pot_d24adsnfccunngaiu280",
+      "local": {
+            "fund_transfer_network": "sepa"
+      },
+      "logistics_tracking_details": [],
+      "metadata": {
+            "collect_id": "col_d24ae102tsfj74sj23s0",
+            "transaction_hash": "0xie4el49kctwen8rf6urv7wirrtemva9bqhjlct7j1v9jp8r4eya4zg08c80xkgxo"
+      },
+      "mt103": "",
+      "object": "payout",
+      "on_behalf_of": "",
+      "payout_fx_transaction": {
+            "exchange_rate": 1,
+            "final": {
+                  "amount": 5000,
+                  "currency": "EUR"
+            },
+            "id": "fx_d24adsmp89reuemeauj0",
+            "initial": {
+                  "amount": 5000,
+                  "currency": "EUR"
+            },
+            "object": "fx_transaction"
+      },
+      "purpose": "PYR008",
+      "reference_id": "",
+      "source": "col_d24ae102tsfj74sj23s0",
+      "statement_descriptor": "",
+      "status": "processing",
+      "status_description": "",
+      "tracking_details": null,
+      "transaction_description": "Payout Description",
+      "type": "local"
+}
                   }
                 },
                 "schema": {
@@ -9049,7 +9244,60 @@
                 "examples": {
                   "Fiat Collect": {
                     "summary": "Fiat Collect",
-                    "value": "{\n        \"amount\": 12829,\n        \"balance_transaction\": \"btr_u7ftrgipu69og2qj1j1pg\",\n        \"created_at\": \"2027-08-15T03:43:46.980214Z\",\n        \"currency\": \"SGD\",\n        \"destination\": \"cva_d2dgk0ka772psfuj1he0\",\n        \"destination_details\": {\n            \"type\": \"virtual_account\",\n            \"virtual_account\": {\n                \"account_holder_name\": \"OM Grand Limited\",\n                \"account_number\": \"0109866363\",\n                \"bank_address\": {\n                    \"address_line_1\": \"\",\n                    \"address_line_2\": \"\",\n                    \"city\": \"\",\n                    \"country\": \"Singapore\",\n                    \"postal_code\": \"\",\n                    \"state\": \"\"\n                },\n                \"bank_branch\": \"8 MARINA BOULEVARD, 27-01, MARINA BAY FINANCIAL CENTRE\",\n                \"bank_codes\": {\n                    \"swift_code\": \"SLSGO2XXX\"\n                },\n                \"bank_name\": \"STANDARD BANK LIMITED\",\n                \"currencies\": [\n                    \"SGD\"\n                ],\n                \"iban\": \"\",\n                \"id\": \"cva_d2dgk0552psfuj1he0\",\n                \"object\": \"virtual_account\"\n            }\n        },\n        \"holding_currency\": \"SGD\",\n        \"id\": \"col_d2fapsh76og2qj0ej5g\",\n        \"metadata\": {},\n        \"object\": \"collect\",\n        \"on_behalf_of\": \"\",\n        \"payer_details\": {\n            \"additional_information\": \"CM Payment for Order 56\",\n            \"name\": \"CMC COMPANY\",\n            \"payer_bank\": {\n                \"account_number\": \"1112019837840\",\n                \"address\": null,\n                \"bank_codes\": {\n                    \"swift_code\": \"AJUM7CHBKXXX\"\n                },\n                \"name\": \"C Bank\"\n            },\n            \"reference_id\": \"\"\n        },\n        \"status\": \"succeeded\",\n        \"tracking_details\": null,\n        \"type\": \"wire_transfer\"\n    }\n}"
+                    "value": {
+      "amount": 12829,
+      "balance_transaction": "btr_u7ftrgipu69og2qj1j1pg",
+      "created_at": "2027-08-15T03:43:46.980214Z",
+      "currency": "SGD",
+      "destination": "cva_d2dgk0ka772psfuj1he0",
+      "destination_details": {
+            "type": "virtual_account",
+            "virtual_account": {
+                  "account_holder_name": "OM Grand Limited",
+                  "account_number": "0109866363",
+                  "bank_address": {
+                        "address_line_1": "",
+                        "address_line_2": "",
+                        "city": "",
+                        "country": "Singapore",
+                        "postal_code": "",
+                        "state": ""
+                  },
+                  "bank_branch": "8 MARINA BOULEVARD, 27-01, MARINA BAY FINANCIAL CENTRE",
+                  "bank_codes": {
+                        "swift_code": "SLSGO2XXX"
+                  },
+                  "bank_name": "STANDARD BANK LIMITED",
+                  "currencies": [
+                        "SGD"
+                  ],
+                  "iban": "",
+                  "id": "cva_d2dgk0552psfuj1he0",
+                  "object": "virtual_account"
+            }
+      },
+      "holding_currency": "SGD",
+      "id": "col_d2fapsh76og2qj0ej5g",
+      "metadata": {},
+      "object": "collect",
+      "on_behalf_of": "",
+      "payer_details": {
+            "additional_information": "CM Payment for Order 56",
+            "name": "CMC COMPANY",
+            "payer_bank": {
+                  "account_number": "1112019837840",
+                  "address": null,
+                  "bank_codes": {
+                        "swift_code": "AJUM7CHBKXXX"
+                  },
+                  "name": "C Bank"
+            },
+            "reference_id": ""
+      },
+      "status": "succeeded",
+      "tracking_details": null,
+      "type": "wire_transfer"
+}
                   },
                   "Crypto Collect": {
                     "summary": "Crypto Collect",
