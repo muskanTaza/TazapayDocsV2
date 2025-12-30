@@ -79,12 +79,26 @@
                 "group": "Managing FX",
                 "pages": [
                   "Guides/payouts/managing-fx/overview",
-                  "Guides/payouts/managing-fx/locking-exchange-rates-for-a-payout",
+                  {
+                    "group": "Locking Exchange Rates for a Payout",
+                    "pages": [
+                      "Guides/payouts/managing-fx/locking-exchange-rates-for-a-payout/for-the-funding-time-duration",
+                      "Guides/payouts/managing-fx/locking-exchange-rates-for-a-payout/for-the-time-duration-between-maker-checker-flow"
+                    ]
+                  },
                   "Guides/payouts/managing-fx/creating-a-quote-and-then-attaching-it-to-a-payout"
                 ]
               },
               "Guides/payouts/local-guides",
-              "Guides/payouts/reversals"
+              {
+                "group": "Reversals",
+                "pages": [
+                  "Guides/payouts/reversals/overview",
+                  "Guides/payouts/reversals/reconciliation",
+                  "Guides/payouts/reversals/viewing-reversed-payouts",
+                  "Guides/payouts/reversals/webhooks"
+                ]
+              }
             ]
           },
           {
