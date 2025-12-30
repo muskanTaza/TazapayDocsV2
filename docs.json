@@ -16,7 +16,9 @@
         "href": "https://dashboard.tazapay.com/"
       }
     ],
-    "pages": ["docs/getting_started_with_tazapay"],
+    "pages": [
+      "Guides/start-here/get-started-with-tazapay"
+    ],
     "tabs": [
       {
         "tab": "Guides",
@@ -34,11 +36,29 @@
           {
             "group": "Global Collections Accounts",
             "pages": [
-              "Guides/global-collections-accounts/overview",
-              "Guides/global-collections-accounts/configuring-virtual-accounts-and-stablecoin-wallets",
-              "Guides/global-collections-accounts/viewing-virtual-accounts-and-stablecoin-wallets",
-              "Guides/global-collections-accounts/receiving-funds",
-              "Guides/global-collections-accounts/coverage"
+              "Guides/global-collection-accounts/overview",
+              "Guides/global-collection-accounts/configuring-virtual-accounts-and-stablecoin-wallets",
+              "Guides/global-collection-accounts/viewing-virtual-accounts-and-stablecoin-wallets",
+              {
+                "group": "Receiving Funds",
+                "pages": [
+                  {
+                    "group": "Fetch Collect Details",
+                    "pages": [
+                      "Guides/global-collection-accounts/receiving-funds/fetch-collect-details/using-dashboard",
+                      "Guides/global-collection-accounts/receiving-funds/fetch-collect-details/using-api"
+                    ]
+                  },
+                  "Guides/global-collection-accounts/receiving-funds/subscribe-to-webhook-events"
+                ]
+              },
+              {
+                "group": "Coverage",
+                "pages": [
+                  "Guides/global-collection-accounts/coverage/virtual-accounts",
+                  "Guides/global-collection-accounts/coverage/stablecoins"
+                ]
+              }
             ]
           },
           {
@@ -61,8 +81,6 @@
                 "pages": [
                   "Guides/payouts/managing-fx/overview",
                   "Guides/payouts/managing-fx/locking-exchange-rates-for-a-payout",
-                  "Guides/payouts/managing-fx/for-the-time-duration-between-maker-checker-flow",
-                  "Guides/payouts/managing-fx/for-the-funding-time-duration",
                   "Guides/payouts/managing-fx/creating-a-quote-and-then-attaching-it-to-a-payout"
                 ]
               },
@@ -78,7 +96,7 @@
               "Guides/connected-accounts/creating-sub-accounts",
               "Guides/connected-accounts/creating-entities",
               "Guides/connected-accounts/simplified-entity-creation",
-              "Guides/connected-accounts/approval-lifecycle"
+              "Guides/connected-accounts/full-entity-creation"
             ]
           },
           {
@@ -117,6 +135,18 @@
               "Guides/transfers-within-tazapay/making-a-payment-to-a-deposit-address",
               "Guides/transfers-within-tazapay/viewing-an-incoming-payment"
             ]
+          },
+          {
+            "group": "Appendix",
+            "pages": [
+              {
+                "group": "Onboarding Requirements",
+                "pages": [
+                  "Guides/appendix/onboarding-requirements/onboarding-requirements-individuals",
+                  "Guides/appendix/onboarding-requirements/onboarding-requirements-businesses"
+                ]
+              }
+            ]
           }
         ]
       },
@@ -144,6 +174,7 @@
             "group": "Collect",
             "pages": [
               "API-Reference/tazapay-api/collect/fetch-collect",
+              "API-Reference/tazapay-api/collect/collect-state-machine",
               "API-Reference/tazapay-api/collect/webhook-events",
               "API-Reference/tazapay-api/collect/error-codes"
             ]
@@ -179,18 +210,27 @@
           {
             "group": "Entity",
             "pages": [
-              "API-Reference/tazapay-api/entity/create-entity",
+              {
+                "group": "Create Entity",
+                "pages": [
+                  "API-Reference/tazapay-api/entity/create-entity-individual",
+                  "API-Reference/tazapay-api/entity/create-entity-business"
+                ]
+              },
               "API-Reference/tazapay-api/entity/submit-entity",
               "API-Reference/tazapay-api/entity/fetch-entity",
               "API-Reference/tazapay-api/entity/update-entity",
               "API-Reference/tazapay-api/entity/list-entity",
+              "API-Reference/tazapay-api/entity/entity-state-machine",
               "API-Reference/tazapay-api/entity/webhook-events",
               "API-Reference/tazapay-api/entity/simulating-on-test-environment"
             ]
           },
           {
             "group": "Balance",
-            "pages": ["API-Reference/tazapay-api/balance/fetch-balance"]
+            "pages": [
+              "API-Reference/tazapay-api/balance/fetch-balance"
+            ]
           },
           {
             "group": "Balance Transaction",
