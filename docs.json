@@ -197,7 +197,13 @@
             "pages": [
               "Guides/transfers-within-tazapay/overview",
               "Guides/transfers-within-tazapay/configuring-an-accounts-deposit-address",
-              "Guides/transfers-within-tazapay/making-a-payment-to-a-deposit-address",
+              {
+                "group": "Making a Payment to a Deposit Address",
+                "pages": [
+                  "Guides/transfers-within-tazapay/making-a-payment-to-a-deposit-address/using-dashboard",
+                  "Guides/transfers-within-tazapay/making-a-payment-to-a-deposit-address/using-api"
+                ]
+              },
               "Guides/transfers-within-tazapay/viewing-an-incoming-payment"
             ]
           },
