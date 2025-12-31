@@ -360,9 +360,33 @@
           {
             "group": "2025",
             "pages": [
-              "Changelog/december-2025",
-              "Changelog/november-2025",
-              "Changelog/october-2025"
+              {
+                "group": "Q4",
+                "pages": [
+                  {
+                    "group": "December",
+                    "pages": [
+                      "Changelog/2025/Q4/December/enhanced-payout-processing",
+                      "Changelog/2025/Q4/December/lightning-network-support"
+                    ]
+                  },
+                  {
+                    "group": "November",
+                    "pages": [
+                      "Changelog/2025/Q4/November/stablecoin-wallet-support",
+                      "Changelog/2025/Q4/November/security-enhancements"
+                    ]
+                  },
+                  {
+                    "group": "October",
+                    "pages": [
+                      "Changelog/2025/Q4/October/connected-accounts-launch",
+                      "Changelog/2025/Q4/October/inr-local-payouts",
+                      "Changelog/2025/Q4/October/performance-improvements"
+                    ]
+                  }
+                ]
+              }
             ]
           }
         ]
@@ -374,9 +398,34 @@
           {
             "group": "2025",
             "pages": [
-              "Product-Releases/connected-accounts-platform",
-              "Product-Releases/lightning-network",
-              "Product-Releases/virtual-accounts-2"
+              {
+                "group": "Q4",
+                "pages": [
+                  {
+                    "group": "December",
+                    "pages": [
+                      "Product-Releases/2025/Q4/December/connected-accounts-platform"
+                    ]
+                  },
+                  {
+                    "group": "November",
+                    "pages": [
+                      "Product-Releases/2025/Q4/November/lightning-network"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Q3",
+                "pages": [
+                  {
+                    "group": "September",
+                    "pages": [
+                      "Product-Releases/2025/Q3/September/virtual-accounts-2"
+                    ]
+                  }
+                ]
+              }
             ]
           }
         ]
@@ -388,10 +437,18 @@
           {
             "group": "2026",
             "pages": [
-              "Roadmap/q1-2026",
-              "Roadmap/q2-2026",
-              "Roadmap/q3-2026",
-              "Roadmap/q4-2026"
+              "Roadmap/2026/mass-payout-scheduling",
+              "Roadmap/2026/enhanced-compliance-suite",
+              "Roadmap/2026/mobile-app",
+              "Roadmap/2026/white-label-solution",
+              "Roadmap/2026/advanced-analytics-dashboard",
+              "Roadmap/2026/crypto-payout-expansion",
+              "Roadmap/2026/ai-powered-fraud-detection",
+              "Roadmap/2026/invoice-management-system",
+              "Roadmap/2026/api-v4-launch",
+              "Roadmap/2026/embedded-finance-toolkit",
+              "Roadmap/2026/cross-border-cards-program",
+              "Roadmap/2026/blockchain-settlement-network"
             ]
           }
         ]
