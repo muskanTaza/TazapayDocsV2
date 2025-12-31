@@ -1,8 +1,70 @@
 ---
-title: "Employee Reimbursements"
-description: "Learn about Employee Reimbursements"
+title: "Employee Reimbursement"
+description: "Reimburse employees for travel, expenses, or operational costs across multiple currencies"
 ---
 
-# Employee Reimbursements
+## Overview
 
-This page is under construction.
+Distributed teams often incur expenses in different currencies. Traditional reimbursement flows are slow, expensive, and hard to track.
+
+## How Tazapay Helps
+
+<CardGroup cols={2}>
+  <Card title="Central Treasury" icon="building-columns">
+    Central treasury funds reimbursements
+  </Card>
+  <Card title="Local Currency Payouts" icon="money-bill-transfer">
+    Local currency payouts to employee bank accounts
+  </Card>
+  <Card title="Faster Settlement" icon="bolt">
+    Faster settlement compared to international wires
+  </Card>
+  <Card title="Easy Reconciliation" icon="file-invoice">
+    Simplified reconciliation per employee or region
+  </Card>
+</CardGroup>
+
+## Integration Flow
+
+<Steps>
+  <Step title="Fund Account">
+    Company funds its Tazapay account
+  </Step>
+  <Step title="Credit Balances">
+    Funds are credited to holding balances
+  </Step>
+  <Step title="Initiate Payouts">
+    Reimbursement payouts are initiated to employee bank accounts
+  </Step>
+  <Step title="Handle FX & Settlement">
+    Tazapay handles FX, local rails, and settlement
+  </Step>
+  <Step title="Track & Reconcile">
+    Payout status and reconciliation are tracked via APIs and dashboard
+  </Step>
+</Steps>
+
+## APIs Involved
+
+| Purpose | API | Endpoint |
+|---------|-----|----------|
+| View holding balances | Fetch Balances | `/v3/balances` |
+| Create payout | Create Payout | `/v3/payouts` |
+| Track payout status | Fetch Payout | `/v3/payouts/{id}` |
+| Reconciliation | Fetch Balance Transactions | `/v3/balance_transaction/{id}` |
+| Event handling | Webhooks | `payout.*` |
+
+## Example
+
+A global company with remote employees:
+
+- Employees incur expenses in multiple countries (travel, tools, local vendors)
+- The company maintains a central balance on Tazapay
+- Reimbursements are processed in:
+  - **INR** for employees in India
+  - **EUR** for employees in Europe
+  - **USD** for employees in the US
+
+<Info>
+Tazapay handles local currency payouts, faster reimbursements, and simplified reconciliation across regions.
+</Info>
