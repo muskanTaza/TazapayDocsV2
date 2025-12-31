@@ -89,7 +89,61 @@
                   "Guides/payouts/managing-fx/creating-a-quote-and-then-attaching-it-to-a-payout"
                 ]
               },
-              "Guides/payouts/local-guides",
+              {
+                "group": "Local Guides",
+                "pages": [
+                  {
+                    "group": "Brazil (BRL)",
+                    "pages": [
+                      "Guides/payouts/local-guides/Brazil (BRL)/pix-key"
+                    ]
+                  },
+                  {
+                    "group": "China (CNY)",
+                    "pages": [
+                      "Guides/payouts/local-guides/China (CNY)/cnaps"
+                    ]
+                  },
+                  {
+                    "group": "India (INR)",
+                    "pages": [
+                      "Guides/payouts/local-guides/India (INR)/fira",
+                      "Guides/payouts/local-guides/India (INR)/firc",
+                      "Guides/payouts/local-guides/India (INR)/supported-purpose-codes"
+                    ]
+                  },
+                  {
+                    "group": "Indonesia (IDR)",
+                    "pages": [
+                      "Guides/payouts/local-guides/Indonesia (IDR)/supported-banks"
+                    ]
+                  },
+                  {
+                    "group": "Malaysia (MYR)",
+                    "pages": [
+                      "Guides/payouts/local-guides/Malaysia (MYR)/supported-banks"
+                    ]
+                  },
+                  {
+                    "group": "Phillippines (PHP)",
+                    "pages": [
+                      "Guides/payouts/local-guides/Phillippines (PHP)/supported-banks"
+                    ]
+                  },
+                  {
+                    "group": "Thailand (THB)",
+                    "pages": [
+                      "Guides/payouts/local-guides/Thailand (THB)/supported-banks"
+                    ]
+                  },
+                  {
+                    "group": "Vietnam (VND)",
+                    "pages": [
+                      "Guides/payouts/local-guides/Vietnam (VND)/supported-banks"
+                    ]
+                  }
+                ]
+              },
               {
                 "group": "Reversals",
                 "pages": [
