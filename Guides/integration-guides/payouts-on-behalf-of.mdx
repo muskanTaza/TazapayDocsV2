@@ -1,0 +1,92 @@
+---
+title: "Payouts on behalf of"
+description: "Learn about Payouts on behalf of"
+---
+Tazapay’s **Payouts on Behalf Of (POBO)** capability allows platforms / fintechs to initiate payouts on behalf of their customers which can be individual or business.
+This ensures compliance, traceability, and correct attribution of funds.
+
+---
+
+## High-level Flow
+
+1. Create an **Entity** (Individual or Business)
+2. Create a **Beneficiary**
+3. Create a **Payout** using the Entity + Beneficiary
+4. Handle **Payout Events / Webhooks**
+
+![POBO flow](/images/diagrams/pobo.png)
+
+---
+
+## Step 1: Create an Entity (Individual or Business)
+
+An Entity represents a platform's or fintech's customer — the party on whose behalf the payout is being made. Every payout must be associated with an entity.
+
+Tazapay supports two entity types:
+- Business Entity – for registered companies
+- Individual Entity – for individual customers (e.g., freelancers, creators, sole proprietors)
+
+⚠️ Only entities with status **submitted** can be used to create payouts.
+
+### Relevant Links
+1. [Business Entity Requirements -  Full Onboarding](/Guides/appendix/onboarding-requirements/onboarding-requirements-businesses)
+2. [Individual Entity Requirements - Full Onboarding](/Guides/appendix/onboarding-requirements/onboarding-requirements-individuals)
+3. [Entity Requirements - Simplified Onboarding](/Guides/connected-accounts/simplified-entity-creation)
+4. [Create Entity API - Business](/API-Reference/tazapay-api/entity/create-entity-business)
+5. [Create Entity API - Individual](/API-Reference/tazapay-api/entity/create-entity-individual)
+6. [Submit Entity API - Business](/API-Reference/tazapay-api/entity/submit-entity-business)
+7. [Submit Entity API - Individual](/API-Reference/tazapay-api/entity/submit-entity-individual)
+
+---
+
+## Step 2: Create a Beneficiary
+
+A **Beneficiary** represents the **recipient of funds**.
+
+This can be:
+- An individual
+- A business
+
+The destinations supported are
+- Bank account
+- Mobile Wallets
+- Local Networks or Proxies
+- Stablecoin Wallets
+- Another Tazapay account
+
+### Relevant Links:
+1. [Create Beneficiary API](/API-Reference/tazapay-api/beneficiary/create-beneficiary)
+2. [Payout Metadata Bank API - This API lists the beneficiary requirements and transfer limits based on destination country and currency](/API-Reference/tazapay-api/metadata/payout-metadata-bank)
+
+---
+
+## Step 3: Create a Payout
+
+Once you have:
+- A **submitted entity**
+- A **created beneficiary**
+
+You can create a payout using the Tazapay API and attach the entity and beneficiary.
+
+### Relevant Links:
+[Create Payout API](/API-Reference/tazapay-api/payout/create-payout)
+
+---
+
+## Step 4: Handle Payout Events & Webhooks
+
+Tazapay sends **webhooks** to notify you of payout state changes. You should always rely on webhooks (not polling) for final payout outcomes.
+
+### Relevant Links:
+1. [Payout State Machine](/API-Reference/tazapay-api/payout/payout-state-machine)
+2. [Payout Webhook Events](/API-Reference/tazapay-api/payout/payout-webhook-events)
+3. [Payout Failure Reasons](/API-Reference/tazapay-api/appendix/payout-failure-reasons)
+4. [Payout Reversal Reasons](/API-Reference/tazapay-api/appendix/payout-reversal-reasons)
+
+### Best Practices
+
+- Always verify webhook signatures  
+- Make payout creation idempotent  
+- Store payout event history for reconciliation  
+
+---

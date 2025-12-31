@@ -167,12 +167,12 @@
             ]
           },
           {
-            "group": "Templatised Guides",
+            "group": "Integration Guides",
             "pages": [
-              "Guides/templatised-guides/payouts-on-behalf-of",
-              "Guides/templatised-guides/collections-on-behalf-of",
-              "Guides/templatised-guides/global-payout-network",
-              "Guides/templatised-guides/just-in-time-funding"
+              "Guides/integration-guides/payouts-on-behalf-of",
+              "Guides/integration-guides/collections-on-behalf-of",
+              "Guides/integration-guides/global-payout-network",
+              "Guides/integration-guides/just-in-time-funding"
             ]
           },
           {
@@ -252,6 +252,7 @@
             "pages": [
               "API-Reference/tazapay-api/payout/create-payout",
               "API-Reference/tazapay-api/payout/fetch-payout",
+              "API-Reference/tazapay-api/payout/payout-state-machine",
               "API-Reference/tazapay-api/payout/update-payout",
               "API-Reference/tazapay-api/payout/fund-payout",
               "API-Reference/tazapay-api/payout/create-payout-quote",
@@ -285,7 +286,13 @@
                   "API-Reference/tazapay-api/entity/create-entity-business"
                 ]
               },
-              "API-Reference/tazapay-api/entity/submit-entity",
+              {
+                "group": "Submit Entity",
+                "pages": [
+                  "API-Reference/tazapay-api/entity/submit-entity-individual",
+                  "API-Reference/tazapay-api/entity/submit-entity-business"
+                ]
+              },
               "API-Reference/tazapay-api/entity/fetch-entity",
               "API-Reference/tazapay-api/entity/update-entity",
               "API-Reference/tazapay-api/entity/list-entity",
@@ -334,6 +341,7 @@
             "group": "Appendix",
             "pages": [
               "API-Reference/appendix/payout-failure-reasons",
+              "API-Reference/appendix/payout-reversal-reasons",
               {
                 "group": "Error Codes",
                 "pages": [
