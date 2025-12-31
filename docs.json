@@ -189,7 +189,8 @@
               {
                 "group": "Banking as a Service",
                 "pages": [
-                  "Guides/embedded-finance-use-cases/banking-as-a-service/stablecoin-neobanks"
+                  "Guides/embedded-finance-use-cases/banking-as-a-service/stablecoin-neobanks",
+                  "Guides/embedded-finance-use-cases/banking-as-a-service/fintechs"
                 ]
               }
             ]
