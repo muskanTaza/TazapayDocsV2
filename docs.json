@@ -100,9 +100,7 @@
                   },
                   {
                     "group": "China (CNY)",
-                    "pages": [
-                      "Guides/payouts/local-guides/China (CNY)/cnaps"
-                    ]
+                    "pages": ["Guides/payouts/local-guides/China (CNY)/cnaps"]
                   },
                   {
                     "group": "India (INR)",
@@ -459,12 +457,16 @@
   "navbar": {
     "links": [
       {
-        "label": "Dashboard",
+        "label": "Live Dashboard",
         "href": "https://dashboard.tazapay.com/"
       },
       {
-        "label": "Feature Requests",
-        "href": "https://forms.gle/your-feature-request-form"
+        "label": "Sandbox Dashboard",
+        "href": "https://dashboard-sandbox.tazapay.com/"
+      },
+      {
+        "label": "Product Feedback",
+        "href": "https://docs.google.com/forms/d/1WQFxbSLoRRUSIiYFa2wCI_Nu__X8ZF9_wjBrwzHWga4/edit"
       }
     ]
   }
