@@ -180,6 +180,7 @@
               {
                 "group": "Global Treasury",
                 "pages": [
+                  "Guides/embedded-finance-use-cases/global-treasury/overview",
                   "Guides/embedded-finance-use-cases/global-treasury/payroll",
                   "Guides/embedded-finance-use-cases/global-treasury/vendor-payouts",
                   "Guides/embedded-finance-use-cases/global-treasury/employee-reimbursements"
