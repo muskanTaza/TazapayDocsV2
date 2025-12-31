@@ -176,6 +176,7 @@
           {
             "group": "Embedded Finance Use Cases",
             "pages": [
+              "Guides/embedded-finance-use-cases/overview",
               {
                 "group": "Global Treasury",
                 "pages": [
