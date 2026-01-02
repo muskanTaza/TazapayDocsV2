@@ -373,9 +373,7 @@
                   {
                     "group": "December",
                     "pages": [
-                      "Changelog/2025/Q4/December/enhanced-payout-processing",
-                      "Changelog/2025/Q4/December/lightning-network-support"
-                    ]
+                      "Changelog/2025/Q4/December/Added-support-for-fund-transfer-network"                    ]
                   },
                   {
                     "group": "November",
