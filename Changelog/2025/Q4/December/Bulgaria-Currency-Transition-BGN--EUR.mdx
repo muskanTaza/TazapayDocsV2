@@ -1,0 +1,66 @@
+---
+title: "Bulgaria Currency Transition BGN EUR"
+---
+## Change Type
+
+**Currency validation / acceptance**
+
+## Region Impacted
+
+**Bulgaria-related flows**
+
+## Effective Date
+
+**25 December 2025**
+
+***
+
+## Summary
+
+To align with ISO 4217 updates and upstream FX/provider support, Tazapay will discontinue support for **BGN** and require **EUR** as the sole supported currency for Bulgaria-related transactions starting **25 December 2025**.
+
+***
+
+## What’s Changing
+
+### 1. Currency Acceptance for New Transactions
+
+From **25 December 2025** onward, any new Bulgaria-related transaction using **BGN** will be rejected.
+
+**EUR** will become the only accepted local currency for Bulgaria-related flows across:
+
+* Collections
+* Holding
+* Checkout
+* Payment links
+* Pay-ins
+* Payouts
+* Settlements
+* Refunds
+* Adjustments
+
+***
+
+### 2. Historical Visibility
+
+* Existing **BGN** transactions will remain visible in the dashboard and reports for historical reference.
+
+***
+
+## Developer Migration Guidance
+
+### Required Action (for API Integrators)
+
+* Update integration logic to ensure **EUR** is used for all Bulgaria-related transactions.
+* If currency is passed via API parameters, ensure **BGN** is no longer used when the transaction is Bulgaria-linked.
+
+### No Action Required
+
+* Transactions already processed in **BGN** require no changes and will remain available for historical viewing and reporting.
+
+***
+
+## Backward Compatibility Notes
+
+* This change affects **only new transaction creation** (and other “new action” flows) after the effective date.
+* Reporting and dashboard access for historical **BGN** records remains unchanged.

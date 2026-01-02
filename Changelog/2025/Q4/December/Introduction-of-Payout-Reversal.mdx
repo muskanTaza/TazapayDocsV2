@@ -1,0 +1,68 @@
+---
+title: "Introduction of Payout Reversal"
+---
+# Get Payout API Changes
+
+The **Get Payout API** has been enhanced to provide additional details for payout reversal scenarios. A new payout state, **`reversed`**, has been introduced along with additional fields to improve traceability and visibility into reversal-related transactions and FX movements.
+
+***
+
+## New State Introduced
+
+* **`reversed`**  
+  Indicates that a previously succeeded payout has been successfully reversed.
+
+***
+
+## New Fields Added
+
+* **`reversal_balance_transaction`**  
+  References the balance transaction created as part of the payout reversal.
+
+* **`reversal_payout_fx_transaction`**  
+  Represents the FX transaction applied during the payout-side reversal process.
+
+For a detailed walkthrough of payout reversals, reconciliation, and merchant workflows, see the <Anchor label="**Payout Reversals** guide." target="_blank" href="https://docs.tazapay.com/docs/payout-reversal-overview">**Payout Reversals** guide.</Anchor>
+
+***
+
+# Fetch Balance Transaction API
+
+Updates have been made to the fee representation for reversal transactions in the **Balance Transaction** object.
+
+***
+
+## Fee Structure Update
+
+For reversal transactions, the API now returns **`third_party_fee`** instead of **`payout_fee`** in the **Fee** object.
+
+| Field       | Behaviour       | Purpose                                                           |
+| ----------- | --------------- | ----------------------------------------------------------------- |
+| fee_details | third_party_fee | Distinguishes third-party charges applied during payout reversals |
+
+***
+
+## FX Structure Update
+
+For reversal transactions, the API now returns **`third_party_fx`** along with holding FX transactions in the **FX** object.
+
+| Field          | Behaviour           | Purpose                                                                 |
+| -------------- | ------------------- | ----------------------------------------------------------------------- |
+| fx_conversions | third_party_fx      | Represents FX charges applied by third-party providers during reversals |
+| fx_conversions | reversal_holding_fx | Represents the FX movement on the holding-currency side of a reversal   |
+
+These updates provide clearer visibility into the fee components associated with reversed payouts.
+
+***
+
+# New Reversal Reason Codes
+
+Comprehensive [reason codes](https://docs.tazapay.com/reference/payout-reversal-reasons) have been introduced for payout reversals to help identify the exact cause of a reversal.
+
+***
+
+## Relevant Links
+
+* [**GET Payout**](https://docs.tazapay.com/reference/fetch-payout)
+* [**Payout Webhooks**](https://docs.tazapay.com/reference/payout-webhooks)
+* [**GET Balance Transaction**](https://docs.tazapay.com/reference/fetch-balance-transaction)
