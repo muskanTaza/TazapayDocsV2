@@ -373,13 +373,16 @@
                   {
                     "group": "December",
                     "pages": [
-                      "Changelog/2025/Q4/December/Added-support-for-fund-transfer-network"                    ]
+                      "Changelog/2025/Q4/December/Added-support-for-fund-transfer-network",
+                      "Changelog/2025/Q4/December/Added-support-for-passing-Beneficiarys-Nationality",
+                      "Changelog/2025/Q4/December/Bulgaria-Currency-Transition-BGN--EUR",
+                      "Changelog/2025/Q4/December/Introduction-of-Payout-Reversal",
+                      "Changelog/2025/Q4/December/Support-for-individual-fields-in-the-entity-object"]
                   },
                   {
                     "group": "November",
                     "pages": [
-                      "Changelog/2025/Q4/November/stablecoin-wallet-support",
-                      "Changelog/2025/Q4/November/security-enhancements"
+                      "Changelog/2025/Q4/November/Revampment-of-Wallet-Payout-and-Beneficiary-flows"
                     ]
                   },
                   {
