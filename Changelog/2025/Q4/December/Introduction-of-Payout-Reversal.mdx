@@ -5,14 +5,10 @@ title: "Introduction of Payout Reversal"
 
 The **Get Payout API** has been enhanced to provide additional details for payout reversal scenarios. A new payout state, **`reversed`**, has been introduced along with additional fields to improve traceability and visibility into reversal-related transactions and FX movements.
 
-***
-
 ## New State Introduced
 
-* **`reversed`**  
+* **`reversed`**
   Indicates that a previously succeeded payout has been successfully reversed.
-
-***
 
 ## New Fields Added
 
@@ -22,15 +18,11 @@ The **Get Payout API** has been enhanced to provide additional details for payou
 * **`reversal_payout_fx_transaction`**  
   Represents the FX transaction applied during the payout-side reversal process.
 
-For a detailed walkthrough of payout reversals, reconciliation, and merchant workflows, see the <Anchor label="**Payout Reversals** guide." target="_blank" href="https://docs.tazapay.com/docs/payout-reversal-overview">**Payout Reversals** guide.</Anchor>
-
-***
+For a detailed walkthrough of payout reversals, reconciliation, and merchant workflows, see the [**Payout Reversals** guide](https://docs.tazapay.com/docs/payout-reversal-overview).
 
 # Fetch Balance Transaction API
 
 Updates have been made to the fee representation for reversal transactions in the **Balance Transaction** object.
-
-***
 
 ## Fee Structure Update
 
@@ -39,8 +31,6 @@ For reversal transactions, the API now returns **`third_party_fee`** instead of 
 | Field       | Behaviour       | Purpose                                                           |
 | ----------- | --------------- | ----------------------------------------------------------------- |
 | fee_details | third_party_fee | Distinguishes third-party charges applied during payout reversals |
-
-***
 
 ## FX Structure Update
 
@@ -53,13 +43,9 @@ For reversal transactions, the API now returns **`third_party_fx`** along with h
 
 These updates provide clearer visibility into the fee components associated with reversed payouts.
 
-***
-
 # New Reversal Reason Codes
 
 Comprehensive [reason codes](https://docs.tazapay.com/reference/payout-reversal-reasons) have been introduced for payout reversals to help identify the exact cause of a reversal.
-
-***
 
 ## Relevant Links
 

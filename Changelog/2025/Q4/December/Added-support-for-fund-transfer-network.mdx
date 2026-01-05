@@ -3,8 +3,6 @@ title: "Added support for fund transfer network"
 ---
 Local payouts now support **fund transfer networks**, allowing visibility into—and where supported, selection of—the actual network used to deliver funds.
 
-***
-
 ## 1. Payout Object
 
 ### New Fields
@@ -21,8 +19,6 @@ A new optional `local` object is added to the payout object.
 * Represents the actual network used to deliver funds
 * Certain corridors allow Tazapay users to specify the network, for others it is auto populated
 * Returned in all payout API responses and payout webhooks
-
-***
 
 ## 2. Payout Bank Metadata API
 
@@ -47,14 +43,10 @@ Each object contains:
   * **Min limit**: max of all network minimums
   * **Max limit**: min of all network maximums
 
-***
-
 ## Backward Compatibility
 
 * All fields are optional
 * No breaking changes to existing integrations
-
-***
 
 ## Relevant Links
 
