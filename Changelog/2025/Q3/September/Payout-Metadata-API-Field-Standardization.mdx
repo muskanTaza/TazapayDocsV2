@@ -1,83 +1,89 @@
 ---
 title: "Payout Metadata API Field Standardization"
 ---
-
 We have released an update to the Payout Bank Metadata API (`/v3/metadata/payout/bank`) to standardize field names and introduce a more structured format for addresses. This update includes **breaking changes** that will require action on your part.
 
 These changes will improve data consistency, reduce errors, and allow for more robust validation.
 
 ***
 
-### Breaking Changes
+### **Breaking Changes**
 
 To continue using the Payout API without interruption, you **must update your integration** to adopt the following new field names and structures.
 
-| Old Field / Structure          | New Field / Structure              | Description |
-| ------------------------------ | ---------------------------------- | ----------- |
-| `address` (string)             | `address` (object)                 | Address is now structured |
-| `postcode`                     | `postal_code`                      | Renamed for consistency |
-| `phone.contact_code`           | `phone.calling_code`               | Renamed |
-| `phone.contact_number`         | `phone.number`                     | Renamed |
+| Old Field / Structure          | New Field / Structure              | Description                                                                                                                                                           |
+| ------------------------------ | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `address` (as a single string) | `address` (as a structured object) | The address is no longer a single string. It is now a structured object with fields like `address.line1`, `address.city`, `address.state`, and `address.postal_code`. |
+| `postcode`                     | `postal_code`                      | The field for the postal code has been renamed for consistency.                                                                                                       |
+| `phone.contact_code`           | `phone.calling_code`               | The field for the phone country code has been renamed.                                                                                                                |
+| `phone.contact_number`         | `phone.number`                     | The field for the local phone number has been renamed.                                                                                                                |
 
 ***
 
-### 🚀 Enhancement
+### **:rocket: Enhancement**
 
-* **New `recommended_fields` Object**
-* Routing availability depends on the number of recommended fields provided.
+We've also introduced an enhancement to help you prepare for future improvements.
 
-***
-
-### Action Required
-
-* Update your integration to parse structured `address`
-* Use updated field names
+* **New `recommended_fields` Object:** The API response now includes a `recommended_fields` object. This will list optional fields that are not part of the primary requirement.
+* **Important Note:** We have introduced `recommended_fields` to accommodate our expanding network of payment providers. **The number of providers available for routing depends on the number of fields specified from the recommended_fields parameter for a given beneficiary**
 
 ***
 
-## Updated Response Structure
+### **Action Required**
 
-**```json**
+* You must update your integration to parse the new, structured `address` object and use the updated field names (`postal_code`, `calling_code`, `number`).
+
+***
+
+## Updated Response Structure:
 {
-  "status": "success",
-  "message": "",
-  "data": {
-    "payout_methods": [
-      {
-        "beneficiary_type": ["individual", "business"],
-        "country": "IN",
-        "currency": "INR",
-        "custom_remitter_support": true,
-        "payout_type": "local",
-        "required_bank_codes": ["ifsc_code"],
-        "required_bank_fields": [
-          "account_holder_name",
-          **"bank_name"**
-        ],
-        "required_beneficiary_fields": [
-          "address.line1",
-          "address.city",
-          "address.state",
-          "address.postal_code",
-          "phone.calling_code",
-          "phone.number",
-          "tax_id"
-        ],
-        "supported_destinations": [],
-        "transfer_limit": {
-          "currency": "INR",
-          "maximum": 100000000,
-          "minimum": 128
-        },
-        "recommended_fields": {
-          "recommended_bank_fields": ["account_number"],
-          "recommended_beneficiary_fields": [
-            **"address.line_1"**
-          ],
-          "recommended_bank_codes": ["ifsc_code"]
-        }
-      }
-    ]
-  }
+    "status": "success",
+    "message": "",
+    "data": {
+        "payout_methods": [
+            {
+                "beneficiary_type": [
+                    "individual",
+                    "business"
+                ],
+                "country": "IN",
+                "currency": "INR",
+                "custom_remitter_support": true,
+                "payout_type": "local",
+                "required_bank_codes": [
+                    "ifsc_code"
+                ],
+                "required_bank_fields": [
+                    "account_holder_name",
+                    "bank_name",
+                ],
+                "required_beneficiary_fields": [
+                    "address.line1",
+                    "address.city",
+                    "address.state",
+                    "address.postal_code",
+                    "phone.calling_code",
+                    "phone.number",
+                    "tax_id"
+                ],
+                "supported_destinations": [],
+                "transfer_limit": {
+                    "currency": "INR",
+                    "maximum": 100000000,
+                    "minimum": 128
+                },
+                "recommended_fields": {
+                    "recommended_bank_fields": [
+                        "account_number"
+                    ],
+                    "recommended_beneficiary_fields": [
+                        "address.line_1",
+                    ],
+                    "recommended_bank_codes": [
+                        "ifsc_code"
+                    ]
+                }
+            }
+        ]
+    }
 }
-**```**
