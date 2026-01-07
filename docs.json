@@ -224,6 +224,20 @@
           }
         ]
       },
+            {
+        "tab": "Checkout",
+        "icon": "shopping-cart",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "Checkout/Introduction-to-Checkout",
+              "Checkout/How-Checkout-works",
+              "Checkout/Managing-Payment-Methods"
+            ]
+          }
+        ]
+      },
       {
         "tab": "API Reference",
         "icon": "rocket",
