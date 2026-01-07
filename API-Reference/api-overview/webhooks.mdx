@@ -1,0 +1,17 @@
+---
+title: "Webhooks"
+description: "Receive real-time notifications via webhooks"
+---
+
+Webhook Endpoints are setup on an account level from the dashboard as that gives users an interface to look at any successful or failed webhooks requests and also re-trigger them if required. Use this [guide](https://docs.tazapay.com/docs/webhooks-guides#/) to setup webhooks.
+
+It is necessary that you configure your endpoint URL to acknowledge Tazapay's webhooks with standard HTTP Codes.
+For example, pass 2xx for a successful POST request receipt on your server.
+
+If Tazapay does not receive a 2xx acknowledgement, it will retry sending webhooks to the endpoint for a period of 24 hours. Click [here](/API-Reference/appendix/webhooks-retry-policy) for the detailed retry policy.
+
+<Info title="Not receiving webhooks?">
+In case of any server block or not receiving a response to your webhook URL, try whitelisting the below IP addresses:
+- Test Mode (Sandbox): **13.213.226.109**
+- Live Mode (Production): **52.77.198.235**
+</Info>

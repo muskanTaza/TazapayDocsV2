@@ -1,0 +1,46 @@
+---
+title: "Revampment Of Wallet Payout And Beneficiary Flows"
+---
+### **🔐 Travel Rule Compliant Wallet Payouts**
+
+We’ve redesigned the wallet payout experience to ensure compliance with global Travel Rule regulations for all outgoing crypto transactions.
+This revamp introduces new data fields, a state-based approval process and enhanced wallet verification ensuring that all crypto payouts are both secure and regulatorily compliant while maintaining transparency for your business and its beneficiaries.
+
+### **🧩 Enhanced Beneficiary Object**
+
+New fields have been added to the beneficiary and destination_details.wallet objects.
+These updates ensure accurate capture of required Travel Rule data when creating wallet payouts—whether through the API or dashboard.
+→ [View updated Beneficiary Object](https://docs.tazapay.com/docs/beneficiary-object-1#/)
+
+→ [See Create Beneficiary API reference](https://docs.tazapay.com/update/reference/create-beneficiary#/)
+
+### 🧾 **Wallet Beneficiary State Management & Approvals**
+
+Wallet beneficiaries now follow a state-based lifecycle with internal compliance approval for 1st-party wallets before payouts can be initiated.
+You’ll receive email and webhook notifications for every wallet beneficiary creation and state transition.
+→ [View Beneficiary Webhooks](https://docs.tazapay.com/update/reference/beneficiary-webhooks#/)
+
+### **🧠 Wallet Verification (Hosted vs. Self-Hosted)**
+
+When adding a wallet beneficiary, you’ll now specify whether the wallet is:
+
+* Hosted (on an exchange)
+* Unhosted (self hosted wallets where you have control over private keys)
+
+Depending on the wallet type:
+
+* Hosted wallets require wallet screen recordings for verification.
+* Self-hosted wallets require performing a cryptographic signature, which proves ownership of the wallet address by digitally signing a verification message with the private key.
+  This step can currently be performed only via the Tazapay dashboard.
+
+Until verification is complete, the wallet beneficiary will remain in the requires_action state and payouts will be restricted.
+All of these wallet beneficiaries can be viewed under Dashboard → Action Required → Wallet Beneficiaries tab
+
+### **👥 Role-Based Access Control (RBAC)**
+
+A new permission, “Allow Cryptographic Signature”, has been added under
+Settings → Manage Team → Payout.
+
+This permission controls who can perform cryptographic signatures.
+
+All existing users have this enabled by default, but admins can restrict access as needed.

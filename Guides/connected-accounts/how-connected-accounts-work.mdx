@@ -1,0 +1,31 @@
+---
+title: "How Connected Accounts Work"
+---
+
+At a high level, Connected Accounts let you represent your underlying customers within Tazapay in one of two ways:
+
+- Sub-accounts (Each of your customer has their own account within Tazapay)
+- Entities (Only you have an account within Tazapay - but pass your customer information with each transaction)
+
+The onboarding method you use determines:
+
+- Whether funds flow through your platform
+- Who owns balances and settlements
+- The level of onboarding, review, and approval required
+
+The choice between these models depends on your platform’s licenses, compliance setup, and risk assessment, and is evaluated by Tazapay during partner onboarding.
+
+## Onboarding Models supported
+
+| Dimension | Sub-Account | Entity (Full Onboarding) | Simplified Entity |
+|----------|-------------|--------------------------|-------------------|
+| What it represents | A separate Tazapay account for your end customer | An underlying customer inside the platform’s master account | A lightweight entity inside the master account |
+| Who owns the account | End customer | Platform (You) | Platform (You) |
+| Fund flow | The platform (you) is not involved in the flow of funds | The platform (You) manage the flow of funds | The platform (You) manage the flow of funds |
+| Balance ownership | Separate balance per sub-account | Single master balance | Single master balance |
+| Onboarding type | Full onboarding only | Full onboarding | Simplified onboarding |
+| Approval required prior to transactions | Yes, by Tazapay onboarding team | Yes, by Tazapay onboarding team | No approval required |
+| Time to become active | SLA-based (document review) | SLA-based (document review) | Instant |
+| Typical use cases | Marketplaces, platforms not licensed to hold funds | Licensed fintechs, wallets, neobanks | Early-stage flows, low-risk or high-scale onboarding |
+| Upgrade path | Can be upgraded to entity (full onboarding) or entity (simplified onboarding) | Can be upgraded to entity (simplified onboarding) | N/A |
+| White-labelled | Yes | Yes | Yes |

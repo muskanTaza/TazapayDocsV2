@@ -1,0 +1,38 @@
+---
+title: "Overview"
+---
+
+FX comes into play whenever funds move between different currencies during a payout.
+
+Depending on your setup, FX can occur at
+- Conversion from holding (balance currency) to payout currency
+- Conversion from payout currency to destination currency
+- Both
+
+### Holding FX
+
+**Balance currency → Payout currency**
+
+This occurs when:
+- Your holding balance is in one currency (e.g. USD)
+- You initiate a payout in a different currency (e.g. EUR)
+Tazapay converts funds from the holding currency to the payout currency as part of the payout flow.
+
+### Destination FX
+
+**Payout currency → Destination settlement currency**
+
+This occurs when:
+
+- The payout is initiated in one currency
+- The destination bank or rail requires settlement in another currency
+
+Tazapay handles the conversion transparently as part of routing and settlement.
+
+> Tazapay also supports locking exchange rates across different stages of the payout lifecycle.
+
+![Types of FX payout](/images/diagrams/types-of-fx-payout.png)
+
+### Relevant Links
+1. [Locking exchange rates for the maker-checker flow](/Guides/payouts/managing-fx/locking-exchange-rates-for-a-payout/for-the-time-duration-between-maker-checker-flow)
+2. [Locking exchange rates for post-payout creation funding](/Guides/payouts/managing-fx/locking-exchange-rates-for-a-payout/for-the-funding-time-duration)

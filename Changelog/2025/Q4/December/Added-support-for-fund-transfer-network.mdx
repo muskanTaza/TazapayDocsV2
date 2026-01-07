@@ -1,0 +1,54 @@
+---
+title: "Added support for fund transfer network"
+---
+Local payouts now support **fund transfer networks**, allowing visibility into—and where supported, selection of—the actual network used to deliver funds.
+
+## 1. Payout Object
+
+### New Fields
+
+A new optional `local` object is added to the payout object.
+
+| Field | Sub-field            | Type | Mandatory | Description                                |
+| ----- | -------------------- | ---- | --------- | ------------------------------------------ |
+| local |                      | json | N         | Fields specific to local payouts           |
+|       | fund_transfer_system | enum | N         | Fund transfer network used for the payout. |
+
+**Notes**
+
+* Represents the actual network used to deliver funds
+* Certain corridors allow Tazapay users to specify the network, for others it is auto populated
+* Returned in all payout API responses and payout webhooks
+
+## 2. Payout Bank Metadata API
+
+### New Fields
+
+The payout bank metadata response now includes `fund_transfer_networks`.
+
+#### `fund_transfer_networks` (array)
+
+Each object contains:
+
+| Field                       | Type    | Description                                                     |
+| --------------------------- | ------- | --------------------------------------------------------------- |
+| remitter_preference_support | boolean | Indicates if the network can be specified in the payout request |
+| name                        | string  | Name of the fund transfer network                               |
+| transfer_limit              | object  | Transfer limits specific to the network                         |
+
+**Transfer Limit Rules**
+
+* Limits may vary by network
+* Effective payout method limits are derived as:
+  * **Min limit**: max of all network minimums
+  * **Max limit**: min of all network maximums
+
+## Backward Compatibility
+
+* All fields are optional
+* No breaking changes to existing integrations
+
+## Relevant Links
+
+1. [Create Payout](https://tazapay-58ae360f.mintlify.app/API-Reference/tazapay-api/payout/create-payout)
+2. [Payout Bank Metadata API](https://tazapay-58ae360f.mintlify.app/API-Reference/tazapay-api/metadata/payout-bank)

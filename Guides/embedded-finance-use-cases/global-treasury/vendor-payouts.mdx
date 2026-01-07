@@ -1,0 +1,92 @@
+---
+title: "Vendor Payouts"
+description: "Pay suppliers, partners, and service providers across multiple countries"
+---
+
+## Overview
+
+Platforms and businesses often work with vendors across multiple countries and need a reliable way to pay them without setting up local banking relationships in each country. Vendors typically expect payments in their local currency, while businesses may hold funds in a single base or treasury currency.
+
+## How Tazapay Helps
+
+<CardGroup cols={2}>
+  <Card title="Centralized Payouts" icon="building-columns">
+    Manage all vendor payouts from a single Tazapay balance
+  </Card>
+  <Card title="Local Currency Support" icon="coins">
+    Pay vendors directly to their bank accounts in local currency
+  </Card>
+  <Card title="Automatic FX Conversion" icon="arrows-rotate">
+    Handles foreign exchange when payout currency differs from holding currency
+  </Card>
+  <Card title="Transaction Tracking" icon="magnifying-glass-chart">
+    Full visibility with transaction-level tracking and reconciliation
+  </Card>
+</CardGroup>
+
+## Integration Flow
+
+<Steps>
+  <Step title="Fund Your Account">
+    Business funds its Tazapay account
+  </Step>
+  <Step title="Credit Holding Balance">
+    Funds are credited to holding balances
+  </Step>
+  <Step title="Initiate Payouts">
+    Business initiates payouts to vendor bank accounts
+  </Step>
+  <Step title="Processing">
+    Tazapay handles FX, local rails, and settlement
+  </Step>
+  <Step title="Track & Reconcile">
+    Payout status and reconciliation are tracked via APIs and dashboard
+  </Step>
+</Steps>
+
+## APIs Involved
+
+| Purpose | API | Endpoint |
+|---------|-----|----------|
+| View holding balances | [Fetch Balances](/api-reference/balances/fetch) | `/v3/balances` |
+| Create payout | [Create Payout](/api-reference/payouts/create) | `/v3/payouts` |
+| Track payout status | [Fetch Payout](/api-reference/payouts/fetch) | `/v3/payouts/{id}` |
+| Reconciliation | [Fetch Balance Transactions](/api-reference/balance-transactions/fetch) | `/v3/balance_transaction/{id}` |
+| Event handling | [Webhooks](/webhooks/overview) | `payout.*` |
+
+## Example: Multi-Country Vendor Payments
+
+A US-based company works with vendors in multiple countries:
+
+<CardGroup cols={3}>
+  <Card title="India" icon="indian-rupee-sign">
+    Design agency paid in INR
+  </Card>
+  <Card title="United Kingdom" icon="sterling-sign">
+    Marketing partner paid in GBP
+  </Card>
+  <Card title="Singapore" icon="dollar-sign">
+    Software vendor paid in SGD
+  </Card>
+</CardGroup>
+
+### How Tazapay Handles These Payouts
+
+<AccordionGroup>
+  <Accordion title="Holding Currency">
+    Funds are held in one or more holding currencies on Tazapay (e.g., USD)
+  </Accordion>
+  <Accordion title="Payout Initiation">
+    Payouts are initiated to vendors in their preferred local currency
+  </Accordion>
+  <Accordion title="Automatic FX">
+    If the payout currency differs from the holding currency, Tazapay performs FX conversion automatically
+  </Accordion>
+  <Accordion title="Local Delivery">
+    Vendors receive funds via local bank transfer or supported payout rails—faster and at lower cost than international wires
+  </Accordion>
+</AccordionGroup>
+
+<Info>
+  By using Tazapay, businesses eliminate the need for multiple banking relationships while ensuring vendors receive payments quickly in their local currency.
+</Info>

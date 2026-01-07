@@ -1,0 +1,495 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Introduction to Tazapay",
+  "colors": {
+    "primary": "#3b82f6",
+    "light": "#3b82f6",
+    "dark": "#3b82f6"
+  },
+  "favicon": "/10a0fda-favicon.ico",
+  "openapi": "/tazapay-api.json",
+  "navigation": {
+    "anchors": [
+      {
+        "anchor": "Dashboard",
+        "href": "https://dashboard.tazapay.com/"
+      }
+    ],
+    "pages": ["Guides/start-here/get-started-with-tazapay"],
+    "tabs": [
+      {
+        "tab": "Guides",
+        "icon": "book-open",
+        "groups": [
+          {
+            "group": "Start Here",
+            "pages": [
+              "Guides/start-here/get-started-with-tazapay",
+              "Guides/start-here/onboarding-requirements",
+              "Guides/start-here/managing-your-team",
+              "Guides/start-here/multifactor-authentication"
+            ]
+          },
+          {
+            "group": "Global Collections Accounts",
+            "pages": [
+              "Guides/global-collection-accounts/overview",
+              "Guides/global-collection-accounts/configuring-virtual-accounts-and-stablecoin-wallets",
+              "Guides/global-collection-accounts/viewing-virtual-accounts-and-stablecoin-wallets",
+              {
+                "group": "Receiving Funds",
+                "pages": [
+                  {
+                    "group": "Fetch Collect Details",
+                    "pages": [
+                      "Guides/global-collection-accounts/receiving-funds/fetch-collect-details/using-dashboard",
+                      "Guides/global-collection-accounts/receiving-funds/fetch-collect-details/using-api"
+                    ]
+                  },
+                  "Guides/global-collection-accounts/receiving-funds/subscribe-to-webhook-events"
+                ]
+              },
+              {
+                "group": "Coverage",
+                "pages": [
+                  "Guides/global-collection-accounts/coverage/virtual-accounts",
+                  "Guides/global-collection-accounts/coverage/stablecoins"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Viewing Balances",
+            "pages": [
+              "Guides/viewing-balances/overview",
+              "Guides/viewing-balances/viewing",
+              "Guides/viewing-balances/enabling-additional-balance-currencies",
+              "Guides/viewing-balances/fx-transactions"
+            ]
+          },
+          {
+            "group": "Payouts",
+            "pages": [
+              "Guides/payouts/overview",
+              "Guides/payouts/coverage",
+              "Guides/payouts/purpose",
+              "Guides/payouts/fund-transfer-networks",
+              {
+                "group": "Managing FX",
+                "pages": [
+                  "Guides/payouts/managing-fx/overview",
+                  {
+                    "group": "Locking Exchange Rates for a Payout",
+                    "pages": [
+                      "Guides/payouts/managing-fx/locking-exchange-rates-for-a-payout/for-the-funding-time-duration",
+                      "Guides/payouts/managing-fx/locking-exchange-rates-for-a-payout/for-the-time-duration-between-maker-checker-flow"
+                    ]
+                  },
+                  "Guides/payouts/managing-fx/creating-a-quote-and-then-attaching-it-to-a-payout"
+                ]
+              },
+              {
+                "group": "Local Guides",
+                "pages": [
+                  {
+                    "group": "Brazil (BRL)",
+                    "pages": [
+                      "Guides/payouts/local-guides/Brazil (BRL)/pix-key"
+                    ]
+                  },
+                  {
+                    "group": "China (CNY)",
+                    "pages": ["Guides/payouts/local-guides/China (CNY)/cnaps"]
+                  },
+                  {
+                    "group": "India (INR)",
+                    "pages": [
+                      "Guides/payouts/local-guides/India (INR)/fira",
+                      "Guides/payouts/local-guides/India (INR)/firc",
+                      "Guides/payouts/local-guides/India (INR)/supported-purpose-codes"
+                    ]
+                  },
+                  {
+                    "group": "Indonesia (IDR)",
+                    "pages": [
+                      "Guides/payouts/local-guides/Indonesia (IDR)/supported-banks"
+                    ]
+                  },
+                  {
+                    "group": "Malaysia (MYR)",
+                    "pages": [
+                      "Guides/payouts/local-guides/Malaysia (MYR)/supported-banks"
+                    ]
+                  },
+                  {
+                    "group": "Phillippines (PHP)",
+                    "pages": [
+                      "Guides/payouts/local-guides/Phillippines (PHP)/supported-banks"
+                    ]
+                  },
+                  {
+                    "group": "Thailand (THB)",
+                    "pages": [
+                      "Guides/payouts/local-guides/Thailand (THB)/supported-banks"
+                    ]
+                  },
+                  {
+                    "group": "Vietnam (VND)",
+                    "pages": [
+                      "Guides/payouts/local-guides/Vietnam (VND)/supported-banks"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Reversals",
+                "pages": [
+                  "Guides/payouts/reversals/overview",
+                  "Guides/payouts/reversals/reconciliation",
+                  "Guides/payouts/reversals/viewing-reversed-payouts",
+                  "Guides/payouts/reversals/webhooks"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Connected Accounts",
+            "pages": [
+              "Guides/connected-accounts/overview",
+              "Guides/connected-accounts/how-connected-accounts-work",
+              "Guides/connected-accounts/creating-sub-accounts",
+              "Guides/connected-accounts/creating-entities",
+              "Guides/connected-accounts/simplified-entity-creation",
+              "Guides/connected-accounts/full-entity-creation"
+            ]
+          },
+          {
+            "group": "Integration Guides",
+            "pages": [
+              "Guides/integration-guides/payouts-on-behalf-of",
+              "Guides/integration-guides/collections-on-behalf-of",
+              "Guides/integration-guides/global-payout-network",
+              "Guides/integration-guides/funding-a-payout-after-creation"
+            ]
+          },
+          {
+            "group": "Embedded Finance Use Cases",
+            "pages": [
+              "Guides/embedded-finance-use-cases/overview",
+              {
+                "group": "Global Treasury",
+                "pages": [
+                  "Guides/embedded-finance-use-cases/global-treasury/overview",
+                  "Guides/embedded-finance-use-cases/global-treasury/payroll",
+                  "Guides/embedded-finance-use-cases/global-treasury/vendor-payouts",
+                  "Guides/embedded-finance-use-cases/global-treasury/employee-reimbursements"
+                ]
+              },
+              {
+                "group": "Banking as a Service",
+                "pages": [
+                  "Guides/embedded-finance-use-cases/banking-as-a-service/stablecoin-neobanks",
+                  "Guides/embedded-finance-use-cases/banking-as-a-service/fintechs"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Transfers Within Tazapay",
+            "pages": [
+              "Guides/transfers-within-tazapay/overview",
+              "Guides/transfers-within-tazapay/configuring-an-accounts-deposit-address",
+              {
+                "group": "Making a Payment to a Deposit Address",
+                "pages": [
+                  "Guides/transfers-within-tazapay/making-a-payment-to-a-deposit-address/using-dashboard",
+                  "Guides/transfers-within-tazapay/making-a-payment-to-a-deposit-address/using-api"
+                ]
+              },
+              "Guides/transfers-within-tazapay/viewing-an-incoming-payment"
+            ]
+          },
+          {
+            "group": "Appendix",
+            "pages": [
+              {
+                "group": "Onboarding Requirements",
+                "pages": [
+                  "Guides/appendix/onboarding-requirements/onboarding-requirements-individuals",
+                  "Guides/appendix/onboarding-requirements/onboarding-requirements-businesses"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "icon": "rocket",
+        "groups": [
+          {
+            "group": "API Overview",
+            "pages": [
+              "API-Reference/api-overview/introduction",
+              "API-Reference/api-overview/endpoints-and-environments",
+              "API-Reference/api-overview/authentication",
+              "API-Reference/api-overview/webhooks",
+              "API-Reference/api-overview/idempotent-requests"
+            ]
+          },
+          {
+            "group": "Collection Account",
+            "pages": [
+              "API-Reference/tazapay-api/collection-account/collection-account-object",
+              "API-Reference/tazapay-api/collection-account/webhook-events"
+            ]
+          },
+          {
+            "group": "Collect",
+            "pages": [
+              "API-Reference/tazapay-api/collect/fetch-collect",
+              "API-Reference/tazapay-api/collect/collect-state-machine",
+              "API-Reference/tazapay-api/collect/webhook-events",
+              "API-Reference/tazapay-api/collect/error-codes"
+            ]
+          },
+          {
+            "group": "Payout",
+            "pages": [
+              "API-Reference/tazapay-api/payout/create-payout",
+              "API-Reference/tazapay-api/payout/fetch-payout",
+              "API-Reference/tazapay-api/payout/payout-state-machine",
+              "API-Reference/tazapay-api/payout/update-payout",
+              "API-Reference/tazapay-api/payout/fund-payout",
+              "API-Reference/tazapay-api/payout/create-payout-quote",
+              "API-Reference/tazapay-api/payout/confirm-payout",
+              "API-Reference/tazapay-api/payout/webhook-events",
+              "API-Reference/tazapay-api/payout/simulating-payouts-on-test-environment"
+            ]
+          },
+          {
+            "group": "Metadata",
+            "pages": [
+              "API-Reference/tazapay-api/metadata/fetch-external-account-details",
+              "API-Reference/tazapay-api/metadata/fetch-exchange-rates",
+              "API-Reference/tazapay-api/metadata/payout-bank"
+            ]
+          },
+          {
+            "group": "Document",
+            "pages": [
+              "API-Reference/tazapay-api/document/upload-document-to-tazapay",
+              "API-Reference/tazapay-api/document/add-document-to-a-resource"
+            ]
+          },
+          {
+            "group": "Entity",
+            "pages": [
+              {
+                "group": "Create Entity",
+                "pages": [
+                  "API-Reference/tazapay-api/entity/create-entity-individual",
+                  "API-Reference/tazapay-api/entity/create-entity-business"
+                ]
+              },
+              {
+                "group": "Submit Entity",
+                "pages": [
+                  "API-Reference/tazapay-api/entity/submit-entity-individual",
+                  "API-Reference/tazapay-api/entity/submit-entity-business"
+                ]
+              },
+              "API-Reference/tazapay-api/entity/fetch-entity",
+              "API-Reference/tazapay-api/entity/update-entity",
+              "API-Reference/tazapay-api/entity/list-entity",
+              "API-Reference/tazapay-api/entity/entity-state-machine",
+              "API-Reference/tazapay-api/entity/webhook-events",
+              "API-Reference/tazapay-api/entity/simulating-on-test-environment"
+            ]
+          },
+          {
+            "group": "Balance",
+            "pages": ["API-Reference/tazapay-api/balance/fetch-balance"]
+          },
+          {
+            "group": "Balance Transaction",
+            "pages": [
+              "API-Reference/tazapay-api/balance-transaction/fetch-balance-transaction",
+              "API-Reference/tazapay-api/balance-transaction/list-balance-transactions"
+            ]
+          },
+          {
+            "group": "Beneficiary",
+            "pages": [
+              "API-Reference/tazapay-api/beneficiary/create-beneficiary",
+              "API-Reference/tazapay-api/beneficiary/fetch-beneficiary",
+              "API-Reference/tazapay-api/beneficiary/update-beneficiary",
+              "API-Reference/tazapay-api/beneficiary/webhook-events"
+            ]
+          },
+          {
+            "group": "Lightning Invoice",
+            "pages": [
+              "API-Reference/tazapay-api/lightning-invoice/create-an-invoice",
+              "API-Reference/tazapay-api/lightning-invoice/fetch-an-invoice",
+              "API-Reference/tazapay-api/lightning-invoice/update-an-invoice"
+            ]
+          },
+          {
+            "group": "Common Object Schemas",
+            "pages": [
+              "API-Reference/tazapay-api/common-object-schemas/fx-transaction",
+              "API-Reference/tazapay-api/common-object-schemas/phone",
+              "API-Reference/tazapay-api/common-object-schemas/address"
+            ]
+          },
+          {
+            "group": "Appendix",
+            "pages": [
+              "API-Reference/appendix/payout-failure-reasons",
+              "API-Reference/appendix/payout-reversal-reasons",
+              {
+                "group": "Error Codes",
+                "pages": [
+                  "API-Reference/appendix/error-codes/generic",
+                  "API-Reference/appendix/error-codes/by-resource"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "icon": "clock",
+        "groups": [
+          {
+            "group": "2025",
+            "pages": [
+              {
+                "group": "Q4",
+                "pages": [
+                  {
+                    "group": "December",
+                    "pages": [
+                      "Changelog/2025/Q4/December/Added-support-for-fund-transfer-network",
+                      "Changelog/2025/Q4/December/Added-support-for-passing-Beneficiarys-Nationality",
+                      "Changelog/2025/Q4/December/Bulgaria-Currency-Transition-BGN--EUR",
+                      "Changelog/2025/Q4/December/Introduction-of-Payout-Reversal",
+                      "Changelog/2025/Q4/December/Support-for-individual-fields-in-the-entity-object"]
+                  },
+                  {
+                    "group": "November",
+                    "pages": [
+                      "Changelog/2025/Q4/November/Revampment-of-Wallet-Payout-and-Beneficiary-flows"
+                    ]
+                  },
+                  {
+                    "group": "October",
+                    "pages": [
+                      "Changelog/2025/Q4/October/New-Payout-Purpose-Codes-for-Payouts",
+                      "Changelog/2025/Q4/October/New-Support-for-Major-Cryptocurrencies-and-Stablecoins"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Q3",
+                "pages": [
+                  {
+                    "group": "September",
+                    "pages": [
+                      "Changelog/2025/Q3/September/New-Accept-Payments-via-WeChat-Pay-in-Thailand",
+                      "Changelog/2025/Q3/September/Payout-Metadata-API-Field-Standardization",
+                      "Changelog/2025/Q3/September/Purpose-Codes-Update-for-INR-Payouts"
+                 ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+      },
+      {
+        "tab": "Product Releases",
+        "icon": "rocket-launch",
+        "groups": [
+          {
+            "group": "2025",
+            "pages": [
+              {
+                "group": "Q4",
+                "pages": [
+                  {
+                    "group": "December",
+                    "pages": [
+                      "Product-Releases/2025/Q4/December/connected-accounts-platform"
+                    ]
+                  },
+                  {
+                    "group": "November",
+                    "pages": [
+                      "Product-Releases/2025/Q4/November/lightning-network"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Q3",
+                "pages": [
+                  {
+                    "group": "September",
+                    "pages": [
+                      "Product-Releases/2025/Q3/September/virtual-accounts-2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Roadmap",
+        "icon": "map",
+        "groups": [
+          {
+            "group": "2026",
+            "pages": [
+              "Roadmap/2026/mass-payout-scheduling",
+              "Roadmap/2026/enhanced-compliance-suite",
+              "Roadmap/2026/mobile-app",
+              "Roadmap/2026/white-label-solution",
+              "Roadmap/2026/advanced-analytics-dashboard",
+              "Roadmap/2026/crypto-payout-expansion",
+              "Roadmap/2026/ai-powered-fraud-detection",
+              "Roadmap/2026/invoice-management-system",
+              "Roadmap/2026/api-v4-launch",
+              "Roadmap/2026/embedded-finance-toolkit",
+              "Roadmap/2026/cross-border-cards-program",
+              "Roadmap/2026/blockchain-settlement-network"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "logo": "/images/logos/tazapay-logo.png",
+  "navbar": {
+    "links": [
+      {
+        "label": "Live Dashboard",
+        "href": "https://dashboard.tazapay.com/"
+      },
+      {
+        "label": "Sandbox Dashboard",
+        "href": "https://dashboard-sandbox.tazapay.com/"
+      },
+      {
+        "label": "Product Feedback",
+        "href": "https://docs.google.com/forms/d/1WQFxbSLoRRUSIiYFa2wCI_Nu__X8ZF9_wjBrwzHWga4/edit"
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+---
+title: "Support For Individual Fields In The Entity Object"
+---
+
+
+* **New `individual` object on entities**
+
+  * Applicable when `type: "individual"`.
+  * Fields added under `individual`:
+
+    * `national_identification_number` (object)
+
+      * `type` (string; supported values: `passport`, `driving_license`, `national_id_card`, `tax_id_number`, `residence_permit`, `other`)
+      * `number` (string)
+    * `date_of_birth` (string; ISO 8601 date format `YYYY-MM-DD`)
+    * `nationality` (string; ISO 3166-1 alpha-2 country code)
+
+* **Webhook payload expansion**
+
+  * Entity webhooks now include `individual` object in `data` when `type: "individual"`.
+  * Events affected:
+
+    * `entity.created`
+    * `entity.updated`
+    * `entity.submitted`
+    * `entity.approved`
+
+### Changed
+
+* **Entity Management endpoints accept and return `individual` fields**
+
+  * Updated request/response schemas for:
+
+    * `POST /v3/entity`
+    * `GET /v3/entity/{id}`
+    * `PUT /v3/entity/{id}`
+    * `POST /v3/entity/{id}/submit`
+  * Responses include `individual` object when `type: "individual"`.
+
+* **Entity submission requirements for individual entities**
+
+  * On full entity submission (`POST /v3/entity/{id}/submit`), the following are required for `type: "individual"`:
+
+    * `individual.national_identification_number.type`
+    * `individual.national_identification_number.number`
+    * `individual.date_of_birth`
+    * `individual.nationality`
+  * For simplified entity creation/update, these fields remain optional.
+
+### Validation Rules
+
+* `individual.date_of_birth` must match `YYYY-MM-DD`.
+* `individual.nationality` must be a 2-letter ISO country code.
+* `individual.national_identification_number.type` and `.number` must be provided together.
+
+### Compatibility
+
+* No breaking changes; additions are backward-compatible and ignorable by existing clients.
+
+### Relevant Links
+
+1. [Create Entity](https://tazapay-58ae360f.mintlify.app/API-Reference/tazapay-api/entity/create-entity-individual)

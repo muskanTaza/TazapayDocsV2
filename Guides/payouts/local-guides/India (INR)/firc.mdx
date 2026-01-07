@@ -1,0 +1,124 @@
+---
+title: "Foreign Inward Remittance Certificate (FIRC)"
+description: "A Foreign Inward Remittance Certificate (FIRC) is a document issued by the recipient's bank in India as an acknowledgment of receiving a fund transfer from a foreign country. It serves as official proof of receipt of the remittance and is often required for regulatory and tax purposes."
+---
+## Key Details
+
+- **Issuer**: Authorized bank in India receiving the foreign remittance  
+- **Purpose**: Proof of foreign currency inflow into India  
+- **Format**:
+  - Traditionally a physical document with a unique serial number
+  - Some banks issue **e-FIRC** (electronic FIRC)
+- **Contains**:
+  - Bank details
+  - Remittance amount and currency
+  - Sender (remitter) details
+  - Beneficiary details
+- **Validity**: No fixed expiry date, but should be retained for records and audits
+
+---
+
+## Why is FIRC Required?
+
+FIRC serves as a critical compliance and accounting document.
+
+### Regulatory Compliance
+- Ensures adherence to **FEMA (Foreign Exchange Management Act)** regulations
+
+### Taxation
+- Acts as supporting evidence of foreign income for tax filings
+
+### Repatriation of Funds
+- May be required when transferring funds back to a foreign country
+
+### Audits
+- Used during statutory and internal audits to verify foreign currency receipts
+
+---
+
+## When is FIRC Required?
+
+FIRC is commonly required in the following scenarios:
+
+- **Large-value transactions**
+  - Typically for remittances exceeding **INR 50,000**
+- **Business transactions**
+  - Exports
+  - Professional services
+  - Commercial receipts
+- **Non-Resident Indians (NRIs)**
+  - When receiving funds from overseas sources
+
+---
+
+## How to Obtain a FIRC via Tazapay
+
+To request a FIRC for a payout:
+
+- Set the `firc_required` field to `true`
+- This field must be provided in the **bank object** inside the **beneficiary object**
+
+### Important Notes
+
+- FIRCs are **not automatically generated**
+- Tazapay requests FIRCs from partner banks and delivers them to customers
+- Issuance timelines depend on the bank
+- Ensure all transaction details are accurate to avoid delays
+- Retain the FIRC securely for future reference
+
+---
+
+## FIRA for India Payouts
+
+When processing payouts to India, Tazapay generates a **Foreign Inward Remittance Advice (FIRA)** in compliance with **Reserve Bank of India (RBI)** regulations.
+
+### Role of Purpose Codes
+
+The **Purpose Code** selected during payout initiation determines:
+
+- How the transaction is classified under RBI guidelines
+- The **type of FIRA** generated
+- Whether the payout is successfully processed or rejected
+
+> **Important**
+>
+> - FIRCs and FIRAs are generated **strictly based on the Purpose Code selected at the time of processing**
+> - They **cannot be edited, revised, or reissued**
+> - Incorrect selection may result in **RFIs, delays, or rejection** by banking partners
+
+---
+
+## Purpose Codes in Tazapay
+
+- Tazapay provides predefined **Tazapay Purpose Codes (`PYRxxx`)**
+- Each code is mapped to a valid **RBI Purpose Code**
+- Mappings include restrictions based on:
+  - **Remitter type**
+  - **Beneficiary type** (individual or corporate)
+
+For the complete list, see  
+[Purpose Codes Valid for India Payouts](https://docs.tazapay.com/docs/purpose-codes-valid-for-india-payouts)
+
+---
+
+## Best Practices
+
+To ensure smooth and compliant payouts:
+
+- Clearly identify the **nature of the transaction**
+  - Goods, software, services, taxes, etc.
+- Select the correct **Tazapay Purpose Code (`PYRxxx`)**
+- Avoid generic or approximate selections
+- Verify **remitter and beneficiary eligibility**
+  - Some codes are restricted to individuals or corporates only
+
+---
+
+## Key Compliance Notes
+
+- FIRAs are generated **only once**
+- **No edits or re-issuance** are permitted after processing
+- Incorrect purpose codes may lead to:
+  - Requests for Information (RFIs)
+  - Processing delays
+  - Payment rejection

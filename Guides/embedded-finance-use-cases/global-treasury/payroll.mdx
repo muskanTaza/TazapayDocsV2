@@ -1,0 +1,90 @@
+---
+title: "Global Payroll"
+description: "Pay employees across multiple countries from a single treasury using Tazapay"
+---
+
+## Overview
+
+Many global employers are headquartered in one country but have teams across regions. Employees may prefer to be paid in local currencies, while employers may receive funds in stablecoins or a single base currency.
+
+Tazapay simplifies this by enabling you to hold funds centrally, convert currencies only when needed, and execute payouts through local payment rails.
+
+## How Tazapay Helps
+
+<CardGroup cols={2}>
+  <Card title="Central Treasury" icon="building-columns">
+    Collect funds into a central Tazapay balance
+  </Card>
+  <Card title="Multi-Currency Holdings" icon="coins">
+    Hold funds in multiple currencies
+  </Card>
+  <Card title="On-Demand FX" icon="arrows-rotate">
+    FX is applied only when needed
+  </Card>
+  <Card title="Local Rails" icon="bank">
+    Execute payouts using local bank transfers or supported rails
+  </Card>
+</CardGroup>
+
+## Integration Flow
+
+<Steps>
+  <Step title="Fund Your Account">
+    Employer funds their Tazapay account via bank transfer or supported funding method.
+  </Step>
+  <Step title="Credit Holding Balances">
+    Funds are credited to your holding balances in your preferred currencies.
+  </Step>
+  <Step title="Initiate Payouts">
+    Employer initiates payouts to employee bank accounts via API or dashboard.
+  </Step>
+  <Step title="Tazapay Handles the Rest">
+    Tazapay manages FX conversion, local payment rails, and settlement.
+  </Step>
+  <Step title="Track and Reconcile">
+    Monitor payout status and reconciliation via APIs and dashboard.
+  </Step>
+</Steps>
+
+## APIs Involved
+
+| Purpose | API | Endpoint |
+| --- | --- | --- |
+| View holding balances | Fetch Balances | `/v3/balances` |
+| Create payout | Create Payout | `/v3/payouts` |
+| Track payout status | Fetch Payout | `/v3/payouts/{id}` |
+| Reconciliation | Fetch Balance Transactions | `/v3/balance_transaction/{id}` |
+| Event handling | Webhooks | `payout.*` |
+
+## Example
+
+<Info>
+A US-based employer receives funds in USDC, holds balances in USD and EUR, and pays employees in INR, EUR, and USD.
+</Info>
+
+### Employer Setup
+
+- **Funding currency:** USDC
+- **Holding currencies:** USD, EUR
+
+### Employee Payouts
+
+<CardGroup cols={3}>
+  <Card title="India" icon="indian-rupee-sign">
+    INR via local bank transfer
+  </Card>
+  <Card title="Europe" icon="euro-sign">
+    EUR via SEPA
+  </Card>
+  <Card title="United States" icon="dollar-sign">
+    USD via ACH
+  </Card>
+</CardGroup>
+
+### What Tazapay Handles
+
+<Check>Currency conversion at competitive rates</Check>
+
+<Check>Local payout networks (IMPS, SEPA, ACH, etc.)</Check>
+
+<Check>Compliance and reconciliation</Check>

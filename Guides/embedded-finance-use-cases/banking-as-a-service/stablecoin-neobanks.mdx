@@ -1,0 +1,97 @@
+---
+title: "Stablecoin-Native Platforms"
+description: "Platforms operating primarily with stablecoins but requiring fiat payouts"
+---
+
+Stablecoin-native businesses often need to bridge crypto and fiat systems, especially for payroll, vendor payments, or off-ramps.
+
+## How Tazapay Helps
+
+<CardGroup cols={2}>
+  <Card title="Stablecoin Collections" icon="coins">
+    Accepts stablecoin collections (e.g., USDC, USDT)
+  </Card>
+  <Card title="Fiat Conversion" icon="arrows-rotate">
+    Converts stablecoins to fiat where required
+  </Card>
+  <Card title="Global Payouts" icon="globe">
+    Supports local fiat payouts across countries
+  </Card>
+  <Card title="Simplified Off-Ramps" icon="route">
+    Reduces reliance on multiple off-ramp providers
+  </Card>
+</CardGroup>
+
+## Integration Flow
+
+```mermaid
+flowchart TD
+    A[Employee Submits Reimbursement] --> B[Manager Review & Policy Check]
+    B --> C{Approved?}
+    C -->|Yes| D[Accounting Validation & Expense Mapping]
+    C -->|No| E[Request Rejected\nEmployee Notified]
+    E --> F[Option to Resubmit]
+    D --> G[Convert to Stablecoin if Required]
+    G --> H[Process Payment via Crypto Rails / Wallet]
+    H --> I[On-chain Settlement / Ledger Update]
+    I --> J[Employee Notified & Record Updated]
+
+    style A fill:#e8f4e8,stroke:#333
+    style B fill:#e8f4e8,stroke:#333
+    style C fill:#fff9e6,stroke:#333
+    style D fill:#e6f2ff,stroke:#333
+    style E fill:#ffe6e6,stroke:#333
+    style F fill:#fff9e6,stroke:#333
+    style G fill:#e6f2ff,stroke:#333
+    style H fill:#e6d9f2,stroke:#333
+    style I fill:#d9f2e6,stroke:#333
+    style J fill:#e8f4e8,stroke:#333
+```
+
+<Steps>
+  <Step title="Collect Stablecoins">
+    Platform collects funds in stablecoins
+  </Step>
+  <Step title="Credit Balance">
+    Funds are credited to the platform's Tazapay balance
+  </Step>
+  <Step title="Convert to Fiat">
+    Stablecoins are converted to fiat when required
+  </Step>
+  <Step title="Initiate Payouts">
+    Platform initiates payouts to beneficiary bank accounts
+  </Step>
+  <Step title="Settlement">
+    Tazapay handles FX, local rails, and settlement
+  </Step>
+  <Step title="Track & Reconcile">
+    Payout status and reconciliation are tracked via APIs and dashboard
+  </Step>
+</Steps>
+
+## APIs Involved
+
+| Purpose | API | Endpoint |
+|---------|-----|----------|
+| View holding balances | Fetch Balances | `/v3/balances` |
+| Stablecoin to fiat conversion | FX / Conversion APIs | `/v3/fx` |
+| Create payout | Create Payout | `/v3/payouts` |
+| Track payout status | Fetch Payout | `/v3/payouts/{id}` |
+| Reconciliation | Fetch Balance Transactions | `/v3/balance_transaction/{id}` |
+| Event handling | Webhooks | `payout.*` |
+
+## Example
+
+<Card title="Stablecoin Payroll Platform" icon="building">
+  A stablecoin payroll platform:
+  - Receives funds in USDC
+  - Uses Tazapay to convert and pay employees in local fiat
+  - Offers a seamless crypto-to-fiat experience to end users
+</Card>
+
+<Info>
+**Tazapay handles:**
+- Stablecoin to fiat conversion
+- Local payout networks
+- Compliance and reconciliation
+</Info>

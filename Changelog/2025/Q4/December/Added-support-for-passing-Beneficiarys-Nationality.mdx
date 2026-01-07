@@ -1,0 +1,53 @@
+---
+title: "Added Support For Passing Beneficiarys Nationality"
+---
+## Applicability
+
+**When:** Creating or updating beneficiary objects.
+
+## Field Added
+
+* **nationality** (string; ISO 3166-1 alpha-2 country code)
+
+### Description
+
+* Optional field
+* Helps reduce sanction screening false positives
+* Accepts 2-letter country codes (e.g., `US`, `GB`, `IN`, `FR`, `SG`)
+
+## Changes
+
+### Beneficiary Management Endpoints
+
+Beneficiary endpoints now accept and return the `nationality` field.
+
+Updated request/response schemas for:
+
+* `POST /v3/beneficiary`
+* `GET /v3/beneficiary/{id}`
+* `PUT /v3/beneficiary/{id}`
+
+**Responses now include `nationality` in the beneficiary object.**
+
+### Payout Endpoints
+
+Payout endpoints now include `nationality` inside `beneficiary_details`.
+
+Updated response schemas for:
+
+* `POST /v3/payout` (when creating with inline beneficiary)
+* `GET /v3/payout/{id}`
+* `PUT /v3/payout/{id}`
+
+**Payout `beneficiary_details` now includes:**
+
+* `beneficiary_details.date_of_birth`
+* `beneficiary_details.nationality`
+
+## Validation Rules
+
+* `nationality` must be a valid 2-letter **ISO 3166-1 alpha-2** country code  
+  (e.g., `US`, `GB`, `IN`, `FR`)
+* Field is **optional** — not required for beneficiary creation or payout processing
+* System automatically normalizes the value to **uppercase**
+* A validation error is returned if an invalid country code is provided

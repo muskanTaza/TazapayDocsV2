@@ -1,0 +1,43 @@
+---
+title: "Overview"
+description: "How Balances Work"
+---
+
+Tazapay allows you to hold funds in multiple currencies within your account. 
+
+Each Tazapay account supports:
+- One primary holding currency
+- Multiple enabled holding currencies
+
+Funds received into your account are credited to holding balances based on the following currency allocation rules. These rules govern how incoming collections and outgoing payouts interact with your enabled holding currencies.
+
+# Holding Currency Allocation rules
+
+## Incoming Funds (Collects)
+
+When a collection is completed, funds are credited to your account as follows:
+1. If the collect currency matches one of your enabled holding (balance) currencies, the funds are credited directly to the corresponding currency balance.
+2. If the collect currency does not match any enabled holding (balance) currency, the funds are automatically converted into your primary holding currency and credited to that balance.
+
+### Example
+
+| Incoming Currency | Enabled Holding Currencies | Primary Holding Currency | Result                     |
+|-------------------|----------------------------|--------------------------|----------------------------|
+| USD               | USD, EUR                   | USD                      | Credited to USD balance    |
+| EUR               | USD, EUR                   | USD                      | Credited to EUR balance    |
+| JPY               | USD, EUR                   | USD                      | Auto-converted to USD      |
+| GBP               | GBP only                   | GBP                      | Credited to GBP balance    |
+
+## Outgoing Funds (Payouts)
+
+When a payout is initiated, funds are debited from your account as follows:
+1. If the payout currency matches one of your enabled holding currencies, the payout is funded directly from that holding balance.
+2. If the payout currency does not match any enabled holding currency, the payout is funded from the primary holding currency, with an automatic FX conversion applied at the time of payout execution.
+
+### Example
+| Payout Currency | Enabled Holding Currencies | Primary Holding Currency | Result                      |
+|-----------------|----------------------------|--------------------------|-----------------------------|
+| USD             | USD, EUR                   | USD                      | Debited from USD balance    |
+| EUR             | USD, EUR                   | USD                      | Debited from EUR balance    |
+| JPY             | USD, EUR                   | USD                      | Auto-converted from USD     |
+| GBP             | GBP only                   | GBP                      | Debited from GBP balance    |
