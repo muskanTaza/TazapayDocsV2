@@ -43,7 +43,7 @@
                   {
                     "group": "Fetch Collect Details",
                     "pages": [
-                      "Money-MovemMoney-Movementent/global-collection-accounts/receiving-funds/fetch-collect-details/using-dashboard",
+                      "Money-Movementent/global-collection-accounts/receiving-funds/fetch-collect-details/using-dashboard",
                       "Money-Movement/global-collection-accounts/receiving-funds/fetch-collect-details/using-api"
                     ]
                   },
