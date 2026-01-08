@@ -16,45 +16,45 @@
         "href": "https://dashboard.tazapay.com/"
       }
     ],
-    "pages": ["Guides/start-here/get-started-with-tazapay"],
+    "pages": ["Money-Movement/start-here/get-started-with-tazapay"],
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Money Movement",
         "icon": "book-open",
         "groups": [
           {
             "group": "Start Here",
             "pages": [
-              "Guides/start-here/get-started-with-tazapay",
-              "Guides/start-here/onboarding-requirements",
-              "Guides/start-here/managing-your-team",
-              "Guides/start-here/multifactor-authentication"
+              "Money-Movement/start-here/get-started-with-tazapay",
+              "Money-Movement/start-here/onboarding-requirements",
+              "Money-Movement/start-here/managing-your-team",
+              "Money-Movement/start-here/multifactor-authentication"
             ]
           },
           {
             "group": "Global Collections Accounts",
             "pages": [
-              "Guides/global-collection-accounts/overview",
-              "Guides/global-collection-accounts/configuring-virtual-accounts-and-stablecoin-wallets",
-              "Guides/global-collection-accounts/viewing-virtual-accounts-and-stablecoin-wallets",
+              "Money-Movement/global-collection-accounts/overview",
+              "Money-Movement/global-collection-accounts/configuring-virtual-accounts-and-stablecoin-wallets",
+              "Money-Movement/global-collection-accounts/viewing-virtual-accounts-and-stablecoin-wallets",
               {
                 "group": "Receiving Funds",
                 "pages": [
                   {
                     "group": "Fetch Collect Details",
                     "pages": [
-                      "Guides/global-collection-accounts/receiving-funds/fetch-collect-details/using-dashboard",
-                      "Guides/global-collection-accounts/receiving-funds/fetch-collect-details/using-api"
+                      "Money-Movementent/global-collection-accounts/receiving-funds/fetch-collect-details/using-dashboard",
+                      "Money-Movement/global-collection-accounts/receiving-funds/fetch-collect-details/using-api"
                     ]
                   },
-                  "Guides/global-collection-accounts/receiving-funds/subscribe-to-webhook-events"
+                  "Money-Movement/global-collection-accounts/receiving-funds/subscribe-to-webhook-events"
                 ]
               },
               {
                 "group": "Coverage",
                 "pages": [
-                  "Guides/global-collection-accounts/coverage/virtual-accounts",
-                  "Guides/global-collection-accounts/coverage/stablecoins"
+                  "Money-Movement/global-collection-accounts/coverage/virtual-accounts",
+                  "Money-Movement/global-collection-accounts/coverage/stablecoins"
                 ]
               }
             ]
@@ -62,31 +62,31 @@
           {
             "group": "Viewing Balances",
             "pages": [
-              "Guides/viewing-balances/overview",
-              "Guides/viewing-balances/viewing",
-              "Guides/viewing-balances/enabling-additional-balance-currencies",
-              "Guides/viewing-balances/fx-transactions"
+              "Money-Movement/viewing-balances/overview",
+              "Money-Movement/viewing-balances/viewing",
+              "Money-Movement/viewing-balances/enabling-additional-balance-currencies",
+              "Money-Movement/viewing-balances/fx-transactions"
             ]
           },
           {
             "group": "Payouts",
             "pages": [
-              "Guides/payouts/overview",
-              "Guides/payouts/coverage",
-              "Guides/payouts/purpose",
-              "Guides/payouts/fund-transfer-networks",
+              "Money-Movement/payouts/overview",
+              "Money-Movement/payouts/coverage",
+              "Money-Movement/payouts/purpose",
+              "Money-Movement/payouts/fund-transfer-networks",
               {
                 "group": "Managing FX",
                 "pages": [
-                  "Guides/payouts/managing-fx/overview",
+                  "Money-Movement/payouts/managing-fx/overview",
                   {
                     "group": "Locking Exchange Rates for a Payout",
                     "pages": [
-                      "Guides/payouts/managing-fx/locking-exchange-rates-for-a-payout/for-the-funding-time-duration",
-                      "Guides/payouts/managing-fx/locking-exchange-rates-for-a-payout/for-the-time-duration-between-maker-checker-flow"
+                      "Money-Movement/payouts/managing-fx/locking-exchange-rates-for-a-payout/for-the-funding-time-duration",
+                      "Money-Movement/payouts/managing-fx/locking-exchange-rates-for-a-payout/for-the-time-duration-between-maker-checker-flow"
                     ]
                   },
-                  "Guides/payouts/managing-fx/creating-a-quote-and-then-attaching-it-to-a-payout"
+                  "Money-Movement/payouts/managing-fx/creating-a-quote-and-then-attaching-it-to-a-payout"
                 ]
               },
               {
@@ -95,49 +95,49 @@
                   {
                     "group": "Brazil (BRL)",
                     "pages": [
-                      "Guides/payouts/local-guides/Brazil (BRL)/pix-key"
+                      "Money-Movement/payouts/local-guides/Brazil (BRL)/pix-key"
                     ]
                   },
                   {
                     "group": "China (CNY)",
-                    "pages": ["Guides/payouts/local-guides/China (CNY)/cnaps"]
+                    "pages": ["Money-Movement/payouts/local-guides/China (CNY)/cnaps"]
                   },
                   {
                     "group": "India (INR)",
                     "pages": [
-                      "Guides/payouts/local-guides/India (INR)/fira",
-                      "Guides/payouts/local-guides/India (INR)/firc",
-                      "Guides/payouts/local-guides/India (INR)/supported-purpose-codes"
+                      "Money-Movement/payouts/local-guides/India (INR)/fira",
+                      "Money-Movement/payouts/local-guides/India (INR)/firc",
+                      "Money-Movement/payouts/local-guides/India (INR)/supported-purpose-codes"
                     ]
                   },
                   {
                     "group": "Indonesia (IDR)",
                     "pages": [
-                      "Guides/payouts/local-guides/Indonesia (IDR)/supported-banks"
+                      "Money-Movement/payouts/local-guides/Indonesia (IDR)/supported-banks"
                     ]
                   },
                   {
                     "group": "Malaysia (MYR)",
                     "pages": [
-                      "Guides/payouts/local-guides/Malaysia (MYR)/supported-banks"
+                      "Money-Movement/payouts/local-guides/Malaysia (MYR)/supported-banks"
                     ]
                   },
                   {
                     "group": "Phillippines (PHP)",
                     "pages": [
-                      "Guides/payouts/local-guides/Phillippines (PHP)/supported-banks"
+                      "Money-Movement/payouts/local-guides/Phillippines (PHP)/supported-banks"
                     ]
                   },
                   {
                     "group": "Thailand (THB)",
                     "pages": [
-                      "Guides/payouts/local-guides/Thailand (THB)/supported-banks"
+                      "Money-Movement/payouts/local-guides/Thailand (THB)/supported-banks"
                     ]
                   },
                   {
                     "group": "Vietnam (VND)",
                     "pages": [
-                      "Guides/payouts/local-guides/Vietnam (VND)/supported-banks"
+                      "Money-Movement/payouts/local-guides/Vietnam (VND)/supported-banks"
                     ]
                   }
                 ]
@@ -145,10 +145,10 @@
               {
                 "group": "Reversals",
                 "pages": [
-                  "Guides/payouts/reversals/overview",
-                  "Guides/payouts/reversals/reconciliation",
-                  "Guides/payouts/reversals/viewing-reversed-payouts",
-                  "Guides/payouts/reversals/webhooks"
+                  "Money-Movement/payouts/reversals/overview",
+                  "Money-Movement/payouts/reversals/reconciliation",
+                  "Money-Movement/payouts/reversals/viewing-reversed-payouts",
+                  "Money-Movement/payouts/reversals/webhooks"
                 ]
               }
             ]
@@ -156,41 +156,41 @@
           {
             "group": "Connected Accounts",
             "pages": [
-              "Guides/connected-accounts/overview",
-              "Guides/connected-accounts/how-connected-accounts-work",
-              "Guides/connected-accounts/creating-sub-accounts",
-              "Guides/connected-accounts/creating-entities",
-              "Guides/connected-accounts/simplified-entity-creation",
-              "Guides/connected-accounts/full-entity-creation"
+              "Money-Movement/connected-accounts/overview",
+              "Money-Movement/connected-accounts/how-connected-accounts-work",
+              "Money-Movement/connected-accounts/creating-sub-accounts",
+              "Money-Movement/connected-accounts/creating-entities",
+              "Money-Movement/connected-accounts/simplified-entity-creation",
+              "Money-Movement/connected-accounts/full-entity-creation"
             ]
           },
           {
             "group": "Integration Guides",
             "pages": [
-              "Guides/integration-guides/payouts-on-behalf-of",
-              "Guides/integration-guides/collections-on-behalf-of",
-              "Guides/integration-guides/global-payout-network",
-              "Guides/integration-guides/funding-a-payout-after-creation"
+              "Money-Movement/integration-guides/payouts-on-behalf-of",
+              "Money-Movement/integration-guides/collections-on-behalf-of",
+              "Money-Movement/integration-guides/global-payout-network",
+              "Money-Movement/integration-guides/funding-a-payout-after-creation"
             ]
           },
           {
             "group": "Embedded Finance Use Cases",
             "pages": [
-              "Guides/embedded-finance-use-cases/overview",
+              "Money-Movement/embedded-finance-use-cases/overview",
               {
                 "group": "Global Treasury",
                 "pages": [
-                  "Guides/embedded-finance-use-cases/global-treasury/overview",
-                  "Guides/embedded-finance-use-cases/global-treasury/payroll",
-                  "Guides/embedded-finance-use-cases/global-treasury/vendor-payouts",
-                  "Guides/embedded-finance-use-cases/global-treasury/employee-reimbursements"
+                  "Money-Movement/embedded-finance-use-cases/global-treasury/overview",
+                  "Money-Movement/embedded-finance-use-cases/global-treasury/payroll",
+                  "Money-Movement/embedded-finance-use-cases/global-treasury/vendor-payouts",
+                  "Money-Movement/embedded-finance-use-cases/global-treasury/employee-reimbursements"
                 ]
               },
               {
                 "group": "Banking as a Service",
                 "pages": [
-                  "Guides/embedded-finance-use-cases/banking-as-a-service/stablecoin-neobanks",
-                  "Guides/embedded-finance-use-cases/banking-as-a-service/fintechs"
+                  "Money-Movement/embedded-finance-use-cases/banking-as-a-service/stablecoin-neobanks",
+                  "Money-Movement/embedded-finance-use-cases/banking-as-a-service/fintechs"
                 ]
               }
             ]
@@ -198,16 +198,16 @@
           {
             "group": "Transfers Within Tazapay",
             "pages": [
-              "Guides/transfers-within-tazapay/overview",
-              "Guides/transfers-within-tazapay/configuring-an-accounts-deposit-address",
+              "Money-Movement/transfers-within-tazapay/overview",
+              "Money-Movement/transfers-within-tazapay/configuring-an-accounts-deposit-address",
               {
                 "group": "Making a Payment to a Deposit Address",
                 "pages": [
-                  "Guides/transfers-within-tazapay/making-a-payment-to-a-deposit-address/using-dashboard",
-                  "Guides/transfers-within-tazapay/making-a-payment-to-a-deposit-address/using-api"
+                  "Money-Movement/transfers-within-tazapay/making-a-payment-to-a-deposit-address/using-dashboard",
+                  "Money-Movement/transfers-within-tazapay/making-a-payment-to-a-deposit-address/using-api"
                 ]
               },
-              "Guides/transfers-within-tazapay/viewing-an-incoming-payment"
+              "Money-Movement/transfers-within-tazapay/viewing-an-incoming-payment"
             ]
           },
           {
@@ -216,10 +216,24 @@
               {
                 "group": "Onboarding Requirements",
                 "pages": [
-                  "Guides/appendix/onboarding-requirements/onboarding-requirements-individuals",
-                  "Guides/appendix/onboarding-requirements/onboarding-requirements-businesses"
+                  "Money-Movement/appendix/onboarding-requirements/onboarding-requirements-individuals",
+                  "Money-Movement/appendix/onboarding-requirements/onboarding-requirements-businesses"
                 ]
               }
+            ]
+          }
+        ]
+      },
+            {
+        "tab": "Checkout",
+        "icon": "shopping-cart",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "Checkout/Introduction-to-Checkout",
+              "Checkout/How-Checkout-works",
+              "Checkout/Managing-Payment-Methods"
             ]
           }
         ]
