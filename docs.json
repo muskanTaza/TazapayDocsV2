@@ -693,6 +693,22 @@
         "icon": "rocket-launch",
         "groups": [
           {
+            "group": "2026",
+            "pages": [
+              {
+                "group": "Q1",
+                "pages": [
+                  {
+                    "group": "January",
+                    "pages": [
+                      "Product-Releases/2026/Q1/January/shopify-plugin-upgrade"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "group": "2025",
             "pages": [
               {
