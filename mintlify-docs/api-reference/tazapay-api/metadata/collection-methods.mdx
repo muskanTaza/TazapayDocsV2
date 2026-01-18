@@ -1,0 +1,22 @@
+---
+title: "Collection Methods Fields"
+---
+
+| Field | Subfield | type | Description |
+| :--- | :--- | :--- | :--- |
+| amount |  | integer | Amount in invoice currency |
+| customer\_country |  | string | ISO 3166 standard alpha-2 code. eg: SG, IN, US, etc. |
+| invoice\_currency |  | string | Invoice currency (in uppercase, iso-4217 standard) |
+| payment\_methods |  | array of json | List of payment methods available for the country-currency combination |
+|  | amount | integer | Amount in charge currency |
+|  | banks | array of string | Banks if any for the customer to select. This is specific to a payment method |
+|  | currency | string | Charge currency (the currency in which the customer is charged) |
+|  | exchange\_rate | float | Exchange rate from invoice currency to charge currency |
+|  | experience\_type | enum | `native`, `redirect_with_input`, `redirect` |
+|  | family | enum | Family in which the payment method is characterised (`real_time_payment`, `card`, `payment_initiation_service`, `wallet`, `local_bank_transfer`, `wire_transfer`, `internet_banking`, `voucher`) |
+|  | group | enum | `card`, `apm`, `lbt`, `wire` |
+|  | logo\_url | array of string | Logos for the payment method |
+|  | type | enum | Payment Method type. Unique identifier representing a payment method. This is the string that you can use to specify payment methods for a checkout / escrow session. |
+|  | name | string | Customer display name for the payment method. Useful to call the payment method with this name on your checkout screen. |
+|  | notification\_type | enum | Whether the payment is confirmed instantaneously with the customer in the payment flow. `synchronous` or `asynchronous` |
+|  | transaction\_fee | integer | Fees applicable for the payment method |

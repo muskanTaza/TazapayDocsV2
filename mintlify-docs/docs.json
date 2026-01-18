@@ -1,0 +1,199 @@
+  {
+    "$schema": "https://mintlify.com/docs.json",
+    "theme": "mint",
+    "name": "Tazapay",
+    "colors": {
+    "primary": "#0b3845",
+    "light": "#1c96c3",
+    "dark": "#0b3845"
+    },
+    "favicon": "/favicon.png",
+
+    "background": {
+      "decoration": "gradient"
+    },
+    "fonts": {
+      "heading": {
+        "family": "Macan",
+        "source": "https://cdn.prod.website-files.com/6598f4892384e3889d845a2d/6740887c6ea387fab16c68c3_Macan%20Semibold.woff2",
+        "format": "woff2"
+      }
+    },
+    "navigation": {
+      "tabs": [
+        {
+          "tab": "API Reference",
+          "icon": "rocket",
+          "groups": [
+            {
+              "group": "Collect",
+              "icon": "envelope-open-dollar",
+              "pages": [
+                "api-reference/tazapay-api/collect/collects",
+                "api-reference/tazapay-api/collect/fetch-collect",
+                "api-reference/tazapay-api/collect/collect-webhook"
+              ]
+            },
+            {
+              "group": "Payout",
+              "icon": "pen-field",
+              "pages": [
+                "api-reference/tazapay-api/payout/payout",
+                "api-reference/tazapay-api/payout/create-payout",
+                "api-reference/tazapay-api/payout/fetch-payout",
+                "api-reference/tazapay-api/payout/update-payout",
+                "api-reference/tazapay-api/payout/fund-payout",
+                "api-reference/tazapay-api/payout/create-payout-quote",
+                "api-reference/tazapay-api/payout/confirm-payout",
+                "api-reference/tazapay-api/payout/simulating-payouts-on-test-environment-sandbox",
+                "api-reference/tazapay-api/payout/payout-webhooks"
+              ]
+            },
+            {
+              "group": "Collection Account",
+              "icon": "wallet",
+              "pages": [
+                "api-reference/tazapay-api/collection-account/global-collection-account-object",
+                "api-reference/tazapay-api/collection-account/collection-account-webhooks"
+              ]
+            },
+            {
+              "group": "Metadata",
+              "icon": "database",
+              "pages": [
+                {
+                  "group": "Collection Methods",
+                  "pages": [
+                    "api-reference/tazapay-api/metadata/collection-methods-api",
+                    "api-reference/tazapay-api/metadata/collection-methods"
+                  ]
+                },
+              "api-reference/tazapay-api/metadata/fetch-external-account-details",
+              "api-reference/tazapay-api/metadata/fetch-exchange-rates",
+              "api-reference/tazapay-api/metadata/payout-bank"
+              ]
+            },
+            {
+              "group": "Document",
+              "icon": "paperclip",
+              "pages": [
+                "api-reference/tazapay-api/document/document",
+                "api-reference/tazapay-api/document/upload-document-to-tazapay",
+                "api-reference/tazapay-api/document/upload-document"
+              ]
+            },
+            {
+              "group": "Entity",
+              "icon": "users",
+              "pages": [
+                "api-reference/tazapay-api/entity/entity",
+                "api-reference/tazapay-api/entity/create-entity",
+                "api-reference/tazapay-api/entity/submit-entity-business",
+                "api-reference/tazapay-api/entity/fetch-entity",
+                "api-reference/tazapay-api/entity/update-entity",
+                "api-reference/tazapay-api/entity/list-entity"
+              ]
+            },
+            {
+              "group": "Balance",
+              "icon": "scale-balanced",
+              "pages": [
+                "api-reference/tazapay-api/balance/balance",
+                "api-reference/tazapay-api/balance/fetch-balance"
+              ]
+            },
+            {
+              "group": "Balance Transaction",
+              "icon": "clock-rotate-left",
+              "pages": [
+                "api-reference/tazapay-api/balance-transaction/balance-transaction",
+                "api-reference/tazapay-api/balance-transaction/fetch-balance-transaction",
+                "api-reference/tazapay-api/balance-transaction/list-balance-transactions"
+              ]
+            },
+            {
+              "group": "Beneficiary",
+              "icon": "id-badge",
+              "pages": [
+                "api-reference/tazapay-api/beneficiary/beneficiary",
+                "api-reference/tazapay-api/beneficiary/create-beneficiary",
+                "api-reference/tazapay-api/beneficiary/fetch-beneficiary",
+                "api-reference/tazapay-api/beneficiary/update-beneficiary",
+                "api-reference/tazapay-api/beneficiary/beneficiary-webhooks"
+              ]
+            },
+            {
+              "group": "Lightning Invoice",
+              "icon": "bolt",
+              "pages": [
+                "api-reference/tazapay-api/lightning-invoice/lightning-invoice",
+                "api-reference/tazapay-api/lightning-invoice/create-a-lightning-invoice",
+                "api-reference/tazapay-api/lightning-invoice/fetch-a-lightning-invoice",
+                "api-reference/tazapay-api/lightning-invoice/update-a-lightning-invoice"
+              ]
+            },
+            {
+              "group": "Common Object Schemas",
+              "icon": "book",
+              "pages": [
+                "api-reference/tazapay-api/common-object-schemas/fx-transaction-object",
+                "api-reference/tazapay-api/common-object-schemas/phone-object",
+                "api-reference/tazapay-api/common-object-schemas/address-object"
+
+              ] 
+            }    
+          ]
+        }
+      ],
+      "global": {
+        "anchors": [
+          {
+            "anchor": "Contact Us",
+            "href": "https://tazapay.com/contact-us",
+            "icon": "headset"
+          },
+          {
+            "anchor": "Blog",
+            "href": "https://tazapay.com/blog",
+            "icon": "newspaper"
+          }
+        ]
+      }
+    },
+    "logo": {
+      "light": "/logo/light.svg",
+      "dark": "/logo/dark.svg",
+      "href": "https://tazapay.com/"
+    },
+    "navbar": {
+      "links": [
+        {
+          "label": "Product Feedback",
+          "href": "https://docs.google.com/forms/d/1WQFxbSLoRRUSIiYFa2wCI_Nu__X8ZF9_wjBrwzHWga4/edit"
+        }
+      ],
+      "primary": {
+        "type": "button",
+        "label": "Login",
+        "href": "https://dashboard.tazapay.com/?_gl=1*1jz63z5*_gcl_au*MTI5ODk5MTkuMTc2NzU4ODYyMw..*_ga*MjAzNjI0MDI2NC4xNzY3NTg4NjIz*_ga_19T6M4L6SX*czE3Njg1NDA1ODIkbzYkZzEkdDE3Njg1NDgxNDgkajQ5JGwwJGgw"
+      }
+    },
+    "contextual": {
+      "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
+    },
+    "footer": {
+      "socials": {
+        "facebook": "https://www.facebook.com/Tazapay",
+        "linkedin": "https://www.linkedin.com/company/tazapay"
+      }
+    }
+  }
