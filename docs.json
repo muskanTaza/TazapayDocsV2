@@ -43,7 +43,7 @@
                   {
                     "group": "Fetch Collect Details",
                     "pages": [
-                      "Global-Money-Movementent/global-collection-accounts/receiving-funds/fetch-collect-details/using-dashboard",
+                      "Global-Money-Movement/global-collection-accounts/receiving-funds/fetch-collect-details/using-dashboard",
                       "Global-Money-Movement/global-collection-accounts/receiving-funds/fetch-collect-details/using-api"
                     ]
                   },
@@ -288,13 +288,6 @@
               "pages": [
                 "Cards-and-LPMs/Core-Concepts/Payin/Overview",
                 "Cards-and-LPMs/Core-Concepts/Payin/Payin-states"
-              ]
-            },
-            {
-              "group": "Escrow",
-              "pages": [
-                "Cards-and-LPMs/Core-Concepts/Escrow/Overview",
-                "Cards-and-LPMs/Core-Concepts/Escrow/Escrow-states"
               ]
             },
             {
