@@ -16,45 +16,45 @@
         "href": "https://dashboard.tazapay.com/"
       }
     ],
-    "pages": ["Money-Movement/start-here/get-started-with-tazapay"],
+    "pages": ["Global-Money-Movement/start-here/get-started-with-tazapay"],
     "tabs": [
       {
-        "tab": "Money Movement",
+        "tab": "Global Money Movement",
         "icon": "book-open",
         "groups": [
           {
             "group": "Start Here",
             "pages": [
-              "Money-Movement/start-here/get-started-with-tazapay",
-              "Money-Movement/start-here/onboarding-requirements",
-              "Money-Movement/start-here/managing-your-team",
-              "Money-Movement/start-here/multifactor-authentication"
+              "Global-Money-Movement/start-here/get-started-with-tazapay",
+              "Global-Money-Movement/start-here/onboarding-requirements",
+              "Global-Money-Movement/start-here/managing-your-team",
+              "Global-Money-Movement/start-here/multifactor-authentication"
             ]
           },
           {
             "group": "Global Collections Accounts",
             "pages": [
-              "Money-Movement/global-collection-accounts/overview",
-              "Money-Movement/global-collection-accounts/configuring-virtual-accounts-and-stablecoin-wallets",
-              "Money-Movement/global-collection-accounts/viewing-virtual-accounts-and-stablecoin-wallets",
+              "Global-Money-Movement/global-collection-accounts/overview",
+              "Global-Money-Movement/global-collection-accounts/configuring-virtual-accounts-and-stablecoin-wallets",
+              "Global-Money-Movement/global-collection-accounts/viewing-virtual-accounts-and-stablecoin-wallets",
               {
                 "group": "Receiving Funds",
                 "pages": [
                   {
                     "group": "Fetch Collect Details",
                     "pages": [
-                      "Money-Movementent/global-collection-accounts/receiving-funds/fetch-collect-details/using-dashboard",
-                      "Money-Movement/global-collection-accounts/receiving-funds/fetch-collect-details/using-api"
+                      "Global-Money-Movementent/global-collection-accounts/receiving-funds/fetch-collect-details/using-dashboard",
+                      "Global-Money-Movement/global-collection-accounts/receiving-funds/fetch-collect-details/using-api"
                     ]
                   },
-                  "Money-Movement/global-collection-accounts/receiving-funds/subscribe-to-webhook-events"
+                  "Global-Money-Movement/global-collection-accounts/receiving-funds/subscribe-to-webhook-events"
                 ]
               },
               {
                 "group": "Coverage",
                 "pages": [
-                  "Money-Movement/global-collection-accounts/coverage/virtual-accounts",
-                  "Money-Movement/global-collection-accounts/coverage/stablecoins"
+                  "Global-Money-Movement/global-collection-accounts/coverage/virtual-accounts",
+                  "Global-Money-Movement/global-collection-accounts/coverage/stablecoins"
                 ]
               }
             ]
@@ -62,31 +62,31 @@
           {
             "group": "Viewing Balances",
             "pages": [
-              "Money-Movement/viewing-balances/overview",
-              "Money-Movement/viewing-balances/viewing",
-              "Money-Movement/viewing-balances/enabling-additional-balance-currencies",
-              "Money-Movement/viewing-balances/fx-transactions"
+              "Global-Money-Movement/viewing-balances/overview",
+              "Global-Money-Movement/viewing-balances/viewing",
+              "Global-Money-Movement/viewing-balances/enabling-additional-balance-currencies",
+              "Global-Money-Movement/viewing-balances/fx-transactions"
             ]
           },
           {
             "group": "Payouts",
             "pages": [
-              "Money-Movement/payouts/overview",
-              "Money-Movement/payouts/coverage",
-              "Money-Movement/payouts/purpose",
-              "Money-Movement/payouts/fund-transfer-networks",
+              "Global-Money-Movement/payouts/overview",
+              "Global-Money-Movement/payouts/coverage",
+              "Global-Money-Movement/payouts/purpose",
+              "Global-Money-Movement/payouts/fund-transfer-networks",
               {
                 "group": "Managing FX",
                 "pages": [
-                  "Money-Movement/payouts/managing-fx/overview",
+                  "Global-Money-Movement/payouts/managing-fx/overview",
                   {
                     "group": "Locking Exchange Rates for a Payout",
                     "pages": [
-                      "Money-Movement/payouts/managing-fx/locking-exchange-rates-for-a-payout/for-the-funding-time-duration",
-                      "Money-Movement/payouts/managing-fx/locking-exchange-rates-for-a-payout/for-the-time-duration-between-maker-checker-flow"
+                      "Global-Money-Movement/payouts/managing-fx/locking-exchange-rates-for-a-payout/for-the-funding-time-duration",
+                      "Global-Money-Movement/payouts/managing-fx/locking-exchange-rates-for-a-payout/for-the-time-duration-between-maker-checker-flow"
                     ]
                   },
-                  "Money-Movement/payouts/managing-fx/creating-a-quote-and-then-attaching-it-to-a-payout"
+                  "Global-Money-Movement/payouts/managing-fx/creating-a-quote-and-then-attaching-it-to-a-payout"
                 ]
               },
               {
@@ -95,49 +95,49 @@
                   {
                     "group": "Brazil (BRL)",
                     "pages": [
-                      "Money-Movement/payouts/local-guides/Brazil (BRL)/pix-key"
+                      "Global-Money-Movement/payouts/local-guides/Brazil (BRL)/pix-key"
                     ]
                   },
                   {
                     "group": "China (CNY)",
-                    "pages": ["Money-Movement/payouts/local-guides/China (CNY)/cnaps"]
+                    "pages": ["Global-Money-Movement/payouts/local-guides/China (CNY)/cnaps"]
                   },
                   {
                     "group": "India (INR)",
                     "pages": [
-                      "Money-Movement/payouts/local-guides/India (INR)/fira",
-                      "Money-Movement/payouts/local-guides/India (INR)/firc",
-                      "Money-Movement/payouts/local-guides/India (INR)/supported-purpose-codes"
+                      "Global-Money-Movement/payouts/local-guides/India (INR)/fira",
+                      "Global-Money-Movement/payouts/local-guides/India (INR)/firc",
+                      "Global-Money-Movement/payouts/local-guides/India (INR)/supported-purpose-codes"
                     ]
                   },
                   {
                     "group": "Indonesia (IDR)",
                     "pages": [
-                      "Money-Movement/payouts/local-guides/Indonesia (IDR)/supported-banks"
+                      "Global-Money-Movement/payouts/local-guides/Indonesia (IDR)/supported-banks"
                     ]
                   },
                   {
                     "group": "Malaysia (MYR)",
                     "pages": [
-                      "Money-Movement/payouts/local-guides/Malaysia (MYR)/supported-banks"
+                      "Global-Money-Movement/payouts/local-guides/Malaysia (MYR)/supported-banks"
                     ]
                   },
                   {
                     "group": "Phillippines (PHP)",
                     "pages": [
-                      "Money-Movement/payouts/local-guides/Phillippines (PHP)/supported-banks"
+                      "Global-Money-Movement/payouts/local-guides/Phillippines (PHP)/supported-banks"
                     ]
                   },
                   {
                     "group": "Thailand (THB)",
                     "pages": [
-                      "Money-Movement/payouts/local-guides/Thailand (THB)/supported-banks"
+                      "Global-Money-Movement/payouts/local-guides/Thailand (THB)/supported-banks"
                     ]
                   },
                   {
                     "group": "Vietnam (VND)",
                     "pages": [
-                      "Money-Movement/payouts/local-guides/Vietnam (VND)/supported-banks"
+                      "Global-Money-Movement/payouts/local-guides/Vietnam (VND)/supported-banks"
                     ]
                   }
                 ]
@@ -145,10 +145,10 @@
               {
                 "group": "Reversals",
                 "pages": [
-                  "Money-Movement/payouts/reversals/overview",
-                  "Money-Movement/payouts/reversals/reconciliation",
-                  "Money-Movement/payouts/reversals/viewing-reversed-payouts",
-                  "Money-Movement/payouts/reversals/webhooks"
+                  "Global-Money-Movement/payouts/reversals/overview",
+                  "Global-Money-Movement/payouts/reversals/reconciliation",
+                  "Global-Money-Movement/payouts/reversals/viewing-reversed-payouts",
+                  "Global-Money-Movement/payouts/reversals/webhooks"
                 ]
               }
             ]
@@ -156,41 +156,41 @@
           {
             "group": "Connected Accounts",
             "pages": [
-              "Money-Movement/connected-accounts/overview",
-              "Money-Movement/connected-accounts/how-connected-accounts-work",
-              "Money-Movement/connected-accounts/creating-sub-accounts",
-              "Money-Movement/connected-accounts/creating-entities",
-              "Money-Movement/connected-accounts/simplified-entity-creation",
-              "Money-Movement/connected-accounts/full-entity-creation"
+              "Global-Money-Movement/connected-accounts/overview",
+              "Global-Money-Movement/connected-accounts/how-connected-accounts-work",
+              "Global-Money-Movement/connected-accounts/creating-sub-accounts",
+              "Global-Money-Movement/connected-accounts/creating-entities",
+              "Global-Money-Movement/connected-accounts/simplified-entity-creation",
+              "Global-Money-Movement/connected-accounts/full-entity-creation"
             ]
           },
           {
             "group": "Integration Guides",
             "pages": [
-              "Money-Movement/integration-guides/payouts-on-behalf-of",
-              "Money-Movement/integration-guides/collections-on-behalf-of",
-              "Money-Movement/integration-guides/global-payout-network",
-              "Money-Movement/integration-guides/funding-a-payout-after-creation"
+              "Global-Money-Movement/integration-guides/payouts-on-behalf-of",
+              "Global-Money-Movement/integration-guides/collections-on-behalf-of",
+              "Global-Money-Movement/integration-guides/global-payout-network",
+              "Global-Money-Movement/integration-guides/funding-a-payout-after-creation"
             ]
           },
           {
             "group": "Embedded Finance Use Cases",
             "pages": [
-              "Money-Movement/embedded-finance-use-cases/overview",
+              "Global-Money-Movement/embedded-finance-use-cases/overview",
               {
                 "group": "Global Treasury",
                 "pages": [
-                  "Money-Movement/embedded-finance-use-cases/global-treasury/overview",
-                  "Money-Movement/embedded-finance-use-cases/global-treasury/payroll",
-                  "Money-Movement/embedded-finance-use-cases/global-treasury/vendor-payouts",
-                  "Money-Movement/embedded-finance-use-cases/global-treasury/employee-reimbursements"
+                  "Global-Money-Movement/embedded-finance-use-cases/global-treasury/overview",
+                  "Global-Money-Movement/embedded-finance-use-cases/global-treasury/payroll",
+                  "Global-Money-Movement/embedded-finance-use-cases/global-treasury/vendor-payouts",
+                  "Global-Money-Movement/embedded-finance-use-cases/global-treasury/employee-reimbursements"
                 ]
               },
               {
                 "group": "Banking as a Service",
                 "pages": [
-                  "Money-Movement/embedded-finance-use-cases/banking-as-a-service/stablecoin-neobanks",
-                  "Money-Movement/embedded-finance-use-cases/banking-as-a-service/fintechs"
+                  "Global-Money-Movement/embedded-finance-use-cases/banking-as-a-service/stablecoin-neobanks",
+                  "Global-Money-Movement/embedded-finance-use-cases/banking-as-a-service/fintechs"
                 ]
               }
             ]
@@ -198,16 +198,16 @@
           {
             "group": "Transfers Within Tazapay",
             "pages": [
-              "Money-Movement/transfers-within-tazapay/overview",
-              "Money-Movement/transfers-within-tazapay/configuring-an-accounts-deposit-address",
+              "Global-Money-Movement/transfers-within-tazapay/overview",
+              "Global-Money-Movement/transfers-within-tazapay/configuring-an-accounts-deposit-address",
               {
                 "group": "Making a Payment to a Deposit Address",
                 "pages": [
-                  "Money-Movement/transfers-within-tazapay/making-a-payment-to-a-deposit-address/using-dashboard",
-                  "Money-Movement/transfers-within-tazapay/making-a-payment-to-a-deposit-address/using-api"
+                  "Global-Money-Movement/transfers-within-tazapay/making-a-payment-to-a-deposit-address/using-dashboard",
+                  "Global-Money-Movement/transfers-within-tazapay/making-a-payment-to-a-deposit-address/using-api"
                 ]
               },
-              "Money-Movement/transfers-within-tazapay/viewing-an-incoming-payment"
+              "Global-Money-Movement/transfers-within-tazapay/viewing-an-incoming-payment"
             ]
           },
           {
@@ -216,8 +216,8 @@
               {
                 "group": "Onboarding Requirements",
                 "pages": [
-                  "Money-Movement/appendix/onboarding-requirements/onboarding-requirements-individuals",
-                  "Money-Movement/appendix/onboarding-requirements/onboarding-requirements-businesses"
+                  "Global-Money-Movement/appendix/onboarding-requirements/onboarding-requirements-individuals",
+                  "Global-Money-Movement/appendix/onboarding-requirements/onboarding-requirements-businesses"
                 ]
               }
             ]
@@ -225,15 +225,15 @@
         ]
       },
             {
-  "tab": "Checkout",
+  "tab": "Cards and LPMs",
   "icon": "shopping-cart",
   "groups": [
     {
       "group": "Overview",
       "pages": [
-        "Checkout/Introduction-to-Checkout",
-        "Checkout/How-Checkout-works",
-        "Checkout/Managing-Payment-Methods"
+        "Cards-and-LPMs/Introduction-to-Checkout",
+        "Cards-and-LPMs/How-Checkout-works",
+        "Cards-and-LPMs/Managing-Payment-Methods"
       ]
     },
     {
@@ -242,26 +242,26 @@
         {
           "group": "Types of Collections",
           "pages": [
-            "Checkout/Types-of-Collections/Cards",
-            "Checkout/Types-of-Collections/Local-Payment-Methods-LPMs",
-            "Checkout/Types-of-Collections/Global-Collection-Account"
+            "Cards-and-LPMs/Types-of-Collections/Cards",
+            "Cards-and-LPMs/Types-of-Collections/Local-Payment-Methods-LPMs",
+            "Cards-and-LPMs/Types-of-Collections/Global-Collection-Account"
           ]
         },
         {
           "group": "Build a Payment Integration",
           "pages": [
-            "Checkout/Build-a-Payment-Integration/Choosing-how-to-collect-payments",
-            "Checkout/Build-a-Payment-Integration/No-Code-Options",
+            "Cards-and-LPMs/Build-a-Payment-Integration/Choosing-how-to-collect-payments",
+            "Cards-and-LPMs/Build-a-Payment-Integration/No-Code-Options",
             {
               "group": "Tazapay Hosted Options",
               "pages": [
-                "Checkout/Build-a-Payment-Integration/Tazapay-Hosted-Options/Payment-Embed",
-                "Checkout/Build-a-Payment-Integration/Tazapay-Hosted-Options/The-hosted-page-lists-the-payment-methods",
-                "Checkout/Build-a-Payment-Integration/Tazapay-Hosted-Options/List-the-payment-methods-on-your-own-page"
+                "Cards-and-LPMs/Build-a-Payment-Integration/Tazapay-Hosted-Options/Payment-Embed",
+                "Cards-and-LPMs/Build-a-Payment-Integration/Tazapay-Hosted-Options/The-hosted-page-lists-the-payment-methods",
+                "Cards-and-LPMs/Build-a-Payment-Integration/Tazapay-Hosted-Options/List-the-payment-methods-on-your-own-page"
               ]
             },
-            "Checkout/Build-a-Payment-Integration/Native-Custom-Integration",
-            "Checkout/Build-a-Payment-Integration/Global-Collection-Account"
+            "Cards-and-LPMs/Build-a-Payment-Integration/Native-Custom-Integration",
+            "Cards-and-LPMs/Build-a-Payment-Integration/Global-Collection-Account"
           ]
         },
         {
@@ -270,54 +270,54 @@
             {
               "group": "Know Your Business (KYB)",
               "pages": [
-                "Checkout/Core-Concepts/Know-Your-Business-KYB/KYB-Overview",
-                "Checkout/Core-Concepts/Know-Your-Business-KYB/KYB-states"
+                "Cards-and-LPMs/Core-Concepts/Know-Your-Business-KYB/KYB-Overview",
+                "Cards-and-LPMs/Core-Concepts/Know-Your-Business-KYB/KYB-states"
               ]
             },
-            "Checkout/Core-Concepts/Bank-Accounts-and-Reconciliation",
-            "Checkout/Core-Concepts/FX-transaction",
+            "Cards-and-LPMs/Core-Concepts/Bank-Accounts-and-Reconciliation",
+            "Cards-and-LPMs/Core-Concepts/FX-transaction",
             {
               "group": "Checkout",
               "pages": [
-                "Checkout/Core-Concepts/Checkout/Overview",
-                "Checkout/Core-Concepts/Checkout/Checkout-States"
+                "Cards-and-LPMs/Core-Concepts/Cards-and-LPMs/Overview",
+                "Cards-and-LPMs/Core-Concepts/Cards-and-LPMs/Checkout-States"
               ]
             },
             {
               "group": "Payin",
               "pages": [
-                "Checkout/Core-Concepts/Payin/Overview",
-                "Checkout/Core-Concepts/Payin/Payin-states"
+                "Cards-and-LPMs/Core-Concepts/Payin/Overview",
+                "Cards-and-LPMs/Core-Concepts/Payin/Payin-states"
               ]
             },
             {
               "group": "Escrow",
               "pages": [
-                "Checkout/Core-Concepts/Escrow/Overview",
-                "Checkout/Core-Concepts/Escrow/Escrow-states"
+                "Cards-and-LPMs/Core-Concepts/Escrow/Overview",
+                "Cards-and-LPMs/Core-Concepts/Escrow/Escrow-states"
               ]
             },
             {
               "group": "Refund",
               "pages": [
-                "Checkout/Core-Concepts/Refund/Overview",
-                "Checkout/Core-Concepts/Refund/Refund-states"
+                "Cards-and-LPMs/Core-Concepts/Refund/Overview",
+                "Cards-and-LPMs/Core-Concepts/Refund/Refund-states"
               ]
             },
-            "Checkout/Core-Concepts/Customer",
-            "Checkout/Core-Concepts/Payment-Method",
+            "Cards-and-LPMs/Core-Concepts/Customer",
+            "Cards-and-LPMs/Core-Concepts/Payment-Method",
             {
               "group": "Payment Attempt",
               "pages": [
-                "Checkout/Core-Concepts/Payment-Attempt/Overview",
-                "Checkout/Core-Concepts/Payment-Attempt/Payment-Attempt-States"
+                "Cards-and-LPMs/Core-Concepts/Payment-Attempt/Overview",
+                "Cards-and-LPMs/Core-Concepts/Payment-Attempt/Payment-Attempt-States"
               ]
             },
             {
               "group": "Settlements",
               "pages": [
-                "Checkout/Core-Concepts/Settlements/Overview",
-                "Checkout/Core-Concepts/Settlements/Settlement-State-Machine"
+                "Cards-and-LPMs/Core-Concepts/Settlements/Overview",
+                "Cards-and-LPMs/Core-Concepts/Settlements/Settlement-State-Machine"
               ]
             }
           ]
@@ -328,71 +328,71 @@
             {
               "group": "India",
               "pages": [
-                "Checkout/Payment-Methods-APAC/India/internet_banking_inr",
-                "Checkout/Payment-Methods-APAC/India/upi_inr",
-                "Checkout/Payment-Methods-APAC/India/upi_inr_native"
+                "Cards-and-LPMs/Payment-Methods-APAC/India/internet_banking_inr",
+                "Cards-and-LPMs/Payment-Methods-APAC/India/upi_inr",
+                "Cards-and-LPMs/Payment-Methods-APAC/India/upi_inr_native"
               ]
             },
             {
               "group": "Indonesia",
               "pages": [
-                "Checkout/Payment-Methods-APAC/Indonesia/bank_push_idr",
-                "Checkout/Payment-Methods-APAC/Indonesia/dana_idr",
-                "Checkout/Payment-Methods-APAC/Indonesia/doku_idr",
-                "Checkout/Payment-Methods-APAC/Indonesia/linkaja_idr",
-                "Checkout/Payment-Methods-APAC/Indonesia/ovo_idr",
-                "Checkout/Payment-Methods-APAC/Indonesia/qris_idr",
-                "Checkout/Payment-Methods-APAC/Indonesia/shopeepay_idr"
+                "Cards-and-LPMs/Payment-Methods-APAC/Indonesia/bank_push_idr",
+                "Cards-and-LPMs/Payment-Methods-APAC/Indonesia/dana_idr",
+                "Cards-and-LPMs/Payment-Methods-APAC/Indonesia/doku_idr",
+                "Cards-and-LPMs/Payment-Methods-APAC/Indonesia/linkaja_idr",
+                "Cards-and-LPMs/Payment-Methods-APAC/Indonesia/ovo_idr",
+                "Cards-and-LPMs/Payment-Methods-APAC/Indonesia/qris_idr",
+                "Cards-and-LPMs/Payment-Methods-APAC/Indonesia/shopeepay_idr"
               ]
             },
             {
               "group": "Japan",
               "pages": [
-                "Checkout/Payment-Methods-APAC/Japan/payeasy_jpy"
+                "Cards-and-LPMs/Payment-Methods-APAC/Japan/payeasy_jpy"
               ]
             },
             {
               "group": "Malaysia",
               "pages": [
-                "Checkout/Payment-Methods-APAC/Malaysia/fpx_corp_myr",
-                "Checkout/Payment-Methods-APAC/Malaysia/fpx_ind_myr"
+                "Cards-and-LPMs/Payment-Methods-APAC/Malaysia/fpx_corp_myr",
+                "Cards-and-LPMs/Payment-Methods-APAC/Malaysia/fpx_ind_myr"
               ]
             },
             {
               "group": "Philippines",
               "pages": [
-                "Checkout/Payment-Methods-APAC/Philippines/qr_php",
-                "Checkout/Payment-Methods-APAC/Philippines/bankpush_php",
-                "Checkout/Payment-Methods-APAC/Philippines/directdebit_php",
-                "Checkout/Payment-Methods-APAC/Philippines/grabpay_php",
-                "Checkout/Payment-Methods-APAC/Philippines/paymaya_php",
-                "Checkout/Payment-Methods-APAC/Philippines/shopeepay_php"
+                "Cards-and-LPMs/Payment-Methods-APAC/Philippines/qr_php",
+                "Cards-and-LPMs/Payment-Methods-APAC/Philippines/bankpush_php",
+                "Cards-and-LPMs/Payment-Methods-APAC/Philippines/directdebit_php",
+                "Cards-and-LPMs/Payment-Methods-APAC/Philippines/grabpay_php",
+                "Cards-and-LPMs/Payment-Methods-APAC/Philippines/paymaya_php",
+                "Cards-and-LPMs/Payment-Methods-APAC/Philippines/shopeepay_php"
               ]
             },
             {
               "group": "Singapore",
               "pages": [
-                "Checkout/Payment-Methods-APAC/Singapore/paynow_sgd"
+                "Cards-and-LPMs/Payment-Methods-APAC/Singapore/paynow_sgd"
               ]
             },
             {
               "group": "Thailand",
               "pages": [
-                "Checkout/Payment-Methods-APAC/Thailand/linepay_thb",
-                "Checkout/Payment-Methods-APAC/Thailand/mobilebanking_thb",
-                "Checkout/Payment-Methods-APAC/Thailand/promptpay_thb",
-                "Checkout/Payment-Methods-APAC/Thailand/shopeepay_thb",
-                "Checkout/Payment-Methods-APAC/Thailand/truemoney_thb",
-                "Checkout/Payment-Methods-APAC/Thailand/wechat_thb_pay",
-                "Checkout/Payment-Methods-APAC/Thailand/wechat_thb_wallet"
+                "Cards-and-LPMs/Payment-Methods-APAC/Thailand/linepay_thb",
+                "Cards-and-LPMs/Payment-Methods-APAC/Thailand/mobilebanking_thb",
+                "Cards-and-LPMs/Payment-Methods-APAC/Thailand/promptpay_thb",
+                "Cards-and-LPMs/Payment-Methods-APAC/Thailand/shopeepay_thb",
+                "Cards-and-LPMs/Payment-Methods-APAC/Thailand/truemoney_thb",
+                "Cards-and-LPMs/Payment-Methods-APAC/Thailand/wechat_thb_pay",
+                "Cards-and-LPMs/Payment-Methods-APAC/Thailand/wechat_thb_wallet"
               ]
             },
             {
               "group": "Vietnam",
               "pages": [
-                "Checkout/Payment-Methods-APAC/Vietnam/bankpush_vnd",
-                "Checkout/Payment-Methods-APAC/Vietnam/shopeepay_vnd",
-                "Checkout/Payment-Methods-APAC/Vietnam/vnpay_vnd"
+                "Cards-and-LPMs/Payment-Methods-APAC/Vietnam/bankpush_vnd",
+                "Cards-and-LPMs/Payment-Methods-APAC/Vietnam/shopeepay_vnd",
+                "Cards-and-LPMs/Payment-Methods-APAC/Vietnam/vnpay_vnd"
               ]
             }
           ]
@@ -403,38 +403,38 @@
             {
               "group": "Austria",
               "pages": [
-                "Checkout/Payment-Methods-Europe/Austria/eps_eur"
+                "Cards-and-LPMs/Payment-Methods-Europe/Austria/eps_eur"
               ]
             },
             {
               "group": "Belgium",
               "pages": [
-                "Checkout/Payment-Methods-Europe/Belgium/bancontact_eur"
+                "Cards-and-LPMs/Payment-Methods-Europe/Belgium/bancontact_eur"
               ]
             },
             {
               "group": "Eurozone",
               "pages": [
-                "Checkout/Payment-Methods-Europe/Eurozone/bank_initiation_eur"
+                "Cards-and-LPMs/Payment-Methods-Europe/Eurozone/bank_initiation_eur"
               ]
             },
             {
               "group": "Italy",
               "pages": [
-                "Checkout/Payment-Methods-Europe/Italy/mybank_eur"
+                "Cards-and-LPMs/Payment-Methods-Europe/Italy/mybank_eur"
               ]
             },
             {
               "group": "Poland",
               "pages": [
-                "Checkout/Payment-Methods-Europe/Poland/blik_pln",
-                "Checkout/Payment-Methods-Europe/Poland/p24_pln"
+                "Cards-and-LPMs/Payment-Methods-Europe/Poland/blik_pln",
+                "Cards-and-LPMs/Payment-Methods-Europe/Poland/p24_pln"
               ]
             },
             {
               "group": "Portugal",
               "pages": [
-                "Checkout/Payment-Methods-Europe/Portugal/multibanco_eur"
+                "Cards-and-LPMs/Payment-Methods-Europe/Portugal/multibanco_eur"
               ]
             }
           ]
@@ -445,20 +445,20 @@
             {
               "group": "Kenya",
               "pages": [
-                "Checkout/Payment-Methods-MENA/Kenya/bank_push_kes",
-                "Checkout/Payment-Methods-MENA/Kenya/mobile_money_kes"
+                "Cards-and-LPMs/Payment-Methods-MENA/Kenya/bank_push_kes",
+                "Cards-and-LPMs/Payment-Methods-MENA/Kenya/mobile_money_kes"
               ]
             },
             {
               "group": "Tanzania",
               "pages": [
-                "Checkout/Payment-Methods-MENA/Tanzania/mobile_money_tzs"
+                "Cards-and-LPMs/Payment-Methods-MENA/Tanzania/mobile_money_tzs"
               ]
             },
             {
               "group": "Uganda",
               "pages": [
-                "Checkout/Payment-Methods-MENA/Uganda/mobile_money_ugx"
+                "Cards-and-LPMs/Payment-Methods-MENA/Uganda/mobile_money_ugx"
               ]
             }
           ]
@@ -469,19 +469,19 @@
             {
               "group": "Brazil",
               "pages": [
-                "Checkout/Payment-Methods-South-America/Brazil/pix_brl"
+                "Cards-and-LPMs/Payment-Methods-South-America/Brazil/pix_brl"
               ]
             },
             {
               "group": "Colombia",
               "pages": [
-                "Checkout/Payment-Methods-South-America/Colombia/internet_banking_cop"
+                "Cards-and-LPMs/Payment-Methods-South-America/Colombia/internet_banking_cop"
               ]
             },
             {
               "group": "Mexico",
               "pages": [
-                "Checkout/Payment-Methods-South-America/Mexico/bank_push_mxn"
+                "Cards-and-LPMs/Payment-Methods-South-America/Mexico/bank_push_mxn"
               ]
             }
           ]
@@ -489,11 +489,11 @@
         {
           "group": "After the Payment",
           "pages": [
-            "Checkout/After-the-Payment/Settlements",
-            "Checkout/After-the-Payment/Refunds",
-            "Checkout/After-the-Payment/Reconciliation",
-            "Checkout/After-the-Payment/Webhook-events",
-            "Checkout/After-the-Payment/Disputes---PIX-MED"
+            "Cards-and-LPMs/After-the-Payment/Settlements",
+            "Cards-and-LPMs/After-the-Payment/Refunds",
+            "Cards-and-LPMs/After-the-Payment/Reconciliation",
+            "Cards-and-LPMs/After-the-Payment/Webhook-events",
+            "Cards-and-LPMs/After-the-Payment/Disputes---PIX-MED"
           ]
         }
       ]
