@@ -1,14 +1,6 @@
 ---
 title: "Overview"
 ---
-The following flowchart details the possible status of a payin
+A Payin object represents your **intent to collect a specific payment** from your customer. It acts as a central tracker for the entire lifecycle of that payment attempt, from the moment you decide to charge your customer until the funds are successfully received, or the attempt fails or expires.
 
-<Image border={false} src="https://files.readme.io/5e40336-image.png" />
-
-| Name                    | Description                                                                                                                                     |
-| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| requires_payment_method | Payment Method details need to be attached to the payin to proceed with the payment                                                             |
-| requires_action         | An action needs to be taken by the customer for the payment to go through                                                                       |
-| processing              | All the actions have been performed by the customer, Tazapay is still waiting to confirm the payment. Not all payment methods have this status. |
-| succeeded               | The payin is successful                                                                                                                         |
-| cancelled               | The payin is cancelled                                                                                                                          |
+Every time you want to initiate a new payment collection process via the API, you will typically start by creating a Payin object.
