@@ -136,8 +136,8 @@ curl --request POST \
 
 To align with your workflow, you can choose to split Step 1 into two steps:
 
-- **Step 1A:** Creating a beneficiary using the [Create Beneficiary endpoint](/reference/create-beneficiary)
-- **Step 1B:** Initiating a payout using the [Create Payout endpoint](/reference/create-payout)
+- **Step 1A:** Creating a beneficiary using the [Create Beneficiary endpoint](/API-Reference/tazapay-api/beneficiary/create-beneficiary)
+- **Step 1B:** Initiating a payout using the [Create Payout endpoint](/API-Reference/tazapay-api/payout/create-payout)
 
 ### Step 1A: Create a Beneficiary
 
@@ -202,7 +202,7 @@ curl --request POST \
 
 ### Step 1B: Initiating a payout to an existing beneficiary
 
-Create a payout on your server using Tazapay's [payout API](/reference/create-payout) with the following information:
+Create a payout on your server using Tazapay's [payout API](/API-Reference/tazapay-api/payout/create-payout) with the following information:
 
 - **Payout Amount and Currency** - The amount you want to transfer to the beneficiary
 - **Beneficiary ID**

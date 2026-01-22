@@ -29,7 +29,7 @@ Create a payout on your server using Tazapay’s payout API with the following i
   * Destination Details
     * PIX key type
     * PIX key
-* [Reason for Payout](https://docs.tazapay.com/docs/purpose)
+* [Reason for Payout](https://tazapay-58ae360f.mintlify.app/Global-Money-Movement/payouts/purpose)
 * Transaction Description - Additional Description for a payout
 
 ### Possible values for `deposit_key_type`
@@ -153,8 +153,8 @@ curl --request POST \
 
 To align with your workflow, you can also choose to split Step 1 into two steps
 
-* Step 1A: Creating a beneficiary using the [Create Beneficiary endpoint](https://docs.tazapay.com/reference/create-beneficiary)
-* Step 1B: Initiating a payout using the [Create Payout endpoint](https://docs.tazapay.com/reference/create-payout)
+* Step 1A: Creating a beneficiary using the [Create Beneficiary endpoint](https://tazapay-58ae360f.mintlify.app/API-Reference/tazapay-api/beneficiary/create-beneficiary)
+* Step 1B: Initiating a payout using the [Create Payout endpoint](https://tazapay-58ae360f.mintlify.app/API-Reference/tazapay-api/payout/create-payout)
 
 ### Step 1A: Creating a beneficiary
 
@@ -238,12 +238,12 @@ curl --request POST \
 
 ### Step 1B: Initiating a payout to the existing beneficiary
 
-Create a payout on your server using Tazapay’s [payout API](https://docs.tazapay.com/reference/create-payout) with the following information:
+Create a payout on your server using Tazapay’s [payout API](https://tazapay-58ae360f.mintlify.app/API-Reference/tazapay-api/payout/create-payout) with the following information:
 
 * Payout Amount and Currency - The amount you want to transfer to the beneficiary
 * Beneficiary ID
 * Type of Payout - `local_payment_network`
-* [Reason for Payout](https://docs.tazapay.com/docs/purpose)
+* [Reason for Payout](https://tazapay-58ae360f.mintlify.app/Global-Money-Movement/payouts/purpose)
 * Transaction Description - Additional Description for a payout
 
 ### Sample cURL
@@ -338,7 +338,7 @@ A payout is in the `processing` state after it is successfully initiated. The 
 2. **succeeded** - The beneficiary has successfully received the funds.
 3. **failed** - This is the state when the payout fails. Any funds deducted for the payout will be credited back to your account. Tazapay specifies the reason for the failure in the field `status_description`
 
-> Tazapay delivers [webhooks](https://docs.tazapay.com/docs/payout-webhook) to your registered endpoint notifying you of any event of interest for the payout.
+> Tazapay delivers [webhooks](https://tazapay-58ae360f.mintlify.app/API-Reference/api-overview/webhooks) to your registered endpoint notifying you of any event of interest for the payout.
 
 <Info>
 The payout will fail in case the tax_id (CPF or CNPJ) entered does not match the tax_id linked to the PIX key. It is recommended to display this message to the users on the PIX key collection screen on your application.
