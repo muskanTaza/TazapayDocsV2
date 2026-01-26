@@ -734,29 +734,6 @@
             ]
           }
         ]
-      },
-      {
-        "tab": "Roadmap",
-        "icon": "map",
-        "groups": [
-          {
-            "group": "2026",
-            "pages": [
-              "Roadmap/2026/mass-payout-scheduling",
-              "Roadmap/2026/enhanced-compliance-suite",
-              "Roadmap/2026/mobile-app",
-              "Roadmap/2026/white-label-solution",
-              "Roadmap/2026/advanced-analytics-dashboard",
-              "Roadmap/2026/crypto-payout-expansion",
-              "Roadmap/2026/ai-powered-fraud-detection",
-              "Roadmap/2026/invoice-management-system",
-              "Roadmap/2026/api-v4-launch",
-              "Roadmap/2026/embedded-finance-toolkit",
-              "Roadmap/2026/cross-border-cards-program",
-              "Roadmap/2026/blockchain-settlement-network"
-            ]
-          }
-        ]
       }
     ]
   },
